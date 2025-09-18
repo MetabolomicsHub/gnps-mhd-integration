@@ -1,10 +1,7 @@
 import datetime
-import enum
 import json
 import logging
-import re
 from pathlib import Path
-from typing import OrderedDict
 from urllib.parse import quote
 
 import httpx
@@ -12,7 +9,6 @@ import xmltodict
 from mhd_model.model.v0_1.dataset.profiles.base import graph_nodes as mhd_domain
 from mhd_model.model.v0_1.dataset.profiles.base.dataset_builder import MhDatasetBuilder
 from mhd_model.model.v0_1.dataset.profiles.base.profile import MhDatasetBaseProfile
-from mhd_model.model.v0_1.dataset.profiles.base.relationships import Relationship
 from mhd_model.model.v0_1.dataset.profiles.legacy.profile import MhDatasetLegacyProfile
 from mhd_model.model.v0_1.rules.managed_cv_terms import (
     COMMON_ASSAY_TYPES,
@@ -22,15 +18,11 @@ from mhd_model.model.v0_1.rules.managed_cv_terms import (
     COMMON_PARAMETER_DEFINITIONS,
     COMMON_PROTOCOLS,
     COMMON_STUDY_FACTOR_DEFINITIONS,
-    COMMON_TECHNOLOGY_TYPES,
-    REQUIRED_COMMON_PARAMETER_DEFINITIONS,
 )
-from mhd_model.shared.fields import DOI
 from mhd_model.shared.model import CvTerm, Revision, UnitCvTerm
-from pydantic import AnyUrl, BaseModel, HttpUrl, ValidationError
+from pydantic import AnyUrl, HttpUrl
 
 from gnps2mhd.config import Gnps2MhdConfiguration
-
 
 logger = logging.getLogger(__name__)
 
@@ -47,8 +39,6 @@ GNPS_MEASUREMENT_TYPES = {
     "untargeted": COMMON_MEASUREMENT_TYPES["MSIO:0000101"],
 }
 
-DEFAULT_MEASUREMENT_TYPE = COMMON_MEASUREMENT_TYPES["OBI:0000366"]
-
 DEFAULT_OMICS_TYPE = COMMON_OMICS_TYPES["EDAM:3172"]
 
 COMMON_PROTOCOLS_MAP = {
@@ -64,7 +54,7 @@ COMMON_PROTOCOLS_MAP = {
     # TODO: Update after adding to managed CV terms
 }
 
-MTBLS_PROTOCOLS_MAP = COMMON_PROTOCOLS_MAP.copy()
+GNPS_PROTOCOLS_MAP = COMMON_PROTOCOLS_MAP.copy()
 
 MANAGED_CHARACTERISTICS_MAP = {
     "organism": COMMON_CHARACTERISTIC_DEFINITIONS["NCIT:C14250"],
@@ -131,10 +121,22 @@ def create_cv_term_value_object(
     )
 
 
-def fetch_massive_metadata_file(massive_study_id: str):
-    metadata_file_name = (
-        "ccms_parameters/params.xml"  # update if its format is different
-    )
+def fetch_massive_metadata_file(
+    massive_study_id: str, cache_root_path: None | str = None
+):
+    cache_path = None
+    if cache_root_path:
+        cache_path = Path(f"{cache_root_path}/{massive_study_id}.params.xml.json")
+        try:
+            if cache_path.exists():
+                with cache_path.open() as f:
+                    json_data = json.load(f)
+                return json_data
+        except Exception as ex:
+            logger.error("Error loading from cache. %s", ex)
+            pass
+
+    metadata_file_name = "ccms_parameters/params.xml"
     metadata_http_file_url = (
         "https://massive.ucsd.edu/ProteoSAFe/DownloadResultFile"
         f"?file=f.{massive_study_id}%2F{quote(metadata_file_name, safe='')}"
@@ -157,6 +159,9 @@ def fetch_massive_metadata_file(massive_study_id: str):
                     params_dict[name].append(val)
                 else:
                     params_dict[name] = [val]
+        if cache_path:
+            with cache_path.open("w") as f:
+                json_data = json.dump(params_dict, f, indent=4)
         return params_dict
 
     except Exception as e:
@@ -176,9 +181,13 @@ class MhdLegacyDatasetBuilder:
         config: Gnps2MhdConfiguration,
         repository_name: str,
         revision: None | Revision = None,
+        **kwargs,
     ) -> MhDatasetLegacyProfile:
+        cache_root_path = kwargs.get("cache_root_path", None)
         # Fetch metadata from Massive. Remove if it is not needed.
-        params = fetch_massive_metadata_file(massive_study_id)
+        params = fetch_massive_metadata_file(
+            massive_study_id, cache_root_path=cache_root_path
+        )
         if not params:
             raise ValueError(f"Could not fetch metadata for study {massive_study_id}")
 
@@ -359,11 +368,18 @@ class MhdLegacyDatasetBuilder:
             )
             for item in species_list:
                 # TODO: Create characteristic value with source and accession if item has valid CURIE
+                accession = ""
+                source = ""
+                if item.upper().startswith("NCBITAXON:"):
+                    identifier = item.upper().replace("NCBITAXON:", "")
+                    source = "NCBITAXON"
+                    accession = f"NCBITacon:{identifier}"
+
                 val = create_cv_term_object(
                     type_="characteristic-value",
                     name=item,
-                    source="",  # TODO?
-                    accession="",  # TODO?
+                    source=source,
+                    accession=accession,  # TODO?
                 )
                 mhd_builder.add(val)
                 mhd_builder.link(
@@ -430,7 +446,7 @@ class MhdLegacyDatasetBuilder:
                 ms_protocol,
                 "has-parameter-definition",
                 ms_instrument_definition,
-                reverse_relationship_name="defined-in",
+                reverse_relationship_name="used-in",
             )
 
             for item in ms_instrument_list:
@@ -481,6 +497,9 @@ class MhdLegacyDatasetBuilder:
         file_format = None
         for file in raw_data_files:
             peak_file_name, raw_file_path = file.split("|")
+            subpaths = raw_file_path.split("/")
+            if len(subpaths) > 1:
+                raw_file_path = "/".join(subpaths[1:])
             extension = Path(raw_file_path).suffix
             extension_lower = extension.lower()
             if (extension_lower, False) in FILE_EXTENSIONS:
@@ -508,7 +527,7 @@ class MhdLegacyDatasetBuilder:
             if study_public_ftp_url:
                 # TODO: validate URL and update
                 file_node.url_list.append(
-                    AnyUrl(f"{study_public_ftp_url}/{raw_file_path}")
+                    AnyUrl(f"{study_public_ftp_url}/peak/{raw_file_path}")
                 )
             mhd_builder.add_node(file_node)
             mhd_builder.link(
@@ -531,14 +550,10 @@ class MhdLegacyDatasetBuilder:
         output_path = mhd_output_path / Path(f"{filename}.mhd.json")
         output_path.open("w").write(
             mhd_dataset.model_dump_json(
-                indent=2, by_alias=True, exclude_none=True, serialize_as_any=True
+                indent=4, by_alias=True, exclude_none=True, serialize_as_any=True
             )
         )
         logger.info(
             "%s study MHD file is created with name: %s", massive_study_id, output_path
         )
         return mhd_dataset
-
-
-# if __name__ == "__main__":
-#     fetch_massive_metadata_file(massive_study_id="MSV000097203")

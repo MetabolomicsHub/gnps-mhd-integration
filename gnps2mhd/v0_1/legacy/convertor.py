@@ -35,4 +35,5 @@ class LegacyProfileV01Convertor(BaseMhdConvertor):
             config=gnps2mhd_config,
             revision=repository_revision,
             repository_name=repository_name,
+            **kwargs,
         )

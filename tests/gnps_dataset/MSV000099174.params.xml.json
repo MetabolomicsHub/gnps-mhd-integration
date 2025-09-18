@@ -1,0 +1,37 @@
+{
+    "dataset.comments": "Ethanolic extract of Withania somnifera (ashwagandha) leaves, digested in Pectinase (non-specific deglycosylation enzyme mixture), was compared to the undigested leaf extract. Replicates include n=3.",
+    "dataset.instrument": "MS:1002634",
+    "dataset.keywords": "Pectinase;leaf extract;deglycosylation;DatasetType:Metabolomics",
+    "dataset.modification": "MS:1002864",
+    "dataset.pi": "Sarah Barr|sab9514@uncw.edu|University of North Carolina Wilmington|United States",
+    "dataset.species": "NCBITaxon:126910",
+    "dataset.type.metabolomics": "on",
+    "default.license": "on",
+    "desc": "Crude Extract vs Pectinase-digested Extract for Withania somnifera (leaf)",
+    "email": "sab9514@uncw.edu",
+    "file_mapping": "SAB_2-26-15.mzML|LE vs LP - mztab feature list for Massive upload.mzTab#/SAB_2-26-15.mzML;SAB_2-26-17.mzML|LE vs LP - mztab feature list for Massive upload.mzTab#/SAB_2-26-17.mzML;SAB_2-26-18.mzML|LE vs LP - mztab feature list for Massive upload.mzTab#/SAB_2-26-18.mzML;SAB_2-26-2.mzML|LE vs LP - mztab feature list for Massive upload.mzTab#/SAB_2-26-2.mzML;SAB_2-26-3.mzML|LE vs LP - mztab feature list for Massive upload.mzTab#/SAB_2-26-3.mzML;SAB_2-26-4.mzML|LE vs LP - mztab feature list for Massive upload.mzTab#/SAB_2-26-4.mzML;",
+    "massive_volume": "v10",
+    "peak_list_files": "f.s_barr/Ashwagandha Digest Transf/LE vs LP files/LE vs LP_20240705.mgf;f.s_barr/Ashwagandha Digest Transf/mzml /SAB_2-26-2.mzML;f.s_barr/Ashwagandha Digest Transf/mzml /SAB_2-26-3.mzML;f.s_barr/Ashwagandha Digest Transf/mzml /SAB_2-26-4.mzML;f.s_barr/Ashwagandha Digest Transf/mzml /SAB_2-26-15.mzML;f.s_barr/Ashwagandha Digest Transf/mzml /SAB_2-26-17.mzML;f.s_barr/Ashwagandha Digest Transf/mzml /SAB_2-26-18.mzML;",
+    "result_file_mapping": [
+        "LE vs LP - mztab feature list for Massive upload.mzTab#/SAB_2-26-18.mzML|SAB_2-26-18.mzML",
+        "LE vs LP - mztab feature list for Massive upload.mzTab#/SAB_2-26-3.mzML|SAB_2-26-3.mzML",
+        "LE vs LP - mztab feature list for Massive upload.mzTab#/SAB_2-26-15.mzML|SAB_2-26-15.mzML",
+        "LE vs LP - mztab feature list for Massive upload.mzTab#/SAB_2-26-4.mzML|SAB_2-26-4.mzML",
+        "LE vs LP - mztab feature list for Massive upload.mzTab#/SAB_2-26-2.mzML|SAB_2-26-2.mzML"
+    ],
+    "result_files": "f.s_barr/Ashwagandha Digest Transf/LE vs LP files/LE vs LP - mztab feature list for Massive upload.mzTab;",
+    "task": "9e33e9a7222948fabbe4695ba9662c67",
+    "upload_file_mapping": [
+        "PEAK-00001.mzML|s_barr/Ashwagandha Digest Transf/mzml /SAB_2-26-2.mzML",
+        "PEAK-00002.mzML|s_barr/Ashwagandha Digest Transf/mzml /SAB_2-26-3.mzML",
+        "PEAK-00003.mzML|s_barr/Ashwagandha Digest Transf/mzml /SAB_2-26-4.mzML",
+        "PEAK-00004.mzML|s_barr/Ashwagandha Digest Transf/mzml /SAB_2-26-15.mzML",
+        "PEAK-00005.mzML|s_barr/Ashwagandha Digest Transf/mzml /SAB_2-26-17.mzML",
+        "PEAK-00006.mzML|s_barr/Ashwagandha Digest Transf/mzml /SAB_2-26-18.mzML",
+        "RESULT-00000.mzTab|s_barr/Ashwagandha Digest Transf/LE vs LP files/LE vs LP - mztab feature list for Massive upload.mzTab"
+    ],
+    "user": "s_barr",
+    "uuid": "1E7E802C-54DC-0001-1DE7-1D78C2BA1F0E",
+    "workflow": "MASSIVE-COMPLETE",
+    "workflow_version": "1.3.3"
+}
