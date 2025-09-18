@@ -1,3 +1,13 @@
+## v0.0.4 (2025-09-18)
+
+### Fix
+
+- commandline documentation updates.
+
+### Refactor
+
+- gnps-mhd-cli commandline is defined
+
 ## v0.0.3 (2025-09-18)
 
 ### Refactor
