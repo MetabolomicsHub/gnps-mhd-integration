@@ -12,7 +12,12 @@ from gnps2mhd.commands.fetch_gnps_study import fetch_gnps_study
 @click.group(context_settings={"help_option_names": ["-h", "--help"]})
 @click.version_option(__version__)
 def cli():
-    """GNPS/MassIVE - MHD Integration CLI with subcommands."""
+    """GNPS/MassIVE - MHD Integration CLI.
+
+    Use this cli to create MHD model file,
+    convert MHD model file to announcement file,
+    and fetch GNPS/MassIVE params.xml metadata file.
+    """
     pass
 
 
