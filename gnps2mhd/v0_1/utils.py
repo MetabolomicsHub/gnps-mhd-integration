@@ -90,10 +90,13 @@ def fetch_massive_metadata_file(
                     params_dict[name] = [val]
         if cache_path:
             with cache_path.open("w") as f:
-                json_data = json.dump(params_dict, f, indent=4)
+                json.dump(params_dict, f, indent=4)
         return params_dict
 
     except Exception as e:
+        import traceback
+
+        traceback.print_exc()
         logger.error("Error fetching massive metadata file %s: %s", massive_study_id, e)
 
     return None

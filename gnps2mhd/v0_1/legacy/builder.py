@@ -1,4 +1,5 @@
 import datetime
+import json
 import logging
 from pathlib import Path
 from urllib.parse import quote
@@ -98,10 +99,22 @@ class MhdLegacyDatasetBuilder:
         **kwargs,
     ) -> MhDatasetLegacyProfile:
         cache_root_path = kwargs.get("cache_root_path", None)
-        # Fetch metadata from Massive. Remove if it is not needed.
-        params = fetch_massive_metadata_file(
-            massive_study_id, cache_root_path=cache_root_path
-        )
+        params_xml_file_path = kwargs.get("input_file_path", None)
+        params = None
+        if params_xml_file_path:
+            params_xml_path = Path(params_xml_file_path)
+
+            if not params_xml_path.exists():
+                raise ValueError(f"File does not exist: {params_xml_file_path}")
+            with params_xml_path.open() as f:
+                params = json.load(f)
+
+        if not params:
+            # Fetch metadata from Massive.
+            params = fetch_massive_metadata_file(
+                massive_study_id, cache_root_path=cache_root_path
+            )
+
         if not params:
             raise ValueError(f"Could not fetch metadata for study {massive_study_id}")
 

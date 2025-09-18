@@ -5,15 +5,21 @@ description = "GNPS = Metabolomics Hub Integration"
 authors = [{"name" = "GNPS Team", "email" = "gnps-help@gnps.orf"}]
 license = "Apache-2.0"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = [
     "asyncpg>=0.30.0",
-    "mhd-model>=0.1.21",
+    "mhd-model>=0.1.22",
     "pydantic>=2.11.7",
     "pydantic-settings>=2.10.1",
     "xmltodict>=0.15.1",
 ]
 
+[project.scripts]
+gnps-mhd-cli = "gnps2mhd.commands.cli:cli"
+
+[tool.setuptools.packages.find]
+include = ["gnps2mhd*"]
+exclude = ["outputs*", "tests*"]
 
 [dependency-groups]
 dev = [
