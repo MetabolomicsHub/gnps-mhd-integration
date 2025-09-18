@@ -1,6 +1,6 @@
 [project]
 name = "gnps-mhd-integration"
-version = "0.0.2"
+version = "0.0.3"
 description = "GNPS = Metabolomics Hub Integration"
 authors = [{"name" = "GNPS Team", "email" = "gnps-help@gnps.orf"}]
 license = "Apache-2.0"
@@ -32,7 +32,7 @@ test = [
 [tool.commitizen]
 name = "cz_conventional_commits"
 version_provider = "uv"
-version = "0.0.2"
+version = "0.0.3"
 tag_format = "v$major.$minor.$patch"
 version_files = [
     "pyproject.toml:version",
