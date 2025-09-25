@@ -459,7 +459,7 @@ test = [
 
 [package.metadata]
 requires-dist = [
-    { name = "mhd-model", specifier = ">=0.1.22" },
+    { name = "mhd-model", specifier = ">=0.1.30" },
     { name = "pydantic", specifier = ">=2.11.7" },
     { name = "pydantic-settings", specifier = ">=2.10.1" },
     { name = "xmltodict", specifier = ">=0.15.1" },
