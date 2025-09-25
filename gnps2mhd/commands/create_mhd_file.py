@@ -42,11 +42,11 @@ logger = logging.getLogger(__name__)
     show_default=True,
     help="Target MHD model profile. It is used to validate MHD model",
 )
-@click.argument(
-    "study_id",
-)
+@click.argument("massive_study_id")
+@click.argument("mhd_identifier")
 def create_mhd_file(
-    study_id: str,
+    massive_study_id: str,
+    mhd_identifier: str,
     output_dir: str,
     output_filename: str,
     schema_uri: str,
@@ -54,6 +54,9 @@ def create_mhd_file(
     input_file_path: None | str,
 ):
     """Convert a GNPS/MassIVE study to MHD model file."""
+
+    if massive_study_id == mhd_identifier:
+        mhd_identifier = None
 
     factory = Gnps2MhdConvertorFactory()
     convertor = factory.get_convertor(
@@ -65,15 +68,15 @@ def create_mhd_file(
     try:
         convertor.convert(
             repository_name="GNPS/MassIVE",
-            repository_identifier=study_id,
-            mhd_identifier=None,
+            repository_identifier=massive_study_id,
+            mhd_identifier=mhd_identifier,
             mhd_output_folder_path=mhd_output_root_path,
             mhd_output_filename=output_filename,
             input_file_path=input_file_path,
         )
-        click.echo(f"{study_id} is converted successfully.")
+        click.echo(f"{mhd_identifier} is converted successfully.")
     except Exception as ex:
-        click.echo(f"{study_id} conversion failed. {str(ex)}")
+        click.echo(f"{mhd_identifier} conversion failed. {str(ex)}")
 
 
 if __name__ == "__main__":

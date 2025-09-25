@@ -31,14 +31,9 @@ def fetch_gnps_study(
 ):
     """Fetch a GNPS/MassIVE study params.xml and convert it to json.
 
+    \b
     Args:
-
     study_id (str): GNPS/MassIVE study id (e.g. MSV000001)
-
-    output_dir (str): Output directory for GNPS/MassIVE metadata file.
-
-    output_filename (str): Metadata json file converted from GNPS/MassIVE params.xml file.
-    Default is <study_id>.params.xml.json
     """
 
     data = fetch_massive_metadata_file(study_id)

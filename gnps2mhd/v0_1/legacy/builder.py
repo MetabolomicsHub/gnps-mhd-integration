@@ -194,7 +194,7 @@ class MhdLegacyDatasetBuilder:
             submitter_email = submitter_fields[1].strip()
 
             mhd_contact = mhd_domain.Person(
-                full_name=submitter_full_name, emails=[submitter_email]
+                full_name=submitter_full_name, email_list=[submitter_email]
             )
             mhd_builder.add(mhd_contact)
             # An assumption is made that PI is also submitter

@@ -17,9 +17,6 @@ dependencies = [
 [project.scripts]
 gnps-mhd-cli = "gnps2mhd.commands.cli:cli"
 
-[tool.setuptools.packages.find]
-include = ["gnps2mhd*"]
-exclude = ["outputs*", "tests*"]
 
 [dependency-groups]
 dev = [
@@ -53,6 +50,18 @@ testpaths = [
     "tests"
 ]
 
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["gnps2mhd*"]
+exclude = ["tests*", "docs*"]
+
+[tool.setuptools.package-data]
+gnps2mhd = ["**/*.json"]
 
 [tool.ruff.lint]
 extend-select = ["E4", "E7", "E9", "F", "I", "G", "SLF", "PTH", "Q", "T"]
