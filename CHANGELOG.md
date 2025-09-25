@@ -1,3 +1,9 @@
+## v0.0.5 (2025-09-25)
+
+### Fix
+
+- comandline and model updates
+
 ## v0.0.4 (2025-09-18)
 
 ### Fix
