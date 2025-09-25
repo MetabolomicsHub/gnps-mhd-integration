@@ -1,3 +1,9 @@
+## v0.0.7 (2025-09-25)
+
+### Fix
+
+- unexpected package dependency
+
 ## v0.0.6 (2025-09-25)
 
 ### Fix
