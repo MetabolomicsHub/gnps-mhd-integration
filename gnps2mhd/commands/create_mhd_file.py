@@ -74,10 +74,10 @@ def create_mhd_file(
             mhd_output_filename=output_filename,
             input_file_path=input_file_path,
         )
-        click.echo(f"{mhd_identifier} is converted successfully.")
+        click.echo(f"{massive_study_id} is converted successfully.")
     except Exception as ex:
-        click.echo(f"{mhd_identifier} conversion failed. {str(ex)}")
+        click.echo(f"{massive_study_id} conversion failed. {str(ex)}")
 
 
 if __name__ == "__main__":
-    create_mhd_file(["ST000001"])
+    create_mhd_file(["MSV000099062"])

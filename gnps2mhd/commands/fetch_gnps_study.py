@@ -47,8 +47,8 @@ def fetch_gnps_study(
     if not data:
         click.echo(f"{study_id} failed.")
         exit(1)
-    click.echo(f"{study_id} is fetched")
+    click.echo(f"{study_id} is donwloaded.")
 
 
 if __name__ == "__main__":
-    fetch_gnps_study(["ST000001"])
+    fetch_gnps_study(["MSV000099062"])
