@@ -160,6 +160,8 @@ gnps-mhd-cli create announcement
 
 
 # MHD identifier will be reserved for each private study
+# Assumption: MSV000099062.mhd.json will be accessible on 
+# https://www.gnps.org/data?MHD_ID=MHD0123456789
 gnps-mhd-cli create announcement MHD0123456789  outputs/MSV000099062.mhd.json "https://www.gnps.org/data?MHD_ID=MHD0123456789"
 ####################################################################
 # MSV000099062 announcement file conversion completed.
@@ -175,15 +177,10 @@ gnps-mhd-cli validate announcement
 ####################################################################
 # Usage: gnps-mhd-cli validate announcement [OPTIONS] MHD_STUDY_ID
 #                                         ANNOUNCEMENT_FILE_PATH
-
 #   Validate MHD announcement file.
-
 #   Args:
-
 #   mhd_study_id (str): MHD study id
-
 #   announcement_file_path (str): MHD announcement file path
-
 #   output_path (None | str): If it is defined, validation results are saved in
 #   output file path.
 
