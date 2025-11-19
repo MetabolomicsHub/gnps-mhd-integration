@@ -22,13 +22,15 @@ class LegacyProfileV01Convertor(BaseMhdConvertor):
         repository_identifier: str,
         mhd_identifier: None | str,
         mhd_output_folder_path: Path,
+        mhd_output_filename: None | str,
         repository_revision: None | Revision = None,
         **kwargs,
     ):
+        mhd_output_path = mhd_output_folder_path / Path(mhd_output_filename)
         mhd_dataset_builder = MhdLegacyDatasetBuilder()
         mhd_dataset_builder.build(
             mhd_id=mhd_identifier,
-            mhd_output_path=mhd_output_folder_path,
+            mhd_output_path=mhd_output_path,
             massive_study_id=repository_identifier,
             target_mhd_model_schema_uri=self.target_mhd_model_schema_uri,
             target_mhd_model_profile_uri=self.target_mhd_model_profile_uri,

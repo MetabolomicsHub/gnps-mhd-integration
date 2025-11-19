@@ -57,7 +57,11 @@ def create_mhd_file(
 
     if massive_study_id == mhd_identifier:
         mhd_identifier = None
-
+        
+    if not output_filename:
+        identifier = mhd_identifier or massive_study_id
+        mhd_output_filename = f"{identifier}.mhd.json"
+        
     factory = Gnps2MhdConvertorFactory()
     convertor = factory.get_convertor(
         target_mhd_model_schema_uri=schema_uri,
@@ -65,19 +69,23 @@ def create_mhd_file(
     )
     mhd_output_root_path = Path(output_dir)
     mhd_output_root_path.mkdir(exist_ok=True, parents=True)
+    
+    output_file_path = mhd_output_root_path / Path(mhd_output_filename)
     try:
         convertor.convert(
             repository_name="GNPS/MassIVE",
             repository_identifier=massive_study_id,
             mhd_identifier=mhd_identifier,
             mhd_output_folder_path=mhd_output_root_path,
-            mhd_output_filename=output_filename,
+            mhd_output_filename=mhd_output_filename,
             input_file_path=input_file_path,
         )
-        click.echo(f"{massive_study_id} is converted successfully.")
+        click.echo(
+            f"{massive_study_id} is converted successfully. Output file: {output_file_path}"
+        )
     except Exception as ex:
         click.echo(f"{massive_study_id} conversion failed. {str(ex)}")
 
 
 if __name__ == "__main__":
-    create_mhd_file(["MSV000099062"])
+    create_mhd_file(["MSV000099062", "MSV000099062"])

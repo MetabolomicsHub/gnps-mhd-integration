@@ -118,7 +118,7 @@ class MhdLegacyDatasetBuilder:
         if not params:
             raise ValueError(f"Could not fetch metadata for study {massive_study_id}")
 
-        # Fetch other files or connect to a database to get more ingformation
+        # Fetch other files or connect to a database to get more information
 
         dataset_provider = create_cv_term_value_object(
             type_="data-provider",
@@ -300,7 +300,7 @@ class MhdLegacyDatasetBuilder:
                 if item.upper().startswith("NCBITAXON:"):
                     identifier = item.upper().replace("NCBITAXON:", "")
                     source = "NCBITAXON"
-                    accession = f"NCBITacon:{identifier}"
+                    accession = f"NCBITaxon:{identifier}"
 
                 val = create_cv_term_object(
                     type_="characteristic-value",
@@ -473,14 +473,13 @@ class MhdLegacyDatasetBuilder:
         )
         filename = mhd_id if mhd_id else massive_study_id
         mhd_dataset.name = f"{filename} MetabolomicsHub Legacy Dataset"
-        mhd_output_path.mkdir(parents=True, exist_ok=True)
-        output_path = mhd_output_path / Path(f"{filename}.mhd.json")
-        output_path.open("w").write(
+        mhd_output_path.parent.mkdir(parents=True, exist_ok=True)
+        mhd_output_path.open("w").write(
             mhd_dataset.model_dump_json(
                 indent=4, by_alias=True, exclude_none=True, serialize_as_any=True
             )
         )
         logger.info(
-            "%s study MHD file is created with name: %s", massive_study_id, output_path
+            "%s study MHD file is created as: %s", massive_study_id, mhd_output_path
         )
         return mhd_dataset

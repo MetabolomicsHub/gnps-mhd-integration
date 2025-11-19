@@ -25,10 +25,11 @@ class MsProfileV01Convertor(BaseMhdConvertor):
         repository_revision: None | Revision = None,
         **kwargs,
     ):
+        mhd_output_path = mhd_output_folder_path / f"{mhd_identifier}.mhd.json"
         mhd_dataset_builder = MhdMsDatasetBuilder()
         mhd_dataset_builder.build(
             mhd_id=mhd_identifier,
-            mhd_output_path=mhd_output_folder_path,
+            mhd_output_path=mhd_output_path,
             massive_study_id=repository_identifier,
             target_mhd_model_schema_uri=self.target_mhd_model_schema_uri,
             target_mhd_model_profile_uri=self.target_mhd_model_profile_uri,

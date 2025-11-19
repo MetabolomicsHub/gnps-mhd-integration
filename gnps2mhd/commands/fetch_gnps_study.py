@@ -1,10 +1,13 @@
 import json
 import logging
+import warnings
 from pathlib import Path
 
 import click
 
 from gnps2mhd.v0_1.utils import fetch_massive_metadata_file
+
+warnings.filterwarnings("ignore", category=UserWarning)
 
 logger = logging.getLogger(__name__)
 
@@ -33,7 +36,7 @@ def fetch_gnps_study(
 
     \b
     Args:
-    study_id (str): GNPS/MassIVE study id (e.g. MSV000001)
+    study_id (str): GNPS/MassIVE study id (e.g. MSV000099062)
     """
 
     data = fetch_massive_metadata_file(study_id)
@@ -47,7 +50,7 @@ def fetch_gnps_study(
     if not data:
         click.echo(f"{study_id} failed.")
         exit(1)
-    click.echo(f"{study_id} is donwloaded.")
+    click.echo(f"{study_id} is downloaded and saved as {output_folder_path}.")
 
 
 if __name__ == "__main__":
