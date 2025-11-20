@@ -1,3 +1,9 @@
+## v0.0.11 (2025-11-20)
+
+### Fix
+
+- mhd-model package upgrade
+
 ## v0.0.10 (2025-11-19)
 
 ### Fix
