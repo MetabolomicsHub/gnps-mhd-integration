@@ -18,6 +18,7 @@ from mhd_model.model.v0_1.rules.managed_cv_terms import (
     COMMON_STUDY_FACTOR_DEFINITIONS,
 )
 from mhd_model.shared.model import CvTerm, Revision
+from mhd_model.shared.validation.cv_term_helper import CvTermHelper
 from pydantic import AnyUrl, HttpUrl
 
 from gnps2mhd.config import Gnps2MhdConfiguration
@@ -33,55 +34,51 @@ logger = logging.getLogger(__name__)
 ## GNPS RELATED CONFIGURATION ###
 ##############################################################################################################
 GNPS_ASSAY_TYPES = {
-    "LC-MS": COMMON_ASSAY_TYPES["OBI:0003097S"],
-    "GC-MS": COMMON_ASSAY_TYPES["OBI:0003110"],
+    "LC-MS": COMMON_ASSAY_TYPES["lc-ms"],
+    "GC-MS": COMMON_ASSAY_TYPES["gc-ms"],
     # TODO: Add more assay types if needed
 }
 GNPS_MEASUREMENT_TYPES = {
-    "targeted": COMMON_MEASUREMENT_TYPES["MSIO:0000100"],
-    "untargeted": COMMON_MEASUREMENT_TYPES["MSIO:0000101"],
+    "targeted": COMMON_MEASUREMENT_TYPES["targeted"],
+    "untargeted": COMMON_MEASUREMENT_TYPES["untargeted"],
 }
 
-DEFAULT_OMICS_TYPE = COMMON_OMICS_TYPES["EDAM:3172"]
+DEFAULT_OMICS_TYPE = COMMON_OMICS_TYPES["metabolomics"]
 
-COMMON_PROTOCOLS_MAP = {
-    "Sample collection": COMMON_PROTOCOLS["EFO:0005518"],
-    "Extraction": COMMON_PROTOCOLS["MS:1000831"],
-    "Mass spectrometry": COMMON_PROTOCOLS["CHMO:0000470"],
-    "Data transformation": COMMON_PROTOCOLS["OBI:0200000"],
-    "Metabolite identification": COMMON_PROTOCOLS["MI:2131"],
-    "Chromatography": COMMON_PROTOCOLS["CHMO:0001000"],
-    "Treatment": COMMON_PROTOCOLS["EFO:0003969"],
-    "Flow Injection Analysis": COMMON_PROTOCOLS["MS:1000058"],
-    "Capillary Electrophoresis": COMMON_PROTOCOLS["CHMO:0001024"],
-    # TODO: Update after adding to managed CV terms
-}
+COMMON_PROTOCOLS_MAP = COMMON_PROTOCOLS
 
 GNPS_PROTOCOLS_MAP = COMMON_PROTOCOLS_MAP.copy()
 
-MANAGED_CHARACTERISTICS_MAP = {
-    "organism": COMMON_CHARACTERISTIC_DEFINITIONS["NCIT:C14250"],
-    "organism part": COMMON_CHARACTERISTIC_DEFINITIONS["NCIT:C103199"],
-    "disease": COMMON_CHARACTERISTIC_DEFINITIONS["EFO:0000408"],
-    "cell type": COMMON_CHARACTERISTIC_DEFINITIONS["EFO:0000324"],
-}
-MANAGED_STUDY_FACTOR_MAP = {
-    "disease": COMMON_STUDY_FACTOR_DEFINITIONS["EFO:0000408"],
-    "treatment": CvTerm(source="EFO", accession="EFO:0000727", name="treatment"),
-}
+COMMON_CHARACTERISTICS_MAP = COMMON_CHARACTERISTIC_DEFINITIONS
 
+GNPS_CHARACTERISTICS_MAP = COMMON_CHARACTERISTICS_MAP.copy()
 
+MANAGED_STUDY_FACTOR_MAP = COMMON_STUDY_FACTOR_DEFINITIONS
+
+DATA_FILE_EXTENSIONS_TO_SKIP = [".raw", ".d"]
+
+# TODO: Update based on current dataset file extensions
 FILE_EXTENSIONS: dict[tuple[str, bool], CvTerm] = {
     (".d", True): CvTerm(
         source="MS", accession="MS:1002302", name="Bruker Container format"
     ),
-    (".raw", False): CvTerm(source="EDAM", accession="EDAM:3712", name="Thermo RAW"),
-    (".raw", True): CvTerm(source="EDAM", accession="EDAM:3858", name="Waters RAW"),
-    (".wiff", False): CvTerm(source="EFO", accession="EDAM:3710", name="WIFF format"),
-    (".mzml", False): CvTerm(source="EDAM", accession="EDAM:3244", name="mzML"),
-    (".mzdata", False): CvTerm(source="EFO", accession="EDAM:3834", name="mzData"),
-    (".mzxml", False): CvTerm(source="EDAM", accession="EDAM:3654", name="mzXML"),
-    (".ibd", False): CvTerm(source="EDAM", accession="EDAM:3839", name="ibd"),
+    (".raw", False): CvTerm(
+        source="EDAM", accession="EDAM:format_3712", name="Thermo RAW"
+    ),
+    (".raw", True): CvTerm(
+        source="EDAM", accession="EDAM:format_3858", name="Waters RAW"
+    ),
+    (".wiff", False): CvTerm(
+        source="EFO", accession="EDAM:format_3710", name="WIFF format"
+    ),
+    (".mzml", False): CvTerm(source="EDAM", accession="EDAM:format_3244", name="mzML"),
+    (".mzdata", False): CvTerm(
+        source="EFO", accession="EDAM:format_3834", name="mzData"
+    ),
+    (".mzxml", False): CvTerm(
+        source="EDAM", accession="EDAM:format_3654", name="mzXML"
+    ),
+    (".ibd", False): CvTerm(source="EDAM", accession="EDAM:format_3839", name="ibd"),
 }
 
 
@@ -98,6 +95,7 @@ class MhdLegacyDatasetBuilder:
         revision: None | Revision = None,
         **kwargs,
     ) -> MhDatasetLegacyProfile:
+        cv_term_helper = CvTermHelper()
         cache_root_path = kwargs.get("cache_root_path", None)
         params_xml_file_path = kwargs.get("input_file_path", None)
         params = None
@@ -231,7 +229,7 @@ class MhdLegacyDatasetBuilder:
         # metadata file.
         #####################################################################################
         params_xml_file_format = create_cv_term_object(
-            type_="descriptor", accession="EDAM:2332", source="EDAM", name="XML"
+            type_="descriptor", accession="EDAM:format_2332", source="EDAM", name="XML"
         )  # update if its format is different
         metadata_file_name = (
             "ccms_parameters/params.xml"  # update if its format is different
@@ -268,7 +266,7 @@ class MhdLegacyDatasetBuilder:
         species_list = [x.strip() for x in species.split(";")]
 
         if species_list:
-            organism = MANAGED_CHARACTERISTICS_MAP["organism"]
+            organism = COMMON_CHARACTERISTICS_MAP["organism"]
             organism_characteristic_type = create_cv_term_object(
                 type_="characteristic-type",
                 name=organism.name,
@@ -297,10 +295,18 @@ class MhdLegacyDatasetBuilder:
                 # TODO: Create characteristic value with source and accession if item has valid CURIE
                 accession = ""
                 source = ""
+
                 if item.upper().startswith("NCBITAXON:"):
-                    identifier = item.upper().replace("NCBITAXON:", "")
-                    source = "NCBITAXON"
-                    accession = f"NCBITaxon:{identifier}"
+                    cv_term = cv_term_helper.find_cv_term("NCBITAXON", item)
+
+                    if cv_term:
+                        item = cv_term.name
+                        source = cv_term.source
+                        accession = cv_term.accession
+                    else:
+                        item = ""
+                        source = "NCBITaxon"
+                        accession = item
 
                 val = create_cv_term_object(
                     type_="characteristic-value",
@@ -322,7 +328,7 @@ class MhdLegacyDatasetBuilder:
 
         ms_instrument_list = [x.strip() for x in ms_instrument.split(";") if x]
         if ms_instrument_list:
-            ms_protocol_type_cv = COMMON_PROTOCOLS_MAP["Mass spectrometry"]
+            ms_protocol_type_cv = COMMON_PROTOCOLS_MAP["mass spectrometry"]
             ms_protocol_type = create_cv_term_object(
                 type_="protocol-type",
                 name=ms_protocol_type_cv.name,
@@ -427,6 +433,14 @@ class MhdLegacyDatasetBuilder:
             subpaths = raw_file_path.split("/")
             if len(subpaths) > 1:
                 raw_file_path = "/".join(subpaths[1:])
+            skip = False
+            for ext in DATA_FILE_EXTENSIONS_TO_SKIP:
+                if f"{ext}/" in raw_file_path.lower():
+                    skip = True
+                    break
+            if skip:
+                logger.debug("Skipping file %s", raw_file_path)
+                continue
             extension = Path(raw_file_path).suffix
             extension_lower = extension.lower()
             if (extension_lower, False) in FILE_EXTENSIONS:

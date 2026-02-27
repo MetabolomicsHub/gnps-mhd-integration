@@ -160,7 +160,7 @@ gnps-mhd-cli create announcement
 
 
 # MHD identifier will be reserved for each private study
-# Assumption: MSV000099062.mhd.json will be accessible on 
+# Assumption: MSV000099062.mhd.json will be accessible on
 # https://www.gnps.org/data?MHD_ID=MHD0123456789
 gnps-mhd-cli create announcement MHD0123456789  outputs/MSV000099062.mhd.json "https://www.gnps.org/data?MHD_ID=MHD0123456789"
 ####################################################################
