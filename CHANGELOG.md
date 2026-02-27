@@ -1,3 +1,9 @@
+## v0.0.12 (2026-02-27)
+
+### Fix
+
+- failures after mhd model common factor, protocol, characteristic definition updates
+
 ## v0.0.11 (2025-11-20)
 
 ### Fix
