@@ -76,7 +76,7 @@ wheels = [
 
 [[package]]
 name = "bioregistry"
-version = "0.13.20"
+version = "0.13.24"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -87,9 +87,9 @@ dependencies = [
     { name = "requests" },
     { name = "tqdm" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0b/7f/ccdf530267cd98a89e7b9c472b428370533d58723d4caa222e3aeed4832a/bioregistry-0.13.20.tar.gz", hash = "sha256:e2f4f5d341fb0e633e3dfd1342c44cdd482edc7bf987b6be8747f04254833ac4", size = 5801555, upload-time = "2026-02-07T03:20:31.229Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/bf/3e/3f741f6bcd2a410d09a80ac9fb9b6097c9327437599854b38c20da5b7a6f/bioregistry-0.13.24.tar.gz", hash = "sha256:b7089e0f1e873c5bf62413fa7b2faa0a3d997bbc26f41a9c813bfe6b8c4483c7", size = 5823606, upload-time = "2026-03-14T03:23:20.029Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e8/f6/87c6a53cc03cb18ac01fb0a8b1083840afc94fb39cf2e808d58402384c41/bioregistry-0.13.20-py3-none-any.whl", hash = "sha256:0e7d299f2f7daa065b3ddae061cedf8fa2a2594b6b50f55d06f2cbe2a8c90c05", size = 5881122, upload-time = "2026-02-07T03:20:28.172Z" },
+    { url = "https://files.pythonhosted.org/packages/b7/c4/65060c42bf1bfe64ec2f394360a5dcebb2c9b8ccc681258b80d42c3a21a4/bioregistry-0.13.24-py3-none-any.whl", hash = "sha256:97b3239771b75d94929dd7ea06043536d202f27a195cd15327ef51fa1180ec2c", size = 5904945, upload-time = "2026-03-14T03:23:17.927Z" },
 ]
 
 [[package]]
@@ -710,6 +710,9 @@ name = "jsonpath-ng"
 version = "1.8.0"
 source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/32/58/250751940d75c8019659e15482d548a4aa3b6ce122c515102a4bfdac50e3/jsonpath_ng-1.8.0.tar.gz", hash = "sha256:54252968134b5e549ea5b872f1df1168bd7defe1a52fed5a358c194e1943ddc3", size = 74513, upload-time = "2026-02-24T14:42:06.182Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/03/99/33c7d78a3fb70d545fd5411ac67a651c81602cc09c9cf0df383733f068c5/jsonpath_ng-1.8.0-py3-none-any.whl", hash = "sha256:b8dde192f8af58d646fc031fac9c99fe4d00326afc4148f1f043c601a8cfe138", size = 67844, upload-time = "2026-02-28T00:53:19.637Z" },
+]
 
 [[package]]
 name = "jsonschema"
@@ -843,7 +846,7 @@ wheels = [
 [[package]]
 name = "mhd-model"
 version = "0.1.50"
-source = { git = "https://github.com/MetabolomicsHub/mhd-model.git?rev=dev#9be4cd59dd45f18098d68389125218beaef3b240" }
+source = { git = "https://github.com/MetabolomicsHub/mhd-model.git?rev=dev#8624a86a3515419d1affea28e3b8b63dddc383ad" }
 dependencies = [
     { name = "bioregistry" },
     { name = "charset-normalizer" },
@@ -1231,11 +1234,11 @@ wheels = [
 
 [[package]]
 name = "pytz"
-version = "2025.2"
+version = "2026.1.post1"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/f8/bf/abbd3cdfb8fbc7fb3d4d38d320f2441b1e7cbe29be4f23797b4a2b5d8aac/pytz-2025.2.tar.gz", hash = "sha256:360b9e3dbb49a209c21ad61809c7fb453643e048b38924c765813546746e81c3", size = 320884, upload-time = "2025-03-25T02:25:00.538Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/56/db/b8721d71d945e6a8ac63c0fc900b2067181dbb50805958d4d4661cf7d277/pytz-2026.1.post1.tar.gz", hash = "sha256:3378dde6a0c3d26719182142c56e60c7f9af7e968076f31aae569d72a0358ee1", size = 321088, upload-time = "2026-03-03T07:47:50.683Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/81/c4/34e93fe5f5429d7570ec1fa436f1986fb1f00c3e0f43a589fe2bbcd22c3f/pytz-2025.2-py2.py3-none-any.whl", hash = "sha256:5ddf76296dd8c44c26eb8f4b6f35488f3ccbf6fbbd7adee0b7262d43f0ec2f00", size = 509225, upload-time = "2025-03-25T02:24:58.468Z" },
+    { url = "https://files.pythonhosted.org/packages/10/99/781fe0c827be2742bcc775efefccb3b048a3a9c6ce9aec0cbf4a101677e5/pytz-2026.1.post1-py2.py3-none-any.whl", hash = "sha256:f2fd16142fda348286a75e1a524be810bb05d444e5a081f37f7affc635035f7a", size = 510489, upload-time = "2026-03-03T07:47:49.167Z" },
 ]
 
 [[package]]
