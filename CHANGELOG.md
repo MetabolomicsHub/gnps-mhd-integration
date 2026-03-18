@@ -1,3 +1,9 @@
+## v0.0.15 (2026-03-18)
+
+### Fix
+
+- mhd-model update to fix missing file extensions and organism part metadata
+
 ## v0.0.14 (2026-03-15)
 
 ### Fix
