@@ -68,7 +68,7 @@ def fetch_massive_metadata_file(
     metadata_file_name = "ccms_parameters/params.xml"
     metadata_http_file_url = (
         "https://massive.ucsd.edu/ProteoSAFe/DownloadResultFile"
-        f"?file=f.{massive_study_id}%2F{quote(metadata_file_name, safe='')}"
+        f"? file=f.{massive_study_id}%2F{quote(metadata_file_name, safe='')}"
     )
     try:
         response = httpx.get(metadata_http_file_url, timeout=5)
