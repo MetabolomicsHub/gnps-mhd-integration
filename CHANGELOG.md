@@ -1,3 +1,9 @@
+## v0.0.17 (2026-03-20)
+
+### Fix
+
+- gnps file download error and use mhd-model-validation
+
 ## v0.0.16 (2026-03-18)
 
 ### Fix

@@ -455,7 +455,7 @@ wheels = [
 
 [[package]]
 name = "gnps-mhd-integration"
-version = "0.0.16"
+version = "0.0.17"
 source = { editable = "." }
 dependencies = [
     { name = "mhd-model" },
