@@ -1,22 +1,11 @@
-import json
 import logging
 from pathlib import Path
 
 import jsonschema
-from mhd_model.convertors.announcement.v0_1.legacy.mhd2announce import (
-    create_announcement_file,
-)
-from mhd_model.model.v0_1.announcement.validation.validator import (
-    MhdAnnouncementFileValidator,
-)
-from mhd_model.model.v0_1.dataset.validation.validator import validate_mhd_file
+from mhd_model.model.v0_1.dataset.validation.validator import validate_mhd_model
 
-from gnps2mhd.config import (
-    Gnps2MhdConfiguration,
-)
-from gnps2mhd.convertor_factory import (
-    Gnps2MhdConvertorFactory,
-)
+from gnps2mhd.config import Gnps2MhdConfiguration
+from gnps2mhd.convertor_factory import Gnps2MhdConvertorFactory
 from scripts.utils import setup_basic_logging_config
 
 logger = logging.getLogger(__name__)
@@ -25,8 +14,6 @@ logger = logging.getLogger(__name__)
 def convert_massive_study_to_mhd_legacy(
     massive_study_id: str, gnps2mhd_config: None | Gnps2MhdConfiguration = None
 ) -> tuple[bool, dict[str, list[jsonschema.ValidationError]]]:
-    all_validation_errors = {}
-    success = False
     if not gnps2mhd_config:
         gnps2mhd_config = Gnps2MhdConfiguration()
 
@@ -47,53 +34,9 @@ def convert_massive_study_to_mhd_legacy(
     )
     mhd_file_path = mhd_output_root_path / Path(mhd_output_filename)
 
-    validation_errors = validate_mhd_file(str(mhd_file_path))
-
-    if validation_errors:
-        logger.error("MHD model validation errors found for %s", massive_study_id)
-        for error in validation_errors:
-            logger.error(error)
-        all_validation_errors[mhd_output_filename] = validation_errors
-    elif not mhd_file_path.exists():
-        logger.error("MHD model file not found for %s", massive_study_id)
-        all_validation_errors[mhd_output_filename] = [
-            f"MHD model file '{mhd_output_filename}' not found"
-        ]
-    else:
-        mhd_announcement_output_root_path = Path("tests/mhd_announcement/legacy")
-        mhd_announcement_output_root_path.mkdir(exist_ok=True, parents=True)
-        logger.info("MHD model validation successful for %s", massive_study_id)
-        announcement_file_name = f"{massive_study_id}.announcement.json"
-        announcement_file_path = mhd_announcement_output_root_path / Path(
-            announcement_file_name
-        )
-        mhd_data_json = json.loads(mhd_file_path.read_text())
-        mhd_file_url = gnps2mhd_config.study_http_base_url + massive_study_id
-        create_announcement_file(mhd_data_json, mhd_file_url, announcement_file_path)
-        if not announcement_file_path.exists():
-            logger.error("MHD announcement file not found for %s", massive_study_id)
-            all_validation_errors[mhd_output_filename] = [
-                f"MHD announcement file '{mhd_output_filename}' not found"
-            ]
-        else:
-            announcement_file_json = json.loads(announcement_file_path.read_text())
-            validator = MhdAnnouncementFileValidator()
-            all_errors = validator.validate(announcement_file_json)
-            if all_errors:
-                logger.error(
-                    "MHD announcement file validation errors found for %s",
-                    massive_study_id,
-                )
-                for error in all_errors:
-                    logger.error(error)
-                all_validation_errors[mhd_output_filename] = all_errors
-            else:
-                success = True
-                logger.info(
-                    "MHD announcement file validation successful for %s",
-                    massive_study_id,
-                )
-    return success, all_validation_errors
+    return validate_mhd_model(
+        massive_study_id, mhd_file_path, validate_announcement_file=True
+    )
 
 
 logger = logging.getLogger(__name__)
