@@ -1,3 +1,9 @@
+## v0.0.18 (2026-03-23)
+
+### Fix
+
+- cli mhd-announcement file conversion error
+
 ## v0.0.17 (2026-03-20)
 
 ### Fix
