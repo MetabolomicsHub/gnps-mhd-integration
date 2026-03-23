@@ -1,0 +1,77 @@
+{
+  "repository_name": "GNPS",
+  "repository_identifier": "MSV000099152",
+  "revision": 1,
+  "$schema": "https://metabolomicshub.github.io/mhd-model/schemas/v0_1/announcement-v0.1.schema.json",
+  "profile_uri": "https://metabolomicshub.github.io/mhd-model/schemas/v0_1/announcement-v0.1.legacy-profile.json",
+  "cv_definitions": [
+    {
+      "label": "EDAM",
+      "name": "The ontology of data analysis and management",
+      "uri": "http://edamontology.org",
+      "prefix": "http://edamontology.org/"
+    },
+    {
+      "label": "NCIT",
+      "name": "NCI Thesaurus OBO Edition",
+      "uri": "http://purl.obolibrary.org/obo/ncit.owl",
+      "prefix": "http://purl.obolibrary.org/obo/NCIT_"
+    }
+  ],
+  "mhd_metadata_file_url": "https://massive.ucsd.edu/????/MSV000099152.mhd.json",
+  "dataset_url_list": [
+    "https://massive.ucsd.edu/????",
+    "ftp://massive-ftp.ucsd.edu/v10/MSV000099152"
+  ],
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "title": "Metabolomic fingerprint changes during industrial alcoholic fermentation of Muscat of  Alexandria grape must",
+  "description": "elucidating the metabolomic fingerprint changes of Muscat of\nAlexandria grape must during industrial-scale alcoholic fermentation, by applying a\nMass Spectrometry based untargeted metabolomics workflow.",
+  "submission_date": "2026-03-20T14:33:00.571879Z",
+  "public_release_date": "2026-03-20T14:33:00.571882Z",
+  "submitters": [
+    {
+      "full_name": "panagiotis arapitsas",
+      "email_list": [
+        "panagiotis.arapitsas@gmail.com"
+      ]
+    }
+  ],
+  "submitter_keywords": [
+    {
+      "source": "",
+      "accession": "",
+      "name": "must"
+    }
+  ],
+  "characteristic_values": [
+    {
+      "key": {
+        "source": "NCIT",
+        "accession": "NCIT:C14250",
+        "name": "organism"
+      },
+      "values": [
+        {
+          "source": "",
+          "accession": "",
+          "name": "grape must"
+        }
+      ]
+    }
+  ],
+  "protocols": [],
+  "repository_metadata_file_list": [
+    {
+      "name": "ccms_parameters/params.xml",
+      "url_list": [
+        "https://massive.ucsd.edu/ProteoSAFe/DownloadResultFile?file=f.MSV000099152%2Fccms_parameters%2Fparams.xml",
+        "ftp://massive-ftp.ucsd.edu/v10/MSV000099152/ccms_parameters/params.xml"
+      ],
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_2332",
+        "name": "XML"
+      }
+    }
+  ]
+}

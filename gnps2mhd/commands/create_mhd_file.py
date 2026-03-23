@@ -31,13 +31,13 @@ logger = logging.getLogger(__name__)
     help="MHD filename (e.g., MHD000001.mhd.json, ST000001.mhd.json)",
 )
 @click.option(
-    "--schema_uri",
+    "--schema-uri",
     default=MHD_MODEL_V0_1_DEFAULT_SCHEMA_NAME,
     show_default=True,
     help="Target MHD model schema. It defines format of MHD model structure.",
 )
 @click.option(
-    "--profile_uri",
+    "--profile-uri",
     default=MHD_MODEL_V0_1_LEGACY_PROFILE_NAME,
     show_default=True,
     help="Target MHD model profile. It is used to validate MHD model",
@@ -57,8 +57,8 @@ def create_mhd_file(
 
     if massive_study_id == mhd_identifier:
         mhd_identifier = None
-
-    if not output_filename:
+    mhd_output_filename = output_filename
+    if not mhd_output_filename:
         identifier = mhd_identifier or massive_study_id
         mhd_output_filename = f"{identifier}.mhd.json"
 
