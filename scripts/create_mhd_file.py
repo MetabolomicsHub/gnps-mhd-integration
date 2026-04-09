@@ -23,19 +23,27 @@ def convert_massive_study_to_mhd_legacy(
         target_mhd_model_profile_uri=gnps2mhd_config.target_mhd_model_legacy_profile_uri,
     )
     mhd_output_root_path = Path("tests/mhd_dataset/legacy")
+    mhd_input_root_path = Path("tests/gnps_dataset")
     mhd_output_root_path.mkdir(exist_ok=True, parents=True)
     mhd_output_filename = f"{massive_study_id}.mhd.json"
+    input_file_path = mhd_input_root_path / Path(f"{massive_study_id}.params.xml.json")
     convertor.convert(
         repository_name="GNPS",
         repository_identifier=massive_study_id,
         mhd_identifier=None,
         mhd_output_folder_path=mhd_output_root_path,
         mhd_output_filename=mhd_output_filename,
+        input_file_path=input_file_path,
     )
     mhd_file_path = mhd_output_root_path / Path(mhd_output_filename)
-
+    mhd_file_url = (
+        f"ftp://massive-ftp.ucsd.edu/v10/{massive_study_id}/mhd/{mhd_output_filename}"
+    )
     return validate_mhd_model(
-        massive_study_id, mhd_file_path, validate_announcement_file=True
+        massive_study_id,
+        mhd_file_path,
+        validate_announcement_file=True,
+        mhd_file_url=mhd_file_url,
     )
 
 

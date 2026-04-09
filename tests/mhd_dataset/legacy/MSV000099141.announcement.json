@@ -32,8 +32,8 @@
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
   "title": "GNPS - Microbial extracts of Staphylococcus epidermidis strains Se21 and Se1457",
   "description": "Metabolomic analysis of the extract of two Staphylococcus epidermidis strains (Se21 and Se1457), alongside the extract of the culture medium. The aim is to identify metabolic differences that may explain the observed antimicrobial activity of one of the strains against Pseudomonas strains. The analysis contains three biological replicates of each strain. Untargeted LC-MS/MS acquisition was performed in Positive mode on a Vanquish Flex UHPLC system coupled to an Orbitrap Exploris 240 (Thermo Fisher Scientific, Bremen, Germany). Chromatographic separation was performed on a Kinetex 1.7 um 100 A pore size C18 reversed phase UHPLC column 100 x 2.1 mm (Phenomenex, Torrance, CA).",
-  "submission_date": "2026-03-20T14:33:01.251976Z",
-  "public_release_date": "2026-03-20T14:33:01.251983Z",
+  "submission_date": "2026-04-09T14:39:47.374004Z",
+  "public_release_date": "2026-04-09T14:39:47.374006Z",
   "submitters": [
     {
       "full_name": "Bradley S. Moore",
@@ -54,11 +54,11 @@
       "key": {
         "source": "NCIT",
         "accession": "NCIT:C14250",
-        "name": "organism"
+        "name": "Organism"
       },
       "values": [
         {
-          "source": "NCBITaxon",
+          "source": "NCBITAXON",
           "accession": "NCBITaxon:1282",
           "name": "Staphylococcus epidermidis"
         }
@@ -73,6 +73,7 @@
         "https://massive.ucsd.edu/ProteoSAFe/DownloadResultFile?file=f.MSV000099141%2Fccms_parameters%2Fparams.xml",
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/ccms_parameters/params.xml"
       ],
+      "extension": ".xml",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_2332",
@@ -86,6 +87,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Data_C18/Raw/Blank_01.raw"
       ],
+      "extension": ".raw",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3712",
@@ -97,6 +99,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Data_C18/Raw/Blank_02.raw"
       ],
+      "extension": ".raw",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3712",
@@ -108,6 +111,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Data_C18/Raw/Blank_prerun.raw"
       ],
+      "extension": ".raw",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3712",
@@ -119,6 +123,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Data_C18/Raw/Medium_01.raw"
       ],
+      "extension": ".raw",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3712",
@@ -130,6 +135,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Data_C18/Raw/POOLQC_01.raw"
       ],
+      "extension": ".raw",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3712",
@@ -141,6 +147,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Data_C18/Raw/POOLQC_02.raw"
       ],
+      "extension": ".raw",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3712",
@@ -152,6 +159,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Data_C18/Raw/Se1457SX7M_R1.raw"
       ],
+      "extension": ".raw",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3712",
@@ -163,6 +171,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Data_C18/Raw/Se1457SX7M_R2.raw"
       ],
+      "extension": ".raw",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3712",
@@ -174,6 +183,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Data_C18/Raw/Se1457SX7M_R3.raw"
       ],
+      "extension": ".raw",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3712",
@@ -185,6 +195,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Data_C18/Raw/Se21SX7M_R1.raw"
       ],
+      "extension": ".raw",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3712",
@@ -196,6 +207,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Data_C18/Raw/Se21SX7M_R2.raw"
       ],
+      "extension": ".raw",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3712",
@@ -207,6 +219,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Data_C18/Raw/Se21SX7M_R3.raw"
       ],
+      "extension": ".raw",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3712",
@@ -218,6 +231,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Data_C18/mzML/Blank_01.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -229,6 +243,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Data_C18/mzML/Blank_02.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -240,6 +255,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Data_C18/mzML/Blank_prerun.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -251,6 +267,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Data_C18/mzML/Medium_01.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -262,6 +279,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Data_C18/mzML/POOLQC_01.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -273,6 +291,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Data_C18/mzML/POOLQC_02.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -284,6 +303,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Data_C18/mzML/Se1457SX7M_R1.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -295,6 +315,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Data_C18/mzML/Se1457SX7M_R2.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -306,6 +327,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Data_C18/mzML/Se21SX7M_R1.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -317,6 +339,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Data_C18/mzML/Se21SX7M_R2.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -328,6 +351,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Data_C18/mzML/Se21SX7M_R3.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -339,6 +363,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Methods/AcquireX_DDA_240KResMS1_15KResMS2_HCDtop10_15min_POS_C18_2stepGradient.meth"
       ],
+      "extension": ".meth",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3712",
@@ -350,6 +375,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Methods/AcquireX_DDA_240KResMS1_15KResMS2_HCDtop10_15min_POS_C18_2stepGradient.pdf"
       ],
+      "extension": ".pdf",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3712",
@@ -361,6 +387,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Methods/AcquireX_wash_15min_Pumps_A2B2.meth"
       ],
+      "extension": ".meth",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3712",
@@ -372,6 +399,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Methods/Kinetex_C18_1.7um_100x2.1mm_100A.txt"
       ],
+      "extension": ".txt",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3712",
@@ -383,6 +411,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Sequence/091025_Lucia_C18.csv"
       ],
+      "extension": ".csv",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3712",
@@ -394,6 +423,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099141/peak/Lucia_SIO/Sequence/091025_Lucia_C18.sld"
       ],
+      "extension": ".sld",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3712",

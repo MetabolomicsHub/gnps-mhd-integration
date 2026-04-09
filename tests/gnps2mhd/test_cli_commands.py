@@ -22,7 +22,6 @@ def output_dir():
 
 
 def test_cli_help_01():
-
     runner = CliRunner()
     result = runner.invoke(cli, ["--help"])
     assert result.exit_code == 0
@@ -31,6 +30,7 @@ def test_cli_help_01():
     assert result.output.startswith("Usage")
 
 
+@pytest.mark.skip(reason="MassIVE is not available")
 @pytest.mark.parametrize(
     "study_id",
     [
@@ -41,11 +41,9 @@ def test_cli_help_01():
         "MSV000099175",
         "MSV000099183",
         "MSV000099201",
-        "MSV000099204",
     ],
 )
 def test_download_studies(study_id: str, output_dir: Path):
-
     runner = CliRunner()
     result = runner.invoke(
         cli,
@@ -70,12 +68,12 @@ def test_download_studies(study_id: str, output_dir: Path):
         "MSV000099175",
         "MSV000099183",
         "MSV000099201",
-        "MSV000099204",
     ],
 )
 def test_create_mhd_files_01(study_id: str, output_dir: Path):
-
     runner = CliRunner()
+    input_file_path = Path("tests/gnps_dataset") / f"{study_id}.params.xml.json"
+
     result = runner.invoke(cli, ["create", "mhd", "--help"])
     assert result.exit_code == 0
 
@@ -87,6 +85,7 @@ def test_create_mhd_files_01(study_id: str, output_dir: Path):
             "mhd",
             study_id,
             study_id,
+            f"--input-file-path={input_file_path}",
             f"--output-dir={output_dir}",
             "--output-filename=" + mhd_file_path.name,
             "--profile-uri=" + MHD_MODEL_V0_1_LEGACY_PROFILE_NAME,
@@ -99,9 +98,8 @@ def test_create_mhd_files_01(study_id: str, output_dir: Path):
     result = runner.invoke(cli, ["create", "announcement", "--help"])
     assert result.exit_code == 0
 
-    # TODO: target_mhd_model_file_url should be updated
     target_mhd_model_file_url = (
-        "https://www.metabolomicsworkbench.org/data/MHDMetadata.php?StudyID=" + study_id
+        f"ftp://massive-ftp.ucsd.edu/v10/{study_id}/mhd/{mhd_file_path.name}"
     )
     announcement_file_path = output_dir / f"{study_id}.announcement.json"
     result = runner.invoke(

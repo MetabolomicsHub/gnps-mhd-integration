@@ -26,8 +26,8 @@
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
   "title": "Metabolomic fingerprint changes during industrial alcoholic fermentation of Muscat of  Alexandria grape must",
   "description": "elucidating the metabolomic fingerprint changes of Muscat of\nAlexandria grape must during industrial-scale alcoholic fermentation, by applying a\nMass Spectrometry based untargeted metabolomics workflow.",
-  "submission_date": "2026-03-20T14:33:00.571879Z",
-  "public_release_date": "2026-03-20T14:33:00.571882Z",
+  "submission_date": "2026-04-09T14:39:47.356416Z",
+  "public_release_date": "2026-04-09T14:39:47.356419Z",
   "submitters": [
     {
       "full_name": "panagiotis arapitsas",
@@ -48,7 +48,7 @@
       "key": {
         "source": "NCIT",
         "accession": "NCIT:C14250",
-        "name": "organism"
+        "name": "Organism"
       },
       "values": [
         {
@@ -67,6 +67,7 @@
         "https://massive.ucsd.edu/ProteoSAFe/DownloadResultFile?file=f.MSV000099152%2Fccms_parameters%2Fparams.xml",
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099152/ccms_parameters/params.xml"
       ],
+      "extension": ".xml",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_2332",

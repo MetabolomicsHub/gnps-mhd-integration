@@ -32,8 +32,8 @@
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
   "title": "GNPS-Untargeted metabolomics on samples from a genetic mouse model of Primary Sclerosing Cholangitis (PSC).",
   "description": "Liver, ileum, cecum, colon, serum, feces, and bile juice samples were collected from the 36 mice.  MS/MS data acquisition was carried out on a Thermo Q Exactive mass spectrometer in positive ionization mode, with chromatographic separation achieved using a Phenomenex Polar C18 column.",
-  "submission_date": "2026-03-20T14:32:56.577900Z",
-  "public_release_date": "2026-03-20T14:32:56.577904Z",
+  "submission_date": "2026-04-09T14:39:45.632207Z",
+  "public_release_date": "2026-04-09T14:39:45.632382Z",
   "submitters": [
     {
       "full_name": "Pieter C. Dorrestein",
@@ -99,11 +99,11 @@
       "key": {
         "source": "NCIT",
         "accession": "NCIT:C14250",
-        "name": "organism"
+        "name": "Organism"
       },
       "values": [
         {
-          "source": "NCBITaxon",
+          "source": "NCBITAXON",
           "accession": "NCBITaxon:10090",
           "name": "Mus musculus"
         }
@@ -118,6 +118,7 @@
         "https://massive.ucsd.edu/ProteoSAFe/DownloadResultFile?file=f.MSV000099062%2Fccms_parameters%2Fparams.xml",
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/ccms_parameters/params.xml"
       ],
+      "extension": ".xml",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_2332",
@@ -131,6 +132,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/BDL-1-3_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -142,6 +144,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/BDL-T7_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -153,6 +156,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Blank_prerun_Plate5.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -164,6 +168,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Blank_prerun_Plate7.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -175,6 +180,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/DDC6-1_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -186,6 +192,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/DDC6-2_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -197,6 +204,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/DDC6-3_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -208,6 +216,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/DDC6-4_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -219,6 +228,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Extraction_blk_Plate1_1.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -230,6 +240,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Extraction_blk_Plate1_2.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -241,6 +252,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Extraction_blk_Plate1_3.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -252,6 +264,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Extraction_blk_Plate2_1.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -263,6 +276,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Extraction_blk_Plate2_2.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -274,6 +288,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Extraction_blk_Plate2_3.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -285,6 +300,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Extraction_blk_Plate4_1.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -296,6 +312,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Extraction_blk_Plate4_1_20250619164342.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -307,6 +324,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Extraction_blk_Plate4_2.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -318,6 +336,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Extraction_blk_Plate4_2_20250619165638.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -329,6 +348,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Extraction_blk_Plate4_3.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -340,6 +360,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Extraction_blk_Plate4_3_20250619170931.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -351,6 +372,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Extraction_blk_Plate5_1.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -362,6 +384,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Extraction_blk_Plate5_2.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -373,6 +396,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Extraction_blk_Plate5_3.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -384,6 +408,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Extraction_blk_Plate6_1.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -395,6 +420,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Extraction_blk_Plate6_2.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -406,6 +432,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Extraction_blk_Plate6_3.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -417,6 +444,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N316_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -428,6 +456,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N351_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -439,6 +468,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N354_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -450,6 +480,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N354_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -461,6 +492,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N354_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -472,6 +504,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N354_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -483,6 +516,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N354_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -494,6 +528,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N354_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -505,6 +540,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N354_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -516,6 +552,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N355_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -527,6 +564,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N355_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -538,6 +576,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N355_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -549,6 +588,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N355_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -560,6 +600,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N355_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -571,6 +612,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N355_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -582,6 +624,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N355_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -593,6 +636,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N356_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -604,6 +648,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N356_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -615,6 +660,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N356_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -626,6 +672,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N356_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -637,6 +684,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N356_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -648,6 +696,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N356_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -659,6 +708,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N356_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -670,6 +720,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N357_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -681,6 +732,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N357_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -692,6 +744,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N357_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -703,6 +756,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N357_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -714,6 +768,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N357_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -725,6 +780,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N357_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -736,6 +792,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N357_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -747,6 +804,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N358_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -758,6 +816,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N358_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -769,6 +828,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N358_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -780,6 +840,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N358_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -791,6 +852,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N358_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -802,6 +864,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N358_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -813,6 +876,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N359_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -824,6 +888,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N359_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -835,6 +900,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N359_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -846,6 +912,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N359_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -857,6 +924,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N359_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -868,6 +936,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N359_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -879,6 +948,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N360_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -890,6 +960,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N360_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -901,6 +972,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N360_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -912,6 +984,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N360_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -923,6 +996,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N360_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -934,6 +1008,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N360_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -945,6 +1020,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N360_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -956,6 +1032,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N361_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -967,6 +1044,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N361_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -978,6 +1056,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N361_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -989,6 +1068,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N361_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1000,6 +1080,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N361_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1011,6 +1092,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N361_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1022,6 +1104,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N361_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1033,6 +1116,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N362_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1044,6 +1128,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N362_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1055,6 +1140,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N362_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1066,6 +1152,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N362_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1077,6 +1164,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N362_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1088,6 +1176,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N362_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1099,6 +1188,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N362_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1110,6 +1200,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N363_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1121,6 +1212,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N363_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1132,6 +1224,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N363_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1143,6 +1236,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N363_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1154,6 +1248,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N363_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1165,6 +1260,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N363_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1176,6 +1272,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N364_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1187,6 +1284,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N364_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1198,6 +1296,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N364_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1209,6 +1308,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N364_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1220,6 +1320,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N364_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1231,6 +1332,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N364_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1242,6 +1344,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N365_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1253,6 +1356,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N365_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1264,6 +1368,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N365_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1275,6 +1380,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N365_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1286,6 +1392,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N365_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1297,6 +1404,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N365_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1308,6 +1416,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N365_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1319,6 +1428,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N366_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1330,6 +1440,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N366_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1341,6 +1452,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N366_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1352,6 +1464,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N366_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1363,6 +1476,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N366_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1374,6 +1488,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N366_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1385,6 +1500,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N367_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1396,6 +1512,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N367_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1407,6 +1524,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N367_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1418,6 +1536,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N367_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1429,6 +1548,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N367_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1440,6 +1560,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N367_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1451,6 +1572,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N367_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1462,6 +1584,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N368_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1473,6 +1596,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N368_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1484,6 +1608,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N368_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1495,6 +1620,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N368_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1506,6 +1632,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N368_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1517,6 +1644,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N368_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1528,6 +1656,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N369_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1539,6 +1668,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N369_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1550,6 +1680,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N369_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1561,6 +1692,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N369_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1572,6 +1704,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N369_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1583,6 +1716,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N369_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1594,6 +1728,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N369_ser_20250618235630.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1605,6 +1740,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N370_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1616,6 +1752,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N370_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1627,6 +1764,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N370_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1638,6 +1776,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N370_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1649,6 +1788,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N370_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1660,6 +1800,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N370_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1671,6 +1812,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N370_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1682,6 +1824,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N371_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1693,6 +1836,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N371_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1704,6 +1848,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N371_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1715,6 +1860,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N371_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1726,6 +1872,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N371_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1737,6 +1884,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N371_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1748,6 +1896,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N371_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1759,6 +1908,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N372_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1770,6 +1920,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N372_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1781,6 +1932,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N372_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1792,6 +1944,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N372_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1803,6 +1956,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N372_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1814,6 +1968,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N372_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1825,6 +1980,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N372_ser_20250619001026.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1836,6 +1992,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N373_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1847,6 +2004,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N373_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1858,6 +2016,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N373_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1869,6 +2028,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N373_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1880,6 +2040,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N373_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1891,6 +2052,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N373_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1902,6 +2064,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N373_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1913,6 +2076,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N374_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1924,6 +2088,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N374_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1935,6 +2100,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N374_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1946,6 +2112,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N374_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1957,6 +2124,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N374_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1968,6 +2136,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N374_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1979,6 +2148,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N374_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -1990,6 +2160,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N375_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2001,6 +2172,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N375_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2012,6 +2184,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N375_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2023,6 +2196,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N375_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2034,6 +2208,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N375_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2045,6 +2220,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N375_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2056,6 +2232,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N375_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2067,6 +2244,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N376_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2078,6 +2256,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N376_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2089,6 +2268,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N376_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2100,6 +2280,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N376_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2111,6 +2292,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N376_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2122,6 +2304,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N376_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2133,6 +2316,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N376_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2144,6 +2328,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N377_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2155,6 +2340,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N377_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2166,6 +2352,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N377_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2177,6 +2364,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N377_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2188,6 +2376,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N377_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2199,6 +2388,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N377_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2210,6 +2400,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N377_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2221,6 +2412,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N378_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2232,6 +2424,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N378_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2243,6 +2436,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N378_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2254,6 +2448,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N378_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2265,6 +2460,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N378_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2276,6 +2472,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N378_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2287,6 +2484,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N379_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2298,6 +2496,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N379_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2309,6 +2508,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N379_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2320,6 +2520,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N379_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2331,6 +2532,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N379_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2342,6 +2544,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N379_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2353,6 +2556,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N379_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2364,6 +2568,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N380_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2375,6 +2580,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N380_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2386,6 +2592,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N380_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2397,6 +2604,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N380_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2408,6 +2616,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N380_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2419,6 +2628,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N380_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2430,6 +2640,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N380_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2441,6 +2652,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N381_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2452,6 +2664,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N381_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2463,6 +2676,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N381_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2474,6 +2688,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N381_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2485,6 +2700,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N381_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2496,6 +2712,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N381_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2507,6 +2724,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N381_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2518,6 +2736,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N382_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2529,6 +2748,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N382_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2540,6 +2760,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N382_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2551,6 +2772,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N382_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2562,6 +2784,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N382_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2573,6 +2796,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N382_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2584,6 +2808,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N382_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2595,6 +2820,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N383_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2606,6 +2832,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N383_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2617,6 +2844,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N383_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2628,6 +2856,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N383_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2639,6 +2868,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N383_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2650,6 +2880,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N383_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2661,6 +2892,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N383_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2672,6 +2904,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N384_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2683,6 +2916,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N384_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2694,6 +2928,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N384_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2705,6 +2940,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N384_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2716,6 +2952,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N384_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2727,6 +2964,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N384_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2738,6 +2976,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N385_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2749,6 +2988,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N385_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2760,6 +3000,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N385_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2771,6 +3012,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N385_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2782,6 +3024,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N385_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2793,6 +3036,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N385_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2804,6 +3048,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N385_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2815,6 +3060,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N386_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2826,6 +3072,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N386_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2837,6 +3084,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N386_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2848,6 +3096,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N386_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2859,6 +3108,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N386_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2870,6 +3120,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N386_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2881,6 +3132,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N387_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2892,6 +3144,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N387_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2903,6 +3156,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N387_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2914,6 +3168,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N387_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2925,6 +3180,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N387_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2936,6 +3192,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N387_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2947,6 +3204,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N388_bil.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2958,6 +3216,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N388_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2969,6 +3228,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N388_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2980,6 +3240,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N388_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -2991,6 +3252,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N388_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3002,6 +3264,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N388_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3013,6 +3276,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N388_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3024,6 +3288,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N389_cec.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3035,6 +3300,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N389_col.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3046,6 +3312,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N389_feces.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3057,6 +3324,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N389_ile.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3068,6 +3336,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N389_liv.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3079,6 +3348,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/N389_ser.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3090,6 +3360,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate1_poolQC_1.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3101,6 +3372,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate1_poolQC_2.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3112,6 +3384,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate1_poolQC_3.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3123,6 +3396,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate1_poolQC_4.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3134,6 +3408,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate1_poolQC_5.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3145,6 +3420,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate2_poolQC_13.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3156,6 +3432,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate2_poolQC_14.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3167,6 +3444,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate2_poolQC_15.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3178,6 +3456,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate2_poolQC_16.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3189,6 +3468,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate3_poolQC_10.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3200,6 +3480,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate3_poolQC_11.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3211,6 +3492,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate3_poolQC_12.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3222,6 +3504,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate3_poolQC_8.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3233,6 +3516,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate3_poolQC_9.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3244,6 +3528,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate4_poolQC_5.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3255,6 +3540,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate4_poolQC_6.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3266,6 +3552,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate4_poolQC_7.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3277,6 +3564,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate5_poolQC_1.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3288,6 +3576,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate5_poolQC_2.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3299,6 +3588,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate5_poolQC_3.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3310,6 +3600,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate6_poolQC_1.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3321,6 +3612,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate6_poolQC_2.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3332,6 +3624,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate6_poolQC_3.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3343,6 +3636,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate6_poolQC_4.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3354,6 +3648,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate6_poolQC_4_20250622125414.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3365,6 +3660,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate7_poolQC_1.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3376,6 +3672,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate7_poolQC_2.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3387,6 +3684,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Plate7_poolQC_3.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3398,6 +3696,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Resuspension_blk_Plate5_1.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3409,6 +3708,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Resuspension_blk_Plate5_2.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3420,6 +3720,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Resuspension_blk_Plate5_3.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3431,6 +3732,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Sixmix_1_Plate5.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3442,6 +3744,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Sixmix_1_Plate7.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3453,6 +3756,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Sixmix_2_Plate3.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3464,6 +3768,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Sixmix_2_Plate4.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3475,6 +3780,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Sixmix_2_Plate6.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3486,6 +3792,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Sixmix_3_Plate1.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",
@@ -3497,6 +3804,7 @@
       "url_list": [
         "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/peak/Karin_PSC/Sixmix_4_Plate2.mzML"
       ],
+      "extension": ".mzML",
       "format": {
         "source": "EDAM",
         "accession": "EDAM:format_3244",

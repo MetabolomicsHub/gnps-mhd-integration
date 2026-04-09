@@ -24,6 +24,7 @@ class LegacyProfileV01Convertor(BaseMhdConvertor):
         mhd_output_folder_path: Path,
         mhd_output_filename: None | str,
         repository_revision: None | Revision = None,
+        input_file_path: None | str = None,
         **kwargs,
     ):
         mhd_output_path = mhd_output_folder_path / Path(mhd_output_filename)
@@ -37,5 +38,6 @@ class LegacyProfileV01Convertor(BaseMhdConvertor):
             config=gnps2mhd_config,
             revision=repository_revision,
             repository_name=repository_name,
+            input_file_path=input_file_path,
             **kwargs,
         )

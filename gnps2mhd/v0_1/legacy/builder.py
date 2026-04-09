@@ -93,17 +93,17 @@ class MhdLegacyDatasetBuilder:
         config: Gnps2MhdConfiguration,
         repository_name: str,
         revision: None | Revision = None,
+        input_file_path: None | str = None,
         **kwargs,
     ) -> MhDatasetLegacyProfile:
         cv_term_helper = CvTermHelper()
         cache_root_path = kwargs.get("cache_root_path", None)
-        params_xml_file_path = kwargs.get("input_file_path", None)
         params = None
-        if params_xml_file_path:
-            params_xml_path = Path(params_xml_file_path)
+        if input_file_path:
+            params_xml_path = Path(input_file_path)
 
             if not params_xml_path.exists():
-                raise ValueError(f"File does not exist: {params_xml_file_path}")
+                raise ValueError(f"File does not exist: {input_file_path}")
             with params_xml_path.open() as f:
                 params = json.load(f)
 
@@ -192,7 +192,9 @@ class MhdLegacyDatasetBuilder:
             submitter_email = submitter_fields[1].strip()
 
             mhd_contact = mhd_domain.Person(
-                full_name=submitter_full_name, email_list=[submitter_email]
+                repository_identifier=massive_study_id + ":" + submitter_full_name,
+                full_name=submitter_full_name,
+                email_list=[submitter_email],
             )
             mhd_builder.add(mhd_contact)
             # An assumption is made that PI is also submitter
@@ -215,7 +217,9 @@ class MhdLegacyDatasetBuilder:
                 organization_name = submitter_fields[2].strip()
                 address = submitter_fields[3].strip()
                 mhd_organization = mhd_domain.Organization(
-                    name=organization_name, address=address
+                    repository_identifier=massive_study_id + ":" + organization_name,
+                    name=organization_name,
+                    address=address,
                 )
                 mhd_builder.add(mhd_organization)
                 mhd_builder.link(
@@ -241,6 +245,7 @@ class MhdLegacyDatasetBuilder:
         #####################################################################################
 
         metadata_file = mhd_domain.MetadataFile(
+            repository_identifier=massive_study_id + ":" + metadata_file_name,
             name=metadata_file_name,
             url_list=[HttpUrl(metadata_http_file_url)],
             extension=Path(metadata_file_name).suffix,
@@ -274,6 +279,7 @@ class MhdLegacyDatasetBuilder:
                 source=organism.source,
             )
             organism_characteristic_definition = mhd_domain.CharacteristicDefinition(
+                repository_identifier=massive_study_id + ":species",
                 characteristic_type_ref=organism_characteristic_type.id_,
                 name="species",
             )
@@ -336,6 +342,7 @@ class MhdLegacyDatasetBuilder:
                 source=ms_protocol_type_cv.source,
             )
             ms_protocol = mhd_domain.Protocol(
+                repository_identifier=massive_study_id + ":mass spectrometry",
                 name="Mass spectrometry",
                 protocol_type_ref=ms_protocol_type.id_,
                 description="Mass spectrometry protocol",
@@ -366,6 +373,7 @@ class MhdLegacyDatasetBuilder:
                 source=ms_instrument_cv.source,
             )
             ms_instrument_definition = mhd_domain.ParameterDefinition(
+                repository_identifier=massive_study_id + ":Instrument",
                 name="Instrument",
                 parameter_type_ref=ms_instrument_parameter_type.id_,
             )
@@ -458,6 +466,7 @@ class MhdLegacyDatasetBuilder:
                 file_format = file_formats[(extension_lower, False)]
 
             file_node = mhd_domain.RawDataFile(
+                repository_identifier=massive_study_id + ":" + raw_file_path,
                 name=raw_file_path,
                 metadata_file_refs=None,
                 compression_format_ref=None,
