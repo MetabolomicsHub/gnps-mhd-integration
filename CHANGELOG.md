@@ -1,3 +1,9 @@
+## v0.0.20 (2026-04-09)
+
+### Fix
+
+- mhd model update and unit test error
+
 ## v0.0.19 (2026-03-26)
 
 ### Fix
