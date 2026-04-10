@@ -1,3 +1,10 @@
+## v0.0.21 (2026-04-10)
+
+### Fix
+
+- file format errors
+- test with failed studies
+
 ## v0.0.20 (2026-04-09)
 
 ### Fix
