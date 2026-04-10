@@ -1,0 +1,96 @@
+{
+    "uid": "34105588",
+    "pubdate": "2021 Jun 30",
+    "epubdate": "",
+    "source": "Org Biomol Chem",
+    "authors": [
+        {
+            "name": "Liu Q",
+            "authtype": "Author",
+            "clusterid": ""
+        },
+        {
+            "name": "Wang Z",
+            "authtype": "Author",
+            "clusterid": ""
+        },
+        {
+            "name": "He J",
+            "authtype": "Author",
+            "clusterid": ""
+        },
+        {
+            "name": "Liu Z",
+            "authtype": "Author",
+            "clusterid": ""
+        }
+    ],
+    "lastauthor": "Liu Z",
+    "title": "Psidguajones A and B, a pair of complex meroterpenoid epimers from the leaves of Psidium guajava.",
+    "sorttitle": "psidguajones a and b a pair of complex meroterpenoid epimers from the leaves of psidium guajava",
+    "volume": "19",
+    "issue": "25",
+    "pages": "5539-5543",
+    "lang": [
+        "eng"
+    ],
+    "nlmuniqueid": "101154995",
+    "issn": "1477-0520",
+    "essn": "1477-0539",
+    "pubtype": [
+        "Journal Article"
+    ],
+    "recordstatus": "PubMed - indexed for MEDLINE",
+    "pubstatus": "4",
+    "articleids": [
+        {
+            "idtype": "pubmed",
+            "idtypen": 1,
+            "value": "34105588"
+        },
+        {
+            "idtype": "doi",
+            "idtypen": 3,
+            "value": "10.1039/d1ob00693b"
+        }
+    ],
+    "history": [
+        {
+            "pubstatus": "pubmed",
+            "date": "2021/06/10 06:00"
+        },
+        {
+            "pubstatus": "medline",
+            "date": "2022/03/11 06:00"
+        },
+        {
+            "pubstatus": "entrez",
+            "date": "2021/06/09 08:49"
+        }
+    ],
+    "references": [],
+    "attributes": [
+        "Has Abstract"
+    ],
+    "pmcrefcount": "",
+    "fulljournalname": "Organic & biomolecular chemistry",
+    "elocationid": "doi: 10.1039/d1ob00693b",
+    "doctype": "citation",
+    "srccontriblist": [],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2021/06/30 00:00",
+    "sortfirstauthor": "Liu Q",
+    "vernaculartitle": ""
+}

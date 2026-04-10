@@ -1,3 +1,7 @@
+from gnps2mhd.v0_1.utils import fetch_pubmed_summary
+from mhd_model.model.v0_1.rules.managed_cv_terms import MISSING_PUBLICATION_REASON
+from mhd_model.model.v0_1.rules.managed_cv_terms import COMMON_MISSING_DATA_TERMS
+from gnps2mhd.v0_1.utils import fetch_massive_study_summary
 import datetime
 import json
 import logging
@@ -82,6 +86,15 @@ FILE_EXTENSIONS: dict[tuple[str, bool], CvTerm] = {
 }
 
 
+def create_cv_term_object_from(type_: str, cv: CvTerm) -> mhd_domain.CvTermObject:
+    if not cv.source or not cv.accession:
+        return mhd_domain.CvTermObject(type_=type_, name=cv.name)
+
+    return mhd_domain.CvTermObject(
+        type_=type_, accession=cv.accession, source=cv.source, name=cv.name
+    )
+
+
 class MhdLegacyDatasetBuilder:
     def build(
         self,
@@ -99,20 +112,26 @@ class MhdLegacyDatasetBuilder:
         cv_term_helper = CvTermHelper()
         cache_root_path = kwargs.get("cache_root_path", None)
         params = None
+        if not cache_root_path and input_file_path:
+            cache_root_path = Path(input_file_path).parent
         if input_file_path:
             params_xml_path = Path(input_file_path)
 
-            if not params_xml_path.exists():
-                raise ValueError(f"File does not exist: {input_file_path}")
-            with params_xml_path.open() as f:
-                params = json.load(f)
+            if params_xml_path.exists():
+                with params_xml_path.open() as f:
+                    params = json.load(f)
 
         if not params:
             # Fetch metadata from Massive.
             params = fetch_massive_metadata_file(
                 massive_study_id, cache_root_path=cache_root_path
             )
-
+            if params and input_file_path:
+                with Path(input_file_path).open("w") as f:
+                    json.dump(params, f, indent=2)
+        summary = fetch_massive_study_summary(
+            massive_study_id, cache_root_path=cache_root_path
+        )
         if not params:
             raise ValueError(f"Could not fetch metadata for study {massive_study_id}")
 
@@ -138,16 +157,21 @@ class MhdLegacyDatasetBuilder:
             else None,
             change_log=[revision] if revision else None,
         )
-
-        study_title = params.get("desc", "")  # set value from other source if not valid
-        study_description = params.get("dataset.comments", "")  # set value
+        study_title = summary.get("title", "") or params.get("desc", "")
+        # set value from other source if not valid
+        study_description = summary.get("description", "") or params.get(
+            "dataset.comments", ""
+        )  # set value
         submission_date = datetime.datetime.now(
             datetime.timezone.utc
         )  # TODO:  set value. Currently no public release date
         public_release_date = datetime.datetime.now(
             datetime.timezone.utc
         )  # TODO: set value. Currently no public release date
-        massive_study_repository_url = "https://massive.ucsd.edu/????"  # TODO fix
+        task = summary.get("task", "")
+        massive_study_repository_url = (
+            f"https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task={task}"
+        )
         license = params.get("default.license", "")
         license_url = None
         if license and license.lower() == "on":
@@ -179,55 +203,161 @@ class MhdLegacyDatasetBuilder:
             mhd_study,
             reverse_relationship_name="provided-by",
         )
-
+        #####################################################################################
+        # Publications
+        #####################################################################################
+        publications = summary.get("publications", []) or []
+        if publications:
+            pending_publication = None
+            publication_list = set()
+            for publication in publications:
+                pub_title = publication.get("title", "") or ""
+                if len(pub_title) < 10:
+                    continue
+                publication_list.add(pub_title)
+                pubmed_id = (
+                    publication.get("pmid", "").lower().replace("pmid:", "").strip()
+                )
+                doi, pubmed_json = fetch_pubmed_summary(
+                    massive_study_id, pubmed_id, cache_root_path
+                )
+                if doi:
+                    mhd_publication = mhd_domain.Publication(
+                        title=pub_title,
+                        pubmed_id=pubmed_id,
+                        doi=doi,
+                        author_list=[
+                            x.get("name")
+                            for x in pubmed_json.get("authors", []) or []
+                            if len(x.get("name", "").strip()) > 4
+                        ],
+                    )
+                    mhd_builder.add(mhd_publication)
+                    mhd_builder.link(
+                        mhd_publication,
+                        "published-in",
+                        mhd_study,
+                        reverse_relationship_name="has-publication",
+                    )
+            if not publication_list:
+                pending_publication = create_cv_term_object_from(
+                    type_="descriptor",
+                    cv=MISSING_PUBLICATION_REASON["pending publication"],
+                )
+                mhd_builder.add(pending_publication)
+                mhd_builder.link(
+                    mhd_study,
+                    "defined-as",
+                    pending_publication,
+                    reverse_relationship_name="publication-status-of",
+                )
+        else:
+            no_publication = create_cv_term_object_from(
+                type_="descriptor", cv=MISSING_PUBLICATION_REASON["no publication"]
+            )
+            mhd_builder.add(no_publication)
+            mhd_builder.link(
+                mhd_study,
+                "defined-as",
+                no_publication,
+                reverse_relationship_name="publication-status-of",
+            )
         #####################################################################################
         # contact as submitter and principal investigator
         #####################################################################################
+        pis = summary.get("pis", []) or {}
 
-        submitter = params.get("dataset.pi", "")  # set value if not valid
-
-        submitter_fields = submitter.split("|")
-        if submitter_fields and len(submitter_fields) > 1:
-            submitter_full_name = submitter_fields[0].strip()
-            submitter_email = submitter_fields[1].strip()
-
-            mhd_contact = mhd_domain.Person(
-                repository_identifier=massive_study_id + ":" + submitter_full_name,
-                full_name=submitter_full_name,
-                email_list=[submitter_email],
-            )
-            mhd_builder.add(mhd_contact)
-            # An assumption is made that PI is also submitter
-            mhd_builder.link(
-                mhd_contact,
-                "submits",
-                mhd_study,
-                reverse_relationship_name="submitted-by",
-            )
-
-            mhd_builder.link(
-                mhd_contact,
-                "principal-investigator-of",
-                mhd_study,
-                reverse_relationship_name="has-principal-investigator",
-            )
-
-            # Create organization if organization name or address is available
-            if len(submitter_fields) > 3:
-                organization_name = submitter_fields[2].strip()
-                address = submitter_fields[3].strip()
-                mhd_organization = mhd_domain.Organization(
-                    repository_identifier=massive_study_id + ":" + organization_name,
-                    name=organization_name,
-                    address=address,
+        if pis:
+            organizations = dict[str, mhd_domain.Organization]()
+            for pi in pis:
+                submitter_full_name = pi.get("name", None) or ""
+                submitter_email = pi.get("email", None) or ""
+                if not submitter_full_name or not submitter_email:
+                    continue
+                mhd_contact = mhd_domain.Person(
+                    repository_identifier=massive_study_id + ":" + submitter_full_name,
+                    full_name=submitter_full_name,
+                    email_list=[submitter_email],
                 )
-                mhd_builder.add(mhd_organization)
+                mhd_builder.add(mhd_contact)
+                # An assumption is made that PI is also submitter
                 mhd_builder.link(
-                    mhd_organization,
-                    "affiliated-with",
                     mhd_contact,
-                    reverse_relationship_name="has-affiliation",
+                    "submits",
+                    mhd_study,
+                    reverse_relationship_name="submitted-by",
                 )
+
+                mhd_builder.link(
+                    mhd_contact,
+                    "principal-investigator-of",
+                    mhd_study,
+                    reverse_relationship_name="has-principal-investigator",
+                )
+                organization_name = pi.get("institution", "") or ""
+                if organization_name and len(organization_name) > 1:
+                    if organization_name not in organizations:
+                        organizations[organization_name] = mhd_domain.Organization(
+                            repository_identifier=massive_study_id
+                            + ":"
+                            + organization_name,
+                            name=organization_name,
+                        )
+                        mhd_builder.add(organizations[organization_name])
+                    mhd_builder.link(
+                        organizations[organization_name],
+                        "affiliated-with",
+                        mhd_contact,
+                        reverse_relationship_name="has-affiliation",
+                    )
+        else:
+            submitter = params.get("dataset.pi", "")  # set value if not valid
+
+            submitter_fields = submitter.split("|")
+            if submitter_fields and len(submitter_fields) > 1:
+                submitter_full_name = submitter_fields[0].strip()
+                submitter_email = submitter_fields[1].strip()
+
+                mhd_contact = mhd_domain.Person(
+                    repository_identifier=massive_study_id + ":" + submitter_full_name,
+                    full_name=submitter_full_name,
+                    email_list=[submitter_email],
+                )
+                mhd_builder.add(mhd_contact)
+                # An assumption is made that PI is also submitter
+                mhd_builder.link(
+                    mhd_contact,
+                    "submits",
+                    mhd_study,
+                    reverse_relationship_name="submitted-by",
+                )
+
+                mhd_builder.link(
+                    mhd_contact,
+                    "principal-investigator-of",
+                    mhd_study,
+                    reverse_relationship_name="has-principal-investigator",
+                )
+
+                # Create organization if organization name or address is available
+                if len(submitter_fields) > 3:
+                    organization_name = submitter_fields[2].strip()
+                    if len(organization_name) > 1:
+                        address = submitter_fields[3].strip()
+                        mhd_organization = mhd_domain.Organization(
+                            repository_identifier=massive_study_id
+                            + ":"
+                            + organization_name,
+                            name=organization_name,
+                            address=address,
+                        )
+                        mhd_builder.add(mhd_organization)
+                        mhd_builder.link(
+                            mhd_organization,
+                            "affiliated-with",
+                            mhd_contact,
+                            reverse_relationship_name="has-affiliation",
+                        )
 
         #####################################################################################
         # metadata file.
@@ -434,10 +564,15 @@ class MhdLegacyDatasetBuilder:
         # raw-data files
         #####################################################################################
         raw_data_files = params.get("upload_file_mapping", [])
+        if isinstance(raw_data_files, str):
+            raw_data_files = [raw_data_files]
         file_formats = {}
         file_format = None
         for file in raw_data_files:
-            peak_file_name, raw_file_path = file.split("|")
+            if not file or "|" not in file:
+                logger.warning("Skipping file %s, no | separator", file)
+                continue
+            peak_file_name, raw_file_path = file.split("|", maxsplit=1)
             subpaths = raw_file_path.split("/")
             if len(subpaths) > 1:
                 raw_file_path = "/".join(subpaths[1:])

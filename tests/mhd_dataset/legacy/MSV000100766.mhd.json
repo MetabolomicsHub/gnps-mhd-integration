@@ -1,0 +1,307 @@
+{
+    "repository_name": "GNPS",
+    "repository_identifier": "MSV000100766",
+    "repository_revision": 1,
+    "$schema": "https://metabolomicshub.github.io/mhd-model/schemas/v0_1/common-data-model-v0.1.schema.json",
+    "profile_uri": "https://metabolomicshub.github.io/mhd-model/schemas/v0_1/common-data-model-v0.1.legacy-profile.json",
+    "cv_definitions": [
+        {
+            "label": "EDAM",
+            "name": "The ontology of data analysis and management",
+            "uri": "http://edamontology.org",
+            "prefix": "http://edamontology.org/"
+        },
+        {
+            "label": "NCBITAXON",
+            "name": "National Center for Biotechnology Information (NCBI) Organismal Classification",
+            "uri": "http://purl.obolibrary.org/obo/ncbitaxon.owl",
+            "prefix": "http://purl.obolibrary.org/obo/NCBITaxon_"
+        },
+        {
+            "label": "NCIT",
+            "name": "NCI Thesaurus OBO Edition",
+            "uri": "http://purl.obolibrary.org/obo/ncit.owl",
+            "prefix": "http://purl.obolibrary.org/obo/NCIT_"
+        }
+    ],
+    "type": "legacy-dataset",
+    "name": "MSV000100766 MetabolomicsHub Legacy Dataset",
+    "graph": {
+        "start_item_refs": [
+            "mhd--study--9dd3205c-5166-5d0a-bbdf-e108054b87aa"
+        ],
+        "nodes": [
+            {
+                "id": "mhd--study--9dd3205c-5166-5d0a-bbdf-e108054b87aa",
+                "type": "study",
+                "created_by_ref": "cv-value--data-provider--b6fe5fd5-c5f8-5e6d-ab5d-0534c2693c9e",
+                "repository_identifier": "MSV000100766",
+                "title": "Psidium guajava_Qtof_GNPS_Massive_1",
+                "description": "Psidguajones A and B, a pair of dimeric sesquiterpene-based mero  terpenoid epimers, have been isolated from the leaves of Psidium  guajava for the first time. Their structures were confirmed by com  prehensive spectroscopic techniques combined with a comparison  of experimental and calculated ECD data.",
+                "submission_date": "2026-04-10T22:48:02.588759Z",
+                "public_release_date": "2026-04-10T22:48:02.589120Z",
+                "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+                "dataset_url_list": [
+                    "https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=5b017a4221ac474e9cd1a3618ed7e8bc",
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100766"
+                ]
+            },
+            {
+                "id": "mhd--characteristic-definition--7f921f89-785d-585d-b0f1-ac03f90533fd",
+                "type": "characteristic-definition",
+                "repository_identifier": "MSV000100766:species",
+                "name": "species",
+                "characteristic_type_ref": "cv--characteristic-type--665578fb-687b-563f-ba6c-65862395bb6a"
+            },
+            {
+                "id": "mhd--metadata-file--5d34625c-aed7-5b11-b9b6-c95fd9870e28",
+                "type": "metadata-file",
+                "url_list": [
+                    "https://massive.ucsd.edu/ProteoSAFe/DownloadResultFile?file=f.MSV000100766%2Fccms_parameters%2Fparams.xml",
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100766/ccms_parameters/params.xml"
+                ],
+                "repository_identifier": "MSV000100766:ccms_parameters/params.xml",
+                "name": "ccms_parameters/params.xml",
+                "format_ref": "cv--descriptor--d0910b45-e517-57ec-94d6-9f15f4827465",
+                "extension": ".xml"
+            },
+            {
+                "id": "mhd--organization--d68f99a2-4a6c-5729-9ad3-f053ba9c29e5",
+                "type": "organization",
+                "repository_identifier": "MSV000100766:Kyungpook National University",
+                "name": "Kyungpook National University"
+            },
+            {
+                "id": "mhd--person--e022ca1e-56af-541a-beee-c4556796715a",
+                "type": "person",
+                "repository_identifier": "MSV000100766:Cao Quyen",
+                "full_name": "Cao Quyen",
+                "email_list": [
+                    "quyencao123@knu.ac.kr"
+                ]
+            },
+            {
+                "id": "mhd--publication--e7b07918-ce3a-5e7b-9922-6c27a35e1570",
+                "type": "publication",
+                "title": "Psidguajones A and B, a pair of complex meroterpenoid epimers from the leaves of Psidium guajava.",
+                "doi": "10.1039/d1ob00693b",
+                "pubmed_id": "34105588",
+                "author_list": [
+                    "Liu Q",
+                    "Wang Z",
+                    "Liu Z"
+                ]
+            },
+            {
+                "id": "mhd--raw-data-file--4f684ed9-5fe8-58bf-84c9-442ee5f5bfd2",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100766/peak/Q1.mzML"
+                ],
+                "repository_identifier": "MSV000100766:Q1.mzML",
+                "name": "Q1.mzML",
+                "format_ref": "cv--descriptor--b0f673fc-7e00-5dc5-b6b4-08a5c045ed9f",
+                "extension": ".mzML"
+            },
+            {
+                "id": "cv--characteristic-type--665578fb-687b-563f-ba6c-65862395bb6a",
+                "type": "characteristic-type",
+                "source": "NCIT",
+                "accession": "NCIT:C14250",
+                "name": "Organism"
+            },
+            {
+                "id": "cv--characteristic-value--587acb66-f9ba-56df-a95d-571a8f76ea29",
+                "type": "characteristic-value",
+                "source": "NCBITAXON",
+                "accession": "NCBITaxon:120290",
+                "name": "Psidium guajava"
+            },
+            {
+                "id": "cv-value--data-provider--b6fe5fd5-c5f8-5e6d-ab5d-0534c2693c9e",
+                "type": "data-provider",
+                "value": "GNPS",
+                "source": "NCIT",
+                "accession": "NCIT:C189151",
+                "name": "Study Data Repository"
+            },
+            {
+                "id": "cv--descriptor--f3c602bd-adb2-5212-aebc-8883d9dba27b",
+                "type": "descriptor",
+                "source": "",
+                "accession": "",
+                "name": "Guava"
+            },
+            {
+                "id": "cv--descriptor--d0910b45-e517-57ec-94d6-9f15f4827465",
+                "type": "descriptor",
+                "source": "EDAM",
+                "accession": "EDAM:format_2332",
+                "name": "XML"
+            },
+            {
+                "id": "cv--descriptor--b0f673fc-7e00-5dc5-b6b4-08a5c045ed9f",
+                "type": "descriptor",
+                "source": "EDAM",
+                "accession": "EDAM:format_3244",
+                "name": "mzML"
+            }
+        ],
+        "relationships": [
+            {
+                "id": "rel--relationship--262b8a9e-7182-56f2-820a-f044456eb136",
+                "type": "relationship",
+                "source_ref": "cv--characteristic-type--665578fb-687b-563f-ba6c-65862395bb6a",
+                "relationship_name": "type-of",
+                "target_ref": "mhd--characteristic-definition--7f921f89-785d-585d-b0f1-ac03f90533fd"
+            },
+            {
+                "id": "rel--relationship--b63a6470-b102-5dea-8a6c-92294065594d",
+                "type": "relationship",
+                "source_ref": "cv--characteristic-value--587acb66-f9ba-56df-a95d-571a8f76ea29",
+                "relationship_name": "instance-of",
+                "target_ref": "mhd--characteristic-definition--7f921f89-785d-585d-b0f1-ac03f90533fd"
+            },
+            {
+                "id": "rel--relationship--9a47e300-b9ef-58cd-b2d3-894a0debf00a",
+                "type": "relationship",
+                "source_ref": "cv--descriptor--f3c602bd-adb2-5212-aebc-8883d9dba27b",
+                "relationship_name": "keyword-of",
+                "target_ref": "mhd--study--9dd3205c-5166-5d0a-bbdf-e108054b87aa"
+            },
+            {
+                "id": "rel--relationship--fe8e66fa-4ddc-59b5-80fc-1bdd352f6adc",
+                "type": "relationship",
+                "source_ref": "cv-value--data-provider--b6fe5fd5-c5f8-5e6d-ab5d-0534c2693c9e",
+                "relationship_name": "provides",
+                "target_ref": "mhd--study--9dd3205c-5166-5d0a-bbdf-e108054b87aa"
+            },
+            {
+                "id": "rel--relationship--ec6b7e9d-fc5a-533f-b622-77b3114d7367",
+                "type": "relationship",
+                "source_ref": "mhd--characteristic-definition--7f921f89-785d-585d-b0f1-ac03f90533fd",
+                "relationship_name": "has-instance",
+                "target_ref": "cv--characteristic-value--587acb66-f9ba-56df-a95d-571a8f76ea29"
+            },
+            {
+                "id": "rel--relationship--385fac5b-05f6-504e-a56e-66d1f123c47c",
+                "type": "relationship",
+                "source_ref": "mhd--characteristic-definition--7f921f89-785d-585d-b0f1-ac03f90533fd",
+                "relationship_name": "has-type",
+                "target_ref": "cv--characteristic-type--665578fb-687b-563f-ba6c-65862395bb6a"
+            },
+            {
+                "id": "rel--relationship--d9651f6e-b976-542d-84ab-1683ffa0b16b",
+                "type": "relationship",
+                "source_ref": "mhd--characteristic-definition--7f921f89-785d-585d-b0f1-ac03f90533fd",
+                "relationship_name": "used-in",
+                "target_ref": "mhd--study--9dd3205c-5166-5d0a-bbdf-e108054b87aa"
+            },
+            {
+                "id": "rel--relationship--399cafe6-38c5-5151-a18b-df366fab70ee",
+                "type": "relationship",
+                "source_ref": "mhd--metadata-file--5d34625c-aed7-5b11-b9b6-c95fd9870e28",
+                "relationship_name": "describes",
+                "target_ref": "mhd--study--9dd3205c-5166-5d0a-bbdf-e108054b87aa"
+            },
+            {
+                "id": "rel--relationship--5cadb5b9-a185-5339-ba23-e0df62c7b3e7",
+                "type": "relationship",
+                "source_ref": "mhd--organization--d68f99a2-4a6c-5729-9ad3-f053ba9c29e5",
+                "relationship_name": "affiliated-with",
+                "target_ref": "mhd--person--e022ca1e-56af-541a-beee-c4556796715a"
+            },
+            {
+                "id": "rel--relationship--5f10bb30-a3fe-57ac-b941-003446cf7235",
+                "type": "relationship",
+                "source_ref": "mhd--person--e022ca1e-56af-541a-beee-c4556796715a",
+                "relationship_name": "has-affiliation",
+                "target_ref": "mhd--organization--d68f99a2-4a6c-5729-9ad3-f053ba9c29e5"
+            },
+            {
+                "id": "rel--relationship--a49528a8-88b4-57a0-ab7b-84621ff8f7b2",
+                "type": "relationship",
+                "source_ref": "mhd--person--e022ca1e-56af-541a-beee-c4556796715a",
+                "relationship_name": "principal-investigator-of",
+                "target_ref": "mhd--study--9dd3205c-5166-5d0a-bbdf-e108054b87aa"
+            },
+            {
+                "id": "rel--relationship--563bc55e-3efe-57e0-9e59-57913ff874f6",
+                "type": "relationship",
+                "source_ref": "mhd--person--e022ca1e-56af-541a-beee-c4556796715a",
+                "relationship_name": "submits",
+                "target_ref": "mhd--study--9dd3205c-5166-5d0a-bbdf-e108054b87aa"
+            },
+            {
+                "id": "rel--relationship--62cb4711-caba-55a1-ac5f-1b4989b6b3c0",
+                "type": "relationship",
+                "source_ref": "mhd--publication--e7b07918-ce3a-5e7b-9922-6c27a35e1570",
+                "relationship_name": "published-in",
+                "target_ref": "mhd--study--9dd3205c-5166-5d0a-bbdf-e108054b87aa"
+            },
+            {
+                "id": "rel--relationship--39b8a86e-dd90-5435-8425-b63cf5517dc5",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--4f684ed9-5fe8-58bf-84c9-442ee5f5bfd2",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--9dd3205c-5166-5d0a-bbdf-e108054b87aa"
+            },
+            {
+                "id": "rel--relationship--bdcfabc4-26ea-5c7f-8d00-634779da39bb",
+                "type": "relationship",
+                "source_ref": "mhd--study--9dd3205c-5166-5d0a-bbdf-e108054b87aa",
+                "relationship_name": "has-characteristic-definition",
+                "target_ref": "mhd--characteristic-definition--7f921f89-785d-585d-b0f1-ac03f90533fd"
+            },
+            {
+                "id": "rel--relationship--356201ca-43a9-5b81-8558-c67ef2de5f34",
+                "type": "relationship",
+                "source_ref": "mhd--study--9dd3205c-5166-5d0a-bbdf-e108054b87aa",
+                "relationship_name": "has-metadata-file",
+                "target_ref": "mhd--metadata-file--5d34625c-aed7-5b11-b9b6-c95fd9870e28"
+            },
+            {
+                "id": "rel--relationship--5e147225-994c-5b49-bf41-f496f92dd27b",
+                "type": "relationship",
+                "source_ref": "mhd--study--9dd3205c-5166-5d0a-bbdf-e108054b87aa",
+                "relationship_name": "has-principal-investigator",
+                "target_ref": "mhd--person--e022ca1e-56af-541a-beee-c4556796715a"
+            },
+            {
+                "id": "rel--relationship--7f7ea17a-830a-5cec-ae03-4ed4fdc9c179",
+                "type": "relationship",
+                "source_ref": "mhd--study--9dd3205c-5166-5d0a-bbdf-e108054b87aa",
+                "relationship_name": "has-publication",
+                "target_ref": "mhd--publication--e7b07918-ce3a-5e7b-9922-6c27a35e1570"
+            },
+            {
+                "id": "rel--relationship--4a79798f-1395-5bfa-8ea3-4daed0f6875e",
+                "type": "relationship",
+                "source_ref": "mhd--study--9dd3205c-5166-5d0a-bbdf-e108054b87aa",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--4f684ed9-5fe8-58bf-84c9-442ee5f5bfd2"
+            },
+            {
+                "id": "rel--relationship--a5002cc3-bedf-5cb5-a597-8dc615a31e28",
+                "type": "relationship",
+                "source_ref": "mhd--study--9dd3205c-5166-5d0a-bbdf-e108054b87aa",
+                "relationship_name": "has-submitter-keyword",
+                "target_ref": "cv--descriptor--f3c602bd-adb2-5212-aebc-8883d9dba27b"
+            },
+            {
+                "id": "rel--relationship--fe286ee3-6111-5c44-97ea-ba46fabb74df",
+                "type": "relationship",
+                "source_ref": "mhd--study--9dd3205c-5166-5d0a-bbdf-e108054b87aa",
+                "relationship_name": "provided-by",
+                "target_ref": "cv-value--data-provider--b6fe5fd5-c5f8-5e6d-ab5d-0534c2693c9e"
+            },
+            {
+                "id": "rel--relationship--6edd466e-f754-5de6-b202-e19f78eab362",
+                "type": "relationship",
+                "source_ref": "mhd--study--9dd3205c-5166-5d0a-bbdf-e108054b87aa",
+                "relationship_name": "submitted-by",
+                "target_ref": "mhd--person--e022ca1e-56af-541a-beee-c4556796715a"
+            }
+        ]
+    }
+}

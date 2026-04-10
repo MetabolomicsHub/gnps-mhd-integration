@@ -1,3 +1,4 @@
+from httpcore import __name
 import json
 import logging
 from pathlib import Path
@@ -98,5 +99,113 @@ def fetch_massive_metadata_file(
 
         traceback.print_exc()
         logger.error("Error fetching massive metadata file %s: %s", massive_study_id, e)
+
+    return None
+
+
+def fetch_massive_study_summary(
+    massive_study_id: str, cache_root_path: None | str = None
+):
+    cache_path = None
+    if cache_root_path:
+        cache_path = Path(f"{cache_root_path}/{massive_study_id}.summary.json")
+        try:
+            if cache_path.exists():
+                with cache_path.open() as f:
+                    json_data = json.load(f)
+                return json_data
+        except Exception as ex:
+            logger.error("Error loading from cache. %s", ex)
+            pass
+
+    metadata_http_file_url = "https://massive.ucsd.edu/ProteoSAFe/QueryDatasets"
+    params = {
+        "pageSize": 1,
+        "offset": 0,
+        "query": '{"title_input":"' + massive_study_id + '"}',
+    }
+    try:
+        response = httpx.get(metadata_http_file_url, params=params, timeout=5)
+        response.raise_for_status()
+        summary_dict = response.json() or {}
+        if summary_dict.get("total_rows", 0) == 0:
+            raise ValueError(f"Could not fetch summary for study {massive_study_id}")
+        summary = {}
+        if summary_dict.get("row_data", {}):
+            summary = summary_dict.get("row_data", [])[0]
+            if summary.get("dataset") == massive_study_id:
+                if cache_path:
+                    with cache_path.open("w") as f:
+                        json.dump(summary, f, indent=4)
+                return summary
+        return None
+
+    except Exception as e:
+        import traceback
+
+        traceback.print_exc()
+        logger.error("Error fetching massive summary %s: %s", massive_study_id, e)
+
+    return None
+
+
+def fetch_pubmed_summary(
+    massive_study_id: str, pubmed_id: str, cache_root_path: None | str = None
+) -> tuple[None | str, None | dict]:
+    cache_path = None
+    if cache_root_path:
+        cache_path = Path(
+            f"{cache_root_path}/{massive_study_id}_pubmed_{pubmed_id}.json"
+        )
+        try:
+            if cache_path.exists():
+                with cache_path.open() as f:
+                    json_data = json.load(f)
+                ids = json_data.get("articleids", []) or []
+                doi = None
+                for id_item in ids:
+                    if id_item.get("idtype") == "doi":
+                        doi = id_item.get("value", None) or None
+                        break
+                return doi, json_data
+        except Exception as ex:
+            logger.error("Error loading from cache. %s", ex)
+            pass
+
+    metadata_http_file_url = (
+        "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi"
+    )
+    params = {
+        "db": "pubmed",
+        "id": pubmed_id,
+        "retmode": "json",
+    }
+    try:
+        response = httpx.get(metadata_http_file_url, params=params, timeout=5)
+        response.raise_for_status()
+        summary_dict = response.json() or {}
+        pubmed_json = summary_dict.get("result", {}).get(pubmed_id, {})
+        ids = pubmed_json.get("articleids", []) or []
+        doi = None
+        for id_item in ids:
+            if id_item.get("idtype") == "doi":
+                doi = id_item.get("value", None) or None
+                break
+        if not doi:
+            if ids:
+                logger.warning("Could not fetch doi for study %s", massive_study_id)
+            return None, None
+        if pubmed_json:
+            if cache_path:
+                with cache_path.open("w") as f:
+                    json.dump(pubmed_json, f, indent=4)
+            return doi, pubmed_json
+        return None, None
+
+    except Exception as e:
+        import traceback
+
+        traceback.print_exc()
+        logger.error("Error fetching massive summary %s: %s", massive_study_id, e)
 
     return None

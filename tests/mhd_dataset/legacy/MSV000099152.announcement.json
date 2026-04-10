@@ -12,22 +12,28 @@
       "prefix": "http://edamontology.org/"
     },
     {
+      "label": "MS",
+      "name": "MS",
+      "uri": "http://purl.obolibrary.org/obo/ms.owl",
+      "prefix": "http://purl.obolibrary.org/obo/MS_"
+    },
+    {
       "label": "NCIT",
       "name": "NCI Thesaurus OBO Edition",
       "uri": "http://purl.obolibrary.org/obo/ncit.owl",
       "prefix": "http://purl.obolibrary.org/obo/NCIT_"
     }
   ],
-  "mhd_metadata_file_url": "https://massive.ucsd.edu/????/MSV000099152.mhd.json",
+  "mhd_metadata_file_url": "ftp://massive-ftp.ucsd.edu/v10/MSV000099152/mhd/MSV000099152.mhd.json",
   "dataset_url_list": [
-    "https://massive.ucsd.edu/????",
+    "https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=9e2318612d7540849277553e4f38df75",
     "ftp://massive-ftp.ucsd.edu/v10/MSV000099152"
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "title": "Metabolomic fingerprint changes during industrial alcoholic fermentation of Muscat of  Alexandria grape must",
-  "description": "elucidating the metabolomic fingerprint changes of Muscat of\nAlexandria grape must during industrial-scale alcoholic fermentation, by applying a\nMass Spectrometry based untargeted metabolomics workflow.",
-  "submission_date": "2026-04-09T14:39:47.356416Z",
-  "public_release_date": "2026-04-09T14:39:47.356419Z",
+  "title": "GNPS - Metabolomic fingerprint changes during industrial alcoholic fermentation of Muscat of  Alexandria grape must",
+  "description": "elucidating the metabolomic fingerprint changes of Muscat of  Alexandria grape must during industrial-scale alcoholic fermentation, by applying a  Mass Spectrometry based untargeted metabolomics workflow. ",
+  "submission_date": "2026-04-10T22:48:18.822100Z",
+  "public_release_date": "2026-04-10T22:48:18.822129Z",
   "submitters": [
     {
       "full_name": "panagiotis arapitsas",
@@ -43,6 +49,11 @@
       "name": "must"
     }
   ],
+  "publications": {
+    "source": "MS",
+    "accession": "MS:1002853",
+    "name": "Dataset with no associated published manuscript"
+  },
   "characteristic_values": [
     {
       "key": {

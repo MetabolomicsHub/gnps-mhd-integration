@@ -12,6 +12,12 @@
       "prefix": "http://edamontology.org/"
     },
     {
+      "label": "MS",
+      "name": "MS",
+      "uri": "http://purl.obolibrary.org/obo/ms.owl",
+      "prefix": "http://purl.obolibrary.org/obo/MS_"
+    },
+    {
       "label": "NCBITAXON",
       "name": "National Center for Biotechnology Information (NCBI) Organismal Classification",
       "uri": "http://purl.obolibrary.org/obo/ncbitaxon.owl",
@@ -24,16 +30,16 @@
       "prefix": "http://purl.obolibrary.org/obo/NCIT_"
     }
   ],
-  "mhd_metadata_file_url": "https://massive.ucsd.edu/????/MSV000099062.mhd.json",
+  "mhd_metadata_file_url": "ftp://massive-ftp.ucsd.edu/v10/MSV000099062/mhd/MSV000099062.mhd.json",
   "dataset_url_list": [
-    "https://massive.ucsd.edu/????",
+    "https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=b676baab927446d19d80fccd726c811d",
     "ftp://massive-ftp.ucsd.edu/v10/MSV000099062"
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
   "title": "GNPS-Untargeted metabolomics on samples from a genetic mouse model of Primary Sclerosing Cholangitis (PSC).",
   "description": "Liver, ileum, cecum, colon, serum, feces, and bile juice samples were collected from the 36 mice.  MS/MS data acquisition was carried out on a Thermo Q Exactive mass spectrometer in positive ionization mode, with chromatographic separation achieved using a Phenomenex Polar C18 column.",
-  "submission_date": "2026-04-09T14:39:45.632207Z",
-  "public_release_date": "2026-04-09T14:39:45.632382Z",
+  "submission_date": "2026-04-10T22:48:06.361855Z",
+  "public_release_date": "2026-04-10T22:48:06.361884Z",
   "submitters": [
     {
       "full_name": "Pieter C. Dorrestein",
@@ -94,6 +100,11 @@
       "name": "PSC"
     }
   ],
+  "publications": {
+    "source": "MS",
+    "accession": "MS:1002853",
+    "name": "Dataset with no associated published manuscript"
+  },
   "characteristic_values": [
     {
       "key": {

@@ -12,6 +12,12 @@
             "prefix": "http://edamontology.org/"
         },
         {
+            "label": "MS",
+            "name": "MS",
+            "uri": "http://purl.obolibrary.org/obo/ms.owl",
+            "prefix": "http://purl.obolibrary.org/obo/MS_"
+        },
+        {
             "label": "NCIT",
             "name": "NCI Thesaurus OBO Edition",
             "uri": "http://purl.obolibrary.org/obo/ncit.owl",
@@ -30,13 +36,13 @@
                 "type": "study",
                 "created_by_ref": "cv-value--data-provider--b6fe5fd5-c5f8-5e6d-ab5d-0534c2693c9e",
                 "repository_identifier": "MSV000099183",
-                "title": "Sp1_MetabolomicaBIB5814_GC\\MS_fase.Apolar_(A)",
+                "title": "GNPS - Sp1_MetabolomicaBIB5814_GC\\MS_fase.Apolar_(A)",
                 "description": "untargeted metabolomics os the polar and nonpolar fractions of the leaf extract from plants exposed to some zone.",
-                "submission_date": "2026-04-09T14:39:47.036825Z",
-                "public_release_date": "2026-04-09T14:39:47.036827Z",
+                "submission_date": "2026-04-10T22:48:18.578267Z",
+                "public_release_date": "2026-04-10T22:48:18.578297Z",
                 "license": "https://creativecommons.org/publicdomain/zero/1.0/",
                 "dataset_url_list": [
-                    "https://massive.ucsd.edu/????",
+                    "https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=7dc576464c9a47cd80213c078a07a927",
                     "ftp://massive-ftp.ucsd.edu/v10/MSV000099183"
                 ]
             },
@@ -63,8 +69,7 @@
                 "id": "mhd--organization--e03061a5-e96a-5ad0-8f94-4dcf7ec846dc",
                 "type": "organization",
                 "repository_identifier": "MSV000099183:Universidade de Sao Paulo",
-                "name": "Universidade de Sao Paulo",
-                "address": "Brasil"
+                "name": "Universidade de Sao Paulo"
             },
             {
                 "id": "mhd--person--41b07cd8-0e95-533e-8525-dadb3ea411d1",
@@ -348,6 +353,13 @@
                 "name": "Study Data Repository"
             },
             {
+                "id": "cv--descriptor--bd9effc4-caf8-5c16-9600-c0bbb7b085a0",
+                "type": "descriptor",
+                "source": "MS",
+                "accession": "MS:1002853",
+                "name": "Dataset with no associated published manuscript"
+            },
+            {
                 "id": "cv--descriptor--d0910b45-e517-57ec-94d6-9f15f4827465",
                 "type": "descriptor",
                 "source": "EDAM",
@@ -382,6 +394,13 @@
                 "type": "relationship",
                 "source_ref": "cv--descriptor--03181b98-c060-51e2-a06a-2b449007a817",
                 "relationship_name": "keyword-of",
+                "target_ref": "mhd--study--94abdb1c-9a33-5bca-b16b-dbccf949fc9e"
+            },
+            {
+                "id": "rel--relationship--19c330cd-b115-51cc-b923-450723bfd619",
+                "type": "relationship",
+                "source_ref": "cv--descriptor--bd9effc4-caf8-5c16-9600-c0bbb7b085a0",
+                "relationship_name": "publication-status-of",
                 "target_ref": "mhd--study--94abdb1c-9a33-5bca-b16b-dbccf949fc9e"
             },
             {
@@ -621,6 +640,13 @@
                 "source_ref": "mhd--raw-data-file--fe9d30fb-64c3-5cc2-bd2f-d13b03070a91",
                 "relationship_name": "created-in",
                 "target_ref": "mhd--study--94abdb1c-9a33-5bca-b16b-dbccf949fc9e"
+            },
+            {
+                "id": "rel--relationship--db40ee62-8618-58cb-bea7-3b1ad037a001",
+                "type": "relationship",
+                "source_ref": "mhd--study--94abdb1c-9a33-5bca-b16b-dbccf949fc9e",
+                "relationship_name": "defined-as",
+                "target_ref": "cv--descriptor--bd9effc4-caf8-5c16-9600-c0bbb7b085a0"
             },
             {
                 "id": "rel--relationship--a700371f-62e0-50e5-8a38-95ddefedfd78",

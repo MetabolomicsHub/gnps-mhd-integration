@@ -12,6 +12,12 @@
             "prefix": "http://edamontology.org/"
         },
         {
+            "label": "MS",
+            "name": "MS",
+            "uri": "http://purl.obolibrary.org/obo/ms.owl",
+            "prefix": "http://purl.obolibrary.org/obo/MS_"
+        },
+        {
             "label": "NCBITAXON",
             "name": "National Center for Biotechnology Information (NCBI) Organismal Classification",
             "uri": "http://purl.obolibrary.org/obo/ncbitaxon.owl",
@@ -36,13 +42,13 @@
                 "type": "study",
                 "created_by_ref": "cv-value--data-provider--b6fe5fd5-c5f8-5e6d-ab5d-0534c2693c9e",
                 "repository_identifier": "MSV000099175",
-                "title": "Crude Extract vs Pectinase-digested Extract for Withania somnifera (root)",
+                "title": "GNPS - Crude Extract vs Pectinase-digested Extract for Withania somnifera (root)",
                 "description": "Ethanolic extract of Withania somnifera (ashwagandha) root, digested in Pectinase (non-specific deglycosylation enzyme mixture), was compared to the undigested root extract. Replicates include n=3.",
-                "submission_date": "2026-04-09T14:39:47.065378Z",
-                "public_release_date": "2026-04-09T14:39:47.065380Z",
+                "submission_date": "2026-04-10T22:48:18.622918Z",
+                "public_release_date": "2026-04-10T22:48:18.622946Z",
                 "license": "https://creativecommons.org/publicdomain/zero/1.0/",
                 "dataset_url_list": [
-                    "https://massive.ucsd.edu/????",
+                    "https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=fec9f581702f496eab9d7b70f626bc35",
                     "ftp://massive-ftp.ucsd.edu/v10/MSV000099175"
                 ]
             },
@@ -69,8 +75,7 @@
                 "id": "mhd--organization--e77c6cbc-9010-51df-b0f6-7ed0b840c0af",
                 "type": "organization",
                 "repository_identifier": "MSV000099175:University of North Carolina Wilmington",
-                "name": "University of North Carolina Wilmington",
-                "address": "United States"
+                "name": "University of North Carolina Wilmington"
             },
             {
                 "id": "mhd--person--95880851-e96a-5b0a-b495-e6d15de29f7a",
@@ -181,6 +186,13 @@
                 "name": "Study Data Repository"
             },
             {
+                "id": "cv--descriptor--bd9effc4-caf8-5c16-9600-c0bbb7b085a0",
+                "type": "descriptor",
+                "source": "MS",
+                "accession": "MS:1002853",
+                "name": "Dataset with no associated published manuscript"
+            },
+            {
                 "id": "cv--descriptor--30794bd0-9e6a-529a-a634-7734b97e04ae",
                 "type": "descriptor",
                 "source": "",
@@ -222,6 +234,13 @@
                 "type": "relationship",
                 "source_ref": "cv--descriptor--30794bd0-9e6a-529a-a634-7734b97e04ae",
                 "relationship_name": "keyword-of",
+                "target_ref": "mhd--study--6d1ee777-0ee3-5d36-beed-44c06fd87ded"
+            },
+            {
+                "id": "rel--relationship--e31e0fba-1488-5108-91b8-87cf2b79e888",
+                "type": "relationship",
+                "source_ref": "cv--descriptor--bd9effc4-caf8-5c16-9600-c0bbb7b085a0",
+                "relationship_name": "publication-status-of",
                 "target_ref": "mhd--study--6d1ee777-0ee3-5d36-beed-44c06fd87ded"
             },
             {
@@ -335,6 +354,13 @@
                 "source_ref": "mhd--raw-data-file--eb76fdf5-bcfb-5ca5-b148-944ac8e8d82c",
                 "relationship_name": "created-in",
                 "target_ref": "mhd--study--6d1ee777-0ee3-5d36-beed-44c06fd87ded"
+            },
+            {
+                "id": "rel--relationship--7e0147ab-b9c6-5c66-9640-be1f02cb5754",
+                "type": "relationship",
+                "source_ref": "mhd--study--6d1ee777-0ee3-5d36-beed-44c06fd87ded",
+                "relationship_name": "defined-as",
+                "target_ref": "cv--descriptor--bd9effc4-caf8-5c16-9600-c0bbb7b085a0"
             },
             {
                 "id": "rel--relationship--c1f1dd49-4b86-541e-bd58-98b9bc28fc40",

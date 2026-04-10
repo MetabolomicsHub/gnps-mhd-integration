@@ -12,6 +12,12 @@
             "prefix": "http://edamontology.org/"
         },
         {
+            "label": "MS",
+            "name": "MS",
+            "uri": "http://purl.obolibrary.org/obo/ms.owl",
+            "prefix": "http://purl.obolibrary.org/obo/MS_"
+        },
+        {
             "label": "NCBITAXON",
             "name": "National Center for Biotechnology Information (NCBI) Organismal Classification",
             "uri": "http://purl.obolibrary.org/obo/ncbitaxon.owl",
@@ -38,11 +44,11 @@
                 "repository_identifier": "MSV000099141",
                 "title": "GNPS - Microbial extracts of Staphylococcus epidermidis strains Se21 and Se1457",
                 "description": "Metabolomic analysis of the extract of two Staphylococcus epidermidis strains (Se21 and Se1457), alongside the extract of the culture medium. The aim is to identify metabolic differences that may explain the observed antimicrobial activity of one of the strains against Pseudomonas strains. The analysis contains three biological replicates of each strain. Untargeted LC-MS/MS acquisition was performed in Positive mode on a Vanquish Flex UHPLC system coupled to an Orbitrap Exploris 240 (Thermo Fisher Scientific, Bremen, Germany). Chromatographic separation was performed on a Kinetex 1.7 um 100 A pore size C18 reversed phase UHPLC column 100 x 2.1 mm (Phenomenex, Torrance, CA).",
-                "submission_date": "2026-04-09T14:39:47.374004Z",
-                "public_release_date": "2026-04-09T14:39:47.374006Z",
+                "submission_date": "2026-04-10T22:48:19.127528Z",
+                "public_release_date": "2026-04-10T22:48:19.127555Z",
                 "license": "https://creativecommons.org/publicdomain/zero/1.0/",
                 "dataset_url_list": [
-                    "https://massive.ucsd.edu/????",
+                    "https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=add5e2d668cf43419766bf21c01cb6d8",
                     "ftp://massive-ftp.ucsd.edu/v10/MSV000099141"
                 ]
             },
@@ -69,8 +75,22 @@
                 "id": "mhd--organization--932b7469-10d2-57a6-897b-de65d08ad069",
                 "type": "organization",
                 "repository_identifier": "MSV000099141:Scripps Institute of Oceanography",
-                "name": "Scripps Institute of Oceanography",
-                "address": "United States;Richard Gallo"
+                "name": "Scripps Institute of Oceanography"
+            },
+            {
+                "id": "mhd--organization--ad0b67ee-f9cd-5282-867c-7120525122d0",
+                "type": "organization",
+                "repository_identifier": "MSV000099141:University of California San Diego",
+                "name": "University of California San Diego"
+            },
+            {
+                "id": "mhd--person--5d59b1a1-15a2-507c-902e-a2714caf0139",
+                "type": "person",
+                "repository_identifier": "MSV000099141:Richard Gallo",
+                "full_name": "Richard Gallo",
+                "email_list": [
+                    "Rgallo@ucsd.edu"
+                ]
             },
             {
                 "id": "mhd--person--a1ca5c5f-e0b0-5bc4-b649-01d3afe96501",
@@ -423,6 +443,13 @@
                 "name": "Study Data Repository"
             },
             {
+                "id": "cv--descriptor--bd9effc4-caf8-5c16-9600-c0bbb7b085a0",
+                "type": "descriptor",
+                "source": "MS",
+                "accession": "MS:1002853",
+                "name": "Dataset with no associated published manuscript"
+            },
+            {
                 "id": "cv--descriptor--f8f2a293-52eb-5a48-b65b-ec8511c72982",
                 "type": "descriptor",
                 "source": "EDAM",
@@ -474,6 +501,13 @@
                 "target_ref": "mhd--study--fc9c2d5c-5f60-5014-b322-72608b9bc2ca"
             },
             {
+                "id": "rel--relationship--b291fb0b-7a6e-5b34-bc26-e42add067467",
+                "type": "relationship",
+                "source_ref": "cv--descriptor--bd9effc4-caf8-5c16-9600-c0bbb7b085a0",
+                "relationship_name": "publication-status-of",
+                "target_ref": "mhd--study--fc9c2d5c-5f60-5014-b322-72608b9bc2ca"
+            },
+            {
                 "id": "rel--relationship--3a85bd03-9e0a-56a6-ab16-4129091871f7",
                 "type": "relationship",
                 "source_ref": "cv-value--data-provider--b6fe5fd5-c5f8-5e6d-ab5d-0534c2693c9e",
@@ -514,6 +548,34 @@
                 "source_ref": "mhd--organization--932b7469-10d2-57a6-897b-de65d08ad069",
                 "relationship_name": "affiliated-with",
                 "target_ref": "mhd--person--a1ca5c5f-e0b0-5bc4-b649-01d3afe96501"
+            },
+            {
+                "id": "rel--relationship--f29e4a94-f4fe-5c36-b3e3-ef653f584b3d",
+                "type": "relationship",
+                "source_ref": "mhd--organization--ad0b67ee-f9cd-5282-867c-7120525122d0",
+                "relationship_name": "affiliated-with",
+                "target_ref": "mhd--person--5d59b1a1-15a2-507c-902e-a2714caf0139"
+            },
+            {
+                "id": "rel--relationship--7594e6a2-8f2d-5b7a-a462-c83a592a2caf",
+                "type": "relationship",
+                "source_ref": "mhd--person--5d59b1a1-15a2-507c-902e-a2714caf0139",
+                "relationship_name": "has-affiliation",
+                "target_ref": "mhd--organization--ad0b67ee-f9cd-5282-867c-7120525122d0"
+            },
+            {
+                "id": "rel--relationship--7e422cb3-e96c-5ade-971b-1708c6ab9715",
+                "type": "relationship",
+                "source_ref": "mhd--person--5d59b1a1-15a2-507c-902e-a2714caf0139",
+                "relationship_name": "principal-investigator-of",
+                "target_ref": "mhd--study--fc9c2d5c-5f60-5014-b322-72608b9bc2ca"
+            },
+            {
+                "id": "rel--relationship--ebc2a709-0c44-5658-addc-b9794dc46008",
+                "type": "relationship",
+                "source_ref": "mhd--person--5d59b1a1-15a2-507c-902e-a2714caf0139",
+                "relationship_name": "submits",
+                "target_ref": "mhd--study--fc9c2d5c-5f60-5014-b322-72608b9bc2ca"
             },
             {
                 "id": "rel--relationship--f6e4ed8e-8e97-5ffe-b651-2bab769c8d65",
@@ -740,6 +802,13 @@
                 "target_ref": "mhd--study--fc9c2d5c-5f60-5014-b322-72608b9bc2ca"
             },
             {
+                "id": "rel--relationship--d76e4c03-5c6c-5b3d-a392-68edbf8a1bf2",
+                "type": "relationship",
+                "source_ref": "mhd--study--fc9c2d5c-5f60-5014-b322-72608b9bc2ca",
+                "relationship_name": "defined-as",
+                "target_ref": "cv--descriptor--bd9effc4-caf8-5c16-9600-c0bbb7b085a0"
+            },
+            {
                 "id": "rel--relationship--91b0806f-61d4-5369-8df8-ec738cee68c2",
                 "type": "relationship",
                 "source_ref": "mhd--study--fc9c2d5c-5f60-5014-b322-72608b9bc2ca",
@@ -752,6 +821,13 @@
                 "source_ref": "mhd--study--fc9c2d5c-5f60-5014-b322-72608b9bc2ca",
                 "relationship_name": "has-metadata-file",
                 "target_ref": "mhd--metadata-file--a2507567-768f-534a-9fe6-e3347b65e85c"
+            },
+            {
+                "id": "rel--relationship--6f880911-b469-58a0-9a0c-dc54ee8fc492",
+                "type": "relationship",
+                "source_ref": "mhd--study--fc9c2d5c-5f60-5014-b322-72608b9bc2ca",
+                "relationship_name": "has-principal-investigator",
+                "target_ref": "mhd--person--5d59b1a1-15a2-507c-902e-a2714caf0139"
             },
             {
                 "id": "rel--relationship--fa8309a6-ba90-5b8c-845f-e520b149d195",
@@ -976,6 +1052,13 @@
                 "source_ref": "mhd--study--fc9c2d5c-5f60-5014-b322-72608b9bc2ca",
                 "relationship_name": "provided-by",
                 "target_ref": "cv-value--data-provider--b6fe5fd5-c5f8-5e6d-ab5d-0534c2693c9e"
+            },
+            {
+                "id": "rel--relationship--9032de28-de19-5094-8f8c-7efed066e0ed",
+                "type": "relationship",
+                "source_ref": "mhd--study--fc9c2d5c-5f60-5014-b322-72608b9bc2ca",
+                "relationship_name": "submitted-by",
+                "target_ref": "mhd--person--5d59b1a1-15a2-507c-902e-a2714caf0139"
             },
             {
                 "id": "rel--relationship--20547dcc-bb69-51ef-ad3a-c4deca91031d",

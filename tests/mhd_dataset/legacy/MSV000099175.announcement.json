@@ -12,6 +12,12 @@
       "prefix": "http://edamontology.org/"
     },
     {
+      "label": "MS",
+      "name": "MS",
+      "uri": "http://purl.obolibrary.org/obo/ms.owl",
+      "prefix": "http://purl.obolibrary.org/obo/MS_"
+    },
+    {
       "label": "NCBITAXON",
       "name": "National Center for Biotechnology Information (NCBI) Organismal Classification",
       "uri": "http://purl.obolibrary.org/obo/ncbitaxon.owl",
@@ -24,16 +30,16 @@
       "prefix": "http://purl.obolibrary.org/obo/NCIT_"
     }
   ],
-  "mhd_metadata_file_url": "https://massive.ucsd.edu/????/MSV000099175.mhd.json",
+  "mhd_metadata_file_url": "ftp://massive-ftp.ucsd.edu/v10/MSV000099175/mhd/MSV000099175.mhd.json",
   "dataset_url_list": [
-    "https://massive.ucsd.edu/????",
+    "https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=fec9f581702f496eab9d7b70f626bc35",
     "ftp://massive-ftp.ucsd.edu/v10/MSV000099175"
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "title": "Crude Extract vs Pectinase-digested Extract for Withania somnifera (root)",
+  "title": "GNPS - Crude Extract vs Pectinase-digested Extract for Withania somnifera (root)",
   "description": "Ethanolic extract of Withania somnifera (ashwagandha) root, digested in Pectinase (non-specific deglycosylation enzyme mixture), was compared to the undigested root extract. Replicates include n=3.",
-  "submission_date": "2026-04-09T14:39:47.065378Z",
-  "public_release_date": "2026-04-09T14:39:47.065380Z",
+  "submission_date": "2026-04-10T22:48:18.622918Z",
+  "public_release_date": "2026-04-10T22:48:18.622946Z",
   "submitters": [
     {
       "full_name": "Sarah Barr",
@@ -49,6 +55,11 @@
       "name": "Pectinase"
     }
   ],
+  "publications": {
+    "source": "MS",
+    "accession": "MS:1002853",
+    "name": "Dataset with no associated published manuscript"
+  },
   "characteristic_values": [
     {
       "key": {
