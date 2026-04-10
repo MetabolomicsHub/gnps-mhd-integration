@@ -1,8 +1,8 @@
+import json
 import logging
 from pathlib import Path
 
 import jsonschema
-import json
 from mhd_model.model.v0_1.dataset.validation.validator import validate_mhd_model
 
 from gnps2mhd.config import Gnps2MhdConfiguration
@@ -43,9 +43,7 @@ def convert_massive_study_to_mhd_legacy(
         return False, {}
     params_json = json.loads(input_file_path.read_text())
     massive_volume = params_json.get("massive_volume", "v10")
-    mhd_file_url = (
-        f"ftp://massive-ftp.ucsd.edu/{massive_volume}/{massive_study_id}/mhd/{mhd_output_filename}"
-    )
+    mhd_file_url = f"ftp://massive-ftp.ucsd.edu/{massive_volume}/{massive_study_id}/mhd/{mhd_output_filename}"
     return validate_mhd_model(
         massive_study_id,
         mhd_file_path,
@@ -60,7 +58,7 @@ if __name__ == "__main__":
     setup_basic_logging_config()
     study_ids = [
         "MSV000100766",
-        # "MSV000099201",
+        "MSV000099201",
         "MSV000099062",
         "MSV000099183",
         "MSV000099175",

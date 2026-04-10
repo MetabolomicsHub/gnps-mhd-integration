@@ -44,10 +44,11 @@
                 "repository_identifier": "MSV000099141",
                 "title": "GNPS - Microbial extracts of Staphylococcus epidermidis strains Se21 and Se1457",
                 "description": "Metabolomic analysis of the extract of two Staphylococcus epidermidis strains (Se21 and Se1457), alongside the extract of the culture medium. The aim is to identify metabolic differences that may explain the observed antimicrobial activity of one of the strains against Pseudomonas strains. The analysis contains three biological replicates of each strain. Untargeted LC-MS/MS acquisition was performed in Positive mode on a Vanquish Flex UHPLC system coupled to an Orbitrap Exploris 240 (Thermo Fisher Scientific, Bremen, Germany). Chromatographic separation was performed on a Kinetex 1.7 um 100 A pore size C18 reversed phase UHPLC column 100 x 2.1 mm (Phenomenex, Torrance, CA).",
-                "submission_date": "2026-04-10T22:48:19.127528Z",
-                "public_release_date": "2026-04-10T22:48:19.127555Z",
+                "submission_date": "2026-04-10T23:22:11.498959Z",
+                "public_release_date": "2026-04-10T23:22:11.498962Z",
                 "license": "https://creativecommons.org/publicdomain/zero/1.0/",
                 "dataset_url_list": [
+                    "https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=add5e2d668cf43419766bf21c01cb6d8&view=advanced_view",
                     "https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=add5e2d668cf43419766bf21c01cb6d8",
                     "ftp://massive-ftp.ucsd.edu/v10/MSV000099141"
                 ]

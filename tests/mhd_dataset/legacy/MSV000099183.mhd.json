@@ -38,10 +38,11 @@
                 "repository_identifier": "MSV000099183",
                 "title": "GNPS - Sp1_MetabolomicaBIB5814_GC\\MS_fase.Apolar_(A)",
                 "description": "untargeted metabolomics os the polar and nonpolar fractions of the leaf extract from plants exposed to some zone.",
-                "submission_date": "2026-04-10T22:48:18.578267Z",
-                "public_release_date": "2026-04-10T22:48:18.578297Z",
+                "submission_date": "2026-04-10T23:22:11.202374Z",
+                "public_release_date": "2026-04-10T23:22:11.202375Z",
                 "license": "https://creativecommons.org/publicdomain/zero/1.0/",
                 "dataset_url_list": [
+                    "https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=7dc576464c9a47cd80213c078a07a927&view=advanced_view",
                     "https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=7dc576464c9a47cd80213c078a07a927",
                     "ftp://massive-ftp.ucsd.edu/v10/MSV000099183"
                 ]

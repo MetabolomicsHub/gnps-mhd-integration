@@ -1,7 +1,3 @@
-from gnps2mhd.v0_1.utils import fetch_pubmed_summary
-from mhd_model.model.v0_1.rules.managed_cv_terms import MISSING_PUBLICATION_REASON
-from mhd_model.model.v0_1.rules.managed_cv_terms import COMMON_MISSING_DATA_TERMS
-from gnps2mhd.v0_1.utils import fetch_massive_study_summary
 import datetime
 import json
 import logging
@@ -20,6 +16,7 @@ from mhd_model.model.v0_1.rules.managed_cv_terms import (
     COMMON_PARAMETER_DEFINITIONS,
     COMMON_PROTOCOLS,
     COMMON_STUDY_FACTOR_DEFINITIONS,
+    MISSING_PUBLICATION_REASON,
 )
 from mhd_model.shared.model import CvTerm, Revision
 from mhd_model.shared.validation.cv_term_helper import CvTermHelper
@@ -30,6 +27,8 @@ from gnps2mhd.v0_1.utils import (
     create_cv_term_object,
     create_cv_term_value_object,
     fetch_massive_metadata_file,
+    fetch_massive_study_summary,
+    fetch_pubmed_summary,
 )
 
 logger = logging.getLogger(__name__)
@@ -73,11 +72,11 @@ FILE_EXTENSIONS: dict[tuple[str, bool], CvTerm] = {
         source="EDAM", accession="EDAM:format_3858", name="Waters RAW"
     ),
     (".wiff", False): CvTerm(
-        source="EFO", accession="EDAM:format_3710", name="WIFF format"
+        source="EDAM", accession="EDAM:format_3710", name="WIFF format"
     ),
     (".mzml", False): CvTerm(source="EDAM", accession="EDAM:format_3244", name="mzML"),
     (".mzdata", False): CvTerm(
-        source="EFO", accession="EDAM:format_3834", name="mzData"
+        source="EDAM", accession="EDAM:format_3834", name="mzData"
     ),
     (".mzxml", False): CvTerm(
         source="EDAM", accession="EDAM:format_3654", name="mzXML"
@@ -169,9 +168,10 @@ class MhdLegacyDatasetBuilder:
             datetime.timezone.utc
         )  # TODO: set value. Currently no public release date
         task = summary.get("task", "")
-        massive_study_repository_url = (
-            f"https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task={task}"
-        )
+        massive_study_repository_urls = [
+            f"https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task={task}&view=advanced_view",
+            f"https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task={task}",
+        ]
         license = params.get("default.license", "")
         license_url = None
         if license and license.lower() == "on":
@@ -184,7 +184,7 @@ class MhdLegacyDatasetBuilder:
             description=study_description,
             submission_date=submission_date,
             public_release_date=public_release_date,
-            dataset_url_list=[HttpUrl(massive_study_repository_url)],
+            dataset_url_list=[HttpUrl(x) for x in massive_study_repository_urls],
             license=license_url,
         )
         massive_volume = params.get("massive_volume", "")  # set value if not valid

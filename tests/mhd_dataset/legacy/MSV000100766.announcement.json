@@ -26,14 +26,15 @@
   ],
   "mhd_metadata_file_url": "ftp://massive-ftp.ucsd.edu/v12/MSV000100766/mhd/MSV000100766.mhd.json",
   "dataset_url_list": [
+    "https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=5b017a4221ac474e9cd1a3618ed7e8bc&view=advanced_view",
     "https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=5b017a4221ac474e9cd1a3618ed7e8bc",
     "ftp://massive-ftp.ucsd.edu/v12/MSV000100766"
   ],
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
   "title": "Psidium guajava_Qtof_GNPS_Massive_1",
   "description": "Psidguajones A and B, a pair of dimeric sesquiterpene-based mero  terpenoid epimers, have been isolated from the leaves of Psidium  guajava for the first time. Their structures were confirmed by com  prehensive spectroscopic techniques combined with a comparison  of experimental and calculated ECD data.",
-  "submission_date": "2026-04-10T22:48:02.588759Z",
-  "public_release_date": "2026-04-10T22:48:02.589120Z",
+  "submission_date": "2026-04-10T23:22:05.072494Z",
+  "public_release_date": "2026-04-10T23:22:05.072667Z",
   "submitters": [
     {
       "full_name": "Cao Quyen",

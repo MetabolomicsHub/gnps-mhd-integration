@@ -44,10 +44,11 @@
                 "repository_identifier": "MSV000099175",
                 "title": "GNPS - Crude Extract vs Pectinase-digested Extract for Withania somnifera (root)",
                 "description": "Ethanolic extract of Withania somnifera (ashwagandha) root, digested in Pectinase (non-specific deglycosylation enzyme mixture), was compared to the undigested root extract. Replicates include n=3.",
-                "submission_date": "2026-04-10T22:48:18.622918Z",
-                "public_release_date": "2026-04-10T22:48:18.622946Z",
+                "submission_date": "2026-04-10T23:22:11.230840Z",
+                "public_release_date": "2026-04-10T23:22:11.230843Z",
                 "license": "https://creativecommons.org/publicdomain/zero/1.0/",
                 "dataset_url_list": [
+                    "https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=fec9f581702f496eab9d7b70f626bc35&view=advanced_view",
                     "https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=fec9f581702f496eab9d7b70f626bc35",
                     "ftp://massive-ftp.ucsd.edu/v10/MSV000099175"
                 ]

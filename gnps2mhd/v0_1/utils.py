@@ -1,4 +1,3 @@
-from httpcore import __name
 import json
 import logging
 from pathlib import Path
