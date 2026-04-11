@@ -17,6 +17,7 @@ def convert_massive_study_to_mhd_legacy(
     massive_study_id: str,
     gnps2mhd_config: None | Gnps2MhdConfiguration = None,
     working_dir: None | Path = None,
+    skip_existing: bool = False,
 ) -> tuple[bool, dict[str, list[jsonschema.ValidationError]]]:
     if not gnps2mhd_config:
         gnps2mhd_config = Gnps2MhdConfiguration()
@@ -32,9 +33,13 @@ def convert_massive_study_to_mhd_legacy(
     mhd_output_root_path.mkdir(exist_ok=True, parents=True)
     mhd_input_root_path = working_dir / Path("gnps_dataset")
     mhd_input_root_path.mkdir(exist_ok=True, parents=True)
-
     mhd_output_filename = f"{massive_study_id}.mhd.json"
+    mhd_file_path = mhd_output_root_path / Path(mhd_output_filename)
+    if skip_existing and mhd_file_path.exists():
+        logger.info("MHD file already exists: %s", mhd_file_path)
+        return True, {}
     input_file_path = mhd_input_root_path / Path(f"{massive_study_id}.params.xml.json")
+    sleep(5)
     convertor.convert(
         repository_name="GNPS",
         repository_identifier=massive_study_id,
@@ -43,7 +48,6 @@ def convert_massive_study_to_mhd_legacy(
         mhd_output_filename=mhd_output_filename,
         input_file_path=input_file_path,
     )
-    mhd_file_path = mhd_output_root_path / Path(mhd_output_filename)
     params_json = {}
     if not mhd_file_path.exists():
         logger.error("MHD file not found: %s", mhd_file_path)
@@ -73,39 +77,38 @@ if __name__ == "__main__":
     #     "MSV000099152",
     #     "MSV000099141",
     # ]
-    study_ids = [
-        "MSV000101188",
-        "MSV000100766",
-        "MSV000100661",
-        "MSV000100658",
-        "MSV000100550",
-        "MSV000100485",
-        "MSV000100430",
-        "MSV000099935",
-        "MSV000099925",
-        "MSV000099686",
-        "MSV000099510",
-        "MSV000099462",
-        "MSV000099461",
-        "MSV000099460",
-        "MSV000099454",
-        "MSV000099428",
-        "MSV000099396",
-        "MSV000099311",
-        "MSV000099127",
-        "MSV000099124",
-        "MSV000099120",
-        "MSV000099097",
-        "MSV000099020",
-        "MSV000098934",
-    ]
+    # study_ids = [
+    #     "MSV000101188",
+    #     "MSV000100766",
+    #     "MSV000100661",
+    #     "MSV000100658",
+    #     "MSV000100550",
+    #     "MSV000100485",
+    #     "MSV000100430",
+    #     "MSV000099935",
+    #     "MSV000099925",
+    #     "MSV000099686",
+    #     "MSV000099510",
+    #     "MSV000099462",
+    #     "MSV000099461",
+    #     "MSV000099460",
+    #     "MSV000099454",
+    #     "MSV000099428",
+    #     "MSV000099396",
+    #     "MSV000099311",
+    #     "MSV000099127",
+    #     "MSV000099124",
+    #     "MSV000099120",
+    #     "MSV000099097",
+    #     "MSV000099020",
+    #     "MSV000098934",
+    # ]
 
-    # study_ids = [x.strip() for x in Path("inputs.tsv").read_text().splitlines()]
+    study_ids = [x.strip() for x in Path("inputs.tsv").read_text().splitlines()]
     gnps2mhd_config = Gnps2MhdConfiguration()
     working_dir = Path(".outputs")
     working_dir.mkdir(exist_ok=True, parents=True)
     for study_id in study_ids:
-        sleep(5)
         convert_massive_study_to_mhd_legacy(
-            study_id, gnps2mhd_config, working_dir=working_dir
+            study_id, gnps2mhd_config, working_dir=working_dir, skip_existing=True
         )

@@ -126,7 +126,8 @@ def fetch_massive_study_summary(
     try:
         response = httpx.get(metadata_http_file_url, params=params, timeout=5)
         response.raise_for_status()
-        summary_dict = response.json() or {}
+        response_text = response.text.encode("utf-8", errors="ignore").decode("utf-8")
+        summary_dict = json.loads(response_text) or {}
         if summary_dict.get("total_rows", 0) == 0:
             raise ValueError(f"Could not fetch summary for study {massive_study_id}")
         summary = {}
