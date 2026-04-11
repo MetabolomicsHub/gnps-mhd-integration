@@ -2,8 +2,8 @@ import sys
 from pathlib import Path
 
 import click
-from mhd_model import __version__
 
+from gnps2mhd import __version__
 from gnps2mhd.commands.create import creation_cli
 from gnps2mhd.commands.fetch_gnps_study import fetch_gnps_study
 from gnps2mhd.commands.validate import validation_cli

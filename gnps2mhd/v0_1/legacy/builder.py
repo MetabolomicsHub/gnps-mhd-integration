@@ -214,7 +214,6 @@ class MhdLegacyDatasetBuilder:
                 pub_title = publication.get("title", "") or ""
                 if len(pub_title) < 10:
                     continue
-                publication_list.add(pub_title)
                 pubmed_id = (
                     publication.get("pmid", "").lower().replace("pmid:", "").strip()
                 )
@@ -222,6 +221,7 @@ class MhdLegacyDatasetBuilder:
                     massive_study_id, pubmed_id, cache_root_path
                 )
                 if doi:
+                    publication_list.add(doi)
                     mhd_publication = mhd_domain.Publication(
                         title=pub_title,
                         pubmed_id=pubmed_id,

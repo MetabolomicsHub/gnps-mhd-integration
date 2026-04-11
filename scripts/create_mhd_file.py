@@ -1,6 +1,7 @@
 import json
 import logging
 from pathlib import Path
+from time import sleep
 
 import jsonschema
 from mhd_model.model.v0_1.dataset.validation.validator import validate_mhd_model
@@ -13,7 +14,9 @@ logger = logging.getLogger(__name__)
 
 
 def convert_massive_study_to_mhd_legacy(
-    massive_study_id: str, gnps2mhd_config: None | Gnps2MhdConfiguration = None
+    massive_study_id: str,
+    gnps2mhd_config: None | Gnps2MhdConfiguration = None,
+    working_dir: None | Path = None,
 ) -> tuple[bool, dict[str, list[jsonschema.ValidationError]]]:
     if not gnps2mhd_config:
         gnps2mhd_config = Gnps2MhdConfiguration()
@@ -23,9 +26,13 @@ def convert_massive_study_to_mhd_legacy(
         target_mhd_model_schema_uri=gnps2mhd_config.target_mhd_model_schema_uri,
         target_mhd_model_profile_uri=gnps2mhd_config.target_mhd_model_legacy_profile_uri,
     )
-    mhd_output_root_path = Path("tests/mhd_dataset/legacy")
-    mhd_input_root_path = Path("tests/gnps_dataset")
+    if not working_dir:
+        working_dir = Path("tests")
+    mhd_output_root_path = working_dir / Path("mhd_dataset/legacy")
     mhd_output_root_path.mkdir(exist_ok=True, parents=True)
+    mhd_input_root_path = working_dir / Path("gnps_dataset")
+    mhd_input_root_path.mkdir(exist_ok=True, parents=True)
+
     mhd_output_filename = f"{massive_study_id}.mhd.json"
     input_file_path = mhd_input_root_path / Path(f"{massive_study_id}.params.xml.json")
     convertor.convert(
@@ -56,16 +63,49 @@ logger = logging.getLogger(__name__)
 
 if __name__ == "__main__":
     setup_basic_logging_config()
+    # study_ids = [
+    #     "MSV000100766",
+    #     "MSV000099201",
+    #     "MSV000099062",
+    #     "MSV000099183",
+    #     "MSV000099175",
+    #     "MSV000099174",
+    #     "MSV000099152",
+    #     "MSV000099141",
+    # ]
     study_ids = [
+        "MSV000101188",
         "MSV000100766",
-        "MSV000099201",
-        "MSV000099062",
-        "MSV000099183",
-        "MSV000099175",
-        "MSV000099174",
-        "MSV000099152",
-        "MSV000099141",
+        "MSV000100661",
+        "MSV000100658",
+        "MSV000100550",
+        "MSV000100485",
+        "MSV000100430",
+        "MSV000099935",
+        "MSV000099925",
+        "MSV000099686",
+        "MSV000099510",
+        "MSV000099462",
+        "MSV000099461",
+        "MSV000099460",
+        "MSV000099454",
+        "MSV000099428",
+        "MSV000099396",
+        "MSV000099311",
+        "MSV000099127",
+        "MSV000099124",
+        "MSV000099120",
+        "MSV000099097",
+        "MSV000099020",
+        "MSV000098934",
     ]
+
+    # study_ids = [x.strip() for x in Path("inputs.tsv").read_text().splitlines()]
     gnps2mhd_config = Gnps2MhdConfiguration()
+    working_dir = Path(".outputs")
+    working_dir.mkdir(exist_ok=True, parents=True)
     for study_id in study_ids:
-        convert_massive_study_to_mhd_legacy(study_id, gnps2mhd_config)
+        sleep(5)
+        convert_massive_study_to_mhd_legacy(
+            study_id, gnps2mhd_config, working_dir=working_dir
+        )

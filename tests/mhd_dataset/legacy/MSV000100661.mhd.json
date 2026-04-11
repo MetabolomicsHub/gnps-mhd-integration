@@ -1,0 +1,2657 @@
+{
+    "repository_name": "GNPS",
+    "repository_identifier": "MSV000100661",
+    "repository_revision": 1,
+    "$schema": "https://metabolomicshub.github.io/mhd-model/schemas/v0_1/common-data-model-v0.1.schema.json",
+    "profile_uri": "https://metabolomicshub.github.io/mhd-model/schemas/v0_1/common-data-model-v0.1.legacy-profile.json",
+    "cv_definitions": [
+        {
+            "label": "EDAM",
+            "name": "The ontology of data analysis and management",
+            "uri": "http://edamontology.org",
+            "prefix": "http://edamontology.org/"
+        },
+        {
+            "label": "MS",
+            "name": "MS",
+            "uri": "http://purl.obolibrary.org/obo/ms.owl",
+            "prefix": "http://purl.obolibrary.org/obo/MS_"
+        },
+        {
+            "label": "NCBITAXON",
+            "name": "National Center for Biotechnology Information (NCBI) Organismal Classification",
+            "uri": "http://purl.obolibrary.org/obo/ncbitaxon.owl",
+            "prefix": "http://purl.obolibrary.org/obo/NCBITaxon_"
+        },
+        {
+            "label": "NCIT",
+            "name": "NCI Thesaurus OBO Edition",
+            "uri": "http://purl.obolibrary.org/obo/ncit.owl",
+            "prefix": "http://purl.obolibrary.org/obo/NCIT_"
+        }
+    ],
+    "type": "legacy-dataset",
+    "name": "MSV000100661 MetabolomicsHub Legacy Dataset",
+    "graph": {
+        "start_item_refs": [
+            "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+        ],
+        "nodes": [
+            {
+                "id": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "type": "study",
+                "created_by_ref": "cv-value--data-provider--b6fe5fd5-c5f8-5e6d-ab5d-0534c2693c9e",
+                "repository_identifier": "MSV000100661",
+                "title": "Combining gut metatranscriptome and metabolome reveals metabolic adaptation of the food-storing Siberian chipmunk (Tamias sibiricus) to hibernation",
+                "description": "Untargeted metabolomics analysis of cecal contents from the Siberian chipmunk (Tamias sibiricus) across four physiological stages of hibernation: pre-hibernation (preH), deep torpor (torpor), interbout arousal (IBA), and post-hibernation (postH). The study aims to characterize the functional reprogramming of the gut metabolome during hibernation. Study Design: Species: Tamias sibiricus Sample Type: Cecal contents Groups: 4 groups (preH, torpor, IBA, postH) with 5 biological replicates per group (Total 20 samples). Method: Samples were analyzed using LC-MS/MS on a Thermo UHPLC-Q Exactive HF-X system in both positive and negative ion modes. Related Manuscript: Combining gut metatranscriptome and metabolome reveals metabolic adaptation of the food-storing Siberian chipmunk (Tamias sibiricus) to hibernation.",
+                "submission_date": "2026-04-10T23:15:54.286730Z",
+                "public_release_date": "2026-04-10T23:15:54.286946Z",
+                "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+                "dataset_url_list": [
+                    "https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=f3722946b2ef4e95b2c8ee6d606e4e9a",
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661"
+                ]
+            },
+            {
+                "id": "mhd--characteristic-definition--da870c23-713e-5f44-953b-e2632247280f",
+                "type": "characteristic-definition",
+                "repository_identifier": "MSV000100661:species",
+                "name": "species",
+                "characteristic_type_ref": "cv--characteristic-type--665578fb-687b-563f-ba6c-65862395bb6a"
+            },
+            {
+                "id": "mhd--metadata-file--6fca7806-aa4e-5477-84ae-dd466d6184d3",
+                "type": "metadata-file",
+                "url_list": [
+                    "https://massive.ucsd.edu/ProteoSAFe/DownloadResultFile?file=f.MSV000100661%2Fccms_parameters%2Fparams.xml",
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/ccms_parameters/params.xml"
+                ],
+                "repository_identifier": "MSV000100661:ccms_parameters/params.xml",
+                "name": "ccms_parameters/params.xml",
+                "format_ref": "cv--descriptor--d0910b45-e517-57ec-94d6-9f15f4827465",
+                "extension": ".xml"
+            },
+            {
+                "id": "mhd--organization--3b9c571d-ef46-5b60-94bf-660206d5e372",
+                "type": "organization",
+                "repository_identifier": "MSV000100661:College of Life Sciences, Henan Normal University",
+                "name": "College of Life Sciences, Henan Normal University"
+            },
+            {
+                "id": "mhd--person--84dc6494-d432-52ea-97ef-21bb9b57d9f4",
+                "type": "person",
+                "repository_identifier": "MSV000100661:Fei Yu",
+                "full_name": "Fei Yu",
+                "email_list": [
+                    "yufei096@163.com"
+                ]
+            },
+            {
+                "id": "mhd--raw-data-file--41bbeb5c-6e4c-527b-a99e-89f7a8f1fddd",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/MAF/m_NEG_maf.tsv.xlsx"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/MAF/m_NEG_maf.tsv.xlsx",
+                "name": "Chipmunk_Metabolomics_2026/MAF/m_NEG_maf.tsv.xlsx",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".xlsx"
+            },
+            {
+                "id": "mhd--raw-data-file--7c02c6ff-5f04-5cfb-a51d-d3432802787c",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/MAF/m_POS_maf.tsv.xlsx"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/MAF/m_POS_maf.tsv.xlsx",
+                "name": "Chipmunk_Metabolomics_2026/MAF/m_POS_maf.tsv.xlsx",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".xlsx"
+            },
+            {
+                "id": "mhd--raw-data-file--7de3fa54-bbc2-582b-945b-e3c570890c42",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/METADATA.csv"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/METADATA.csv",
+                "name": "Chipmunk_Metabolomics_2026/METADATA.csv",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".csv"
+            },
+            {
+                "id": "mhd--raw-data-file--ca782310-f6a0-5030-a0fa-34e0aa1a26f4",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/Peak_Table_Final.csv"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/Peak_Table_Final.csv",
+                "name": "Chipmunk_Metabolomics_2026/Peak_Table_Final.csv",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".csv"
+            },
+            {
+                "id": "mhd--raw-data-file--deabb2af-f0d9-5228-a04b-f434a50cb044",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_MN4.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_MN4.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_MN4.wiff.scan",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--c7fa24ab-a04a-5b03-934a-251bf99a6818",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC01.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC01.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC01.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--4dee6e69-f73b-587b-a6b9-af0c0fd6c1c9",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC01.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC01.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC01.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--40b06c98-9441-558a-8546-4b20cdb03822",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC02.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC02.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC02.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--2b966e79-4dff-5cc0-a5ed-b3151ddf74db",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC02.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC02.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC02.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--daef3060-7726-5f3a-af3d-74b8bcdb0dc8",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC03.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC03.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC03.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--f2e6803d-f1d1-5086-a679-5104861f3205",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC03.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC03.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC03.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--66a3207e-7a41-5b00-b007-04ea2adb215e",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313882_MN20.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313882_MN20.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313882_MN20.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--7b99ae8a-f8a2-594f-88ae-0cd7e96beca1",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313882_MN20.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313882_MN20.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313882_MN20.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--c4428fd0-9e35-5176-8461-bb14b4e1ec6b",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313883_MN73.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313883_MN73.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313883_MN73.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--58ab4adf-df73-5970-9371-d957db7a4072",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313883_MN73.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313883_MN73.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313883_MN73.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--0aebec76-12bb-5d64-9a37-1b47765614a1",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313884_MN55.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313884_MN55.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313884_MN55.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--80c375fc-521b-57cc-a481-6eb7d2fbea5a",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313884_MN55.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313884_MN55.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313884_MN55.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--9b5f714a-6612-501f-90d1-a8f6873705e7",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313885_MN2.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313885_MN2.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313885_MN2.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--e8fc7075-60b5-5f9a-8b6f-d37547aef102",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313885_MN2.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313885_MN2.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313885_MN2.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--19a54eff-efb0-5dec-bbbf-b9ba717f779e",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313888_MN48.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313888_MN48.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313888_MN48.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--97f04bf9-2d42-56a3-9d93-79415b704b6a",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313888_MN48.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313888_MN48.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313888_MN48.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--31892418-e71b-5ba5-8c3e-12832fe319b7",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313889_MN67.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313889_MN67.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313889_MN67.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--dcb9157a-d884-58a3-8c04-5094015676c9",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313889_MN67.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313889_MN67.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313889_MN67.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--c0a091a5-e948-59ff-9e3e-4e31f6cc7e86",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313892_MN45.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313892_MN45.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313892_MN45.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--d578310c-d4a0-5e71-9689-0f9dd71a1116",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313892_MN45.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313892_MN45.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313892_MN45.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--6f55263b-2aef-5211-9d61-65dbfce02865",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313893_MN53.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313893_MN53.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313893_MN53.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--77a76a2b-c5fb-58f9-adc9-aa31c796acf7",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313893_MN53.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313893_MN53.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313893_MN53.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--45282c58-2608-5910-92d4-5a0d983f7a54",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313894_MN25.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313894_MN25.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313894_MN25.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--182792bc-02ca-5925-9929-06e8cf140bbb",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313894_MN25.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313894_MN25.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313894_MN25.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--c47bd56c-f8d2-54eb-b398-60ed3b9a4bc6",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313895_MN21.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313895_MN21.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313895_MN21.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--7326b142-7b0e-57cc-9327-472ed42af2fa",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313895_MN21.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313895_MN21.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313895_MN21.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--d844004a-7ff3-5d81-ab9c-73e2b0bac422",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313896_MN84.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313896_MN84.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313896_MN84.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--9e0d0a84-7efb-580d-b2b7-e56044d526cb",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313896_MN84.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313896_MN84.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313896_MN84.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--5acd05fe-3285-5b32-864b-8bf2692e8d9d",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313897_MN59.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313897_MN59.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313897_MN59.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--cbb2133f-efee-54d6-ba8b-d29ed0b4ef26",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313897_MN59.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313897_MN59.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313897_MN59.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--e8c1a2c5-80da-5aa3-8fa3-d214f5c74e2b",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313898_MN63.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313898_MN63.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313898_MN63.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--cb6b2f3e-7315-52da-8b4f-5b681a3bca85",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313898_MN63.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313898_MN63.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313898_MN63.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--a0bdddf7-3764-5a7e-b37e-49d3058f05ec",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313899_MN43.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313899_MN43.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313899_MN43.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--3fada7ac-e586-5d09-9b34-fc413de84871",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313899_MN43.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313899_MN43.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313899_MN43.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--fabf6389-f6b5-5b60-a212-b1455660b009",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313902_MN24.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313902_MN24.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313902_MN24.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--1eff8f99-aad0-5fc9-8a36-18b3203e3538",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313902_MN24.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313902_MN24.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313902_MN24.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--cff953ff-0e15-5d5b-84af-21730f92a6ac",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313903_MN32.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313903_MN32.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313903_MN32.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--72de763c-18f8-5463-9b82-1981e5c5d9d2",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313903_MN32.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313903_MN32.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313903_MN32.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--dffde2c8-33fc-573d-acb3-8a8045595fbf",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313904_MN8.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313904_MN8.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313904_MN8.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--c6a976c4-556f-5847-957a-65421a560f48",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313904_MN8.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313904_MN8.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313904_MN8.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--6a31f2d3-ecd1-5584-bba6-a52d34f42131",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313905_MN37.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313905_MN37.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313905_MN37.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--b9825792-e5f5-5c28-a767-7d06e130b9d1",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313905_MN37.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313905_MN37.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313905_MN37.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--cdeca546-0571-5129-9211-442e5b05237f",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313908_MN12.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313908_MN12.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313908_MN12.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--4c44f83a-9410-5822-bd5a-0c22bdfdbd78",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313908_MN12.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313908_MN12.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313908_MN12.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--f0f17c94-87d6-5ae1-bb90-255dce495a91",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_MN4.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_MN4.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_MN4.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--401a5e83-1f2a-5e63-ad08-d74c8251b86a",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_MN4.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_MN4.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_MN4.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--2d5b53c8-89d1-53f6-bc83-9f9068333137",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC01.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC01.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC01.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--a05d263c-36fc-56f6-b07a-1ce8566eb7c9",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC01.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC01.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC01.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--b4034f37-8c12-5313-a11c-96bb28dddd41",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC02.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC02.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC02.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--6b096825-a5d9-5661-8c50-f93c1c326ba8",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC02.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC02.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC02.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--a9fee51a-f272-5e08-a908-9d0e8bc294df",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC03.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC03.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC03.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--634e6c30-263a-55bd-a461-6818cabcc784",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC03.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC03.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC03.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--1088cf88-9984-57dd-be8b-4ca41e8c94ba",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313882_MN20.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313882_MN20.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313882_MN20.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--18267d58-d6b0-51a0-bbe4-c8658937f8a7",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313882_MN20.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313882_MN20.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313882_MN20.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--ba200b78-950a-593b-af51-3b094dd0d296",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313883_MN73.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313883_MN73.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313883_MN73.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--80f778bb-7faa-5ccb-b1fa-a2774533e5a8",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313883_MN73.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313883_MN73.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313883_MN73.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--b8e115fc-e372-51f7-9a9b-4ab946f6fb99",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313884_MN55.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313884_MN55.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313884_MN55.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--11dfb2d1-31a1-5a00-8356-6e2dd76d66de",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313884_MN55.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313884_MN55.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313884_MN55.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--1593e29d-4836-552f-afe2-eae048b97558",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313885_MN2.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313885_MN2.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313885_MN2.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--4c3954b6-d1b3-51ac-b74c-2af294777f1f",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313885_MN2.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313885_MN2.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313885_MN2.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--f6ecde13-3115-5950-872d-df8e2a3654fc",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313888_MN48.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313888_MN48.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313888_MN48.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--885d3869-c628-5b7b-85b7-328b225c0183",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313888_MN48.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313888_MN48.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313888_MN48.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--ee21f1fe-872a-5532-8e08-68b8b0da62a4",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313889_MN67.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313889_MN67.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313889_MN67.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--b570d91e-6f93-5833-88ff-9f86e56c273f",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313889_MN67.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313889_MN67.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313889_MN67.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--3fd84667-294f-55a8-a45d-832cb3497634",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313892_MN45.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313892_MN45.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313892_MN45.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--fc6cda2d-b286-5aed-a3e8-fd9db16386b8",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313892_MN45.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313892_MN45.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313892_MN45.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--6052ac53-f502-5f55-b08d-a3f82352495f",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313893_MN53.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313893_MN53.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313893_MN53.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--8a6e256f-0f13-5355-a876-fa94972653f2",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313893_MN53.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313893_MN53.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313893_MN53.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--68c5197c-316c-5a66-8736-d2cb267a9038",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313894_MN25.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313894_MN25.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313894_MN25.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--e8cadcc8-285f-539a-8014-81b02de00fc5",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313894_MN25.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313894_MN25.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313894_MN25.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--b052b9b5-d40a-559b-ad07-5f724c0583a6",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313895_MN21.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313895_MN21.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313895_MN21.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--408691bf-ff73-517a-ab8d-65e3b3eea72e",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313895_MN21.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313895_MN21.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313895_MN21.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--24983963-c0b8-5f99-9293-be27a244cb3b",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313896_MN84.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313896_MN84.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313896_MN84.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--8d369294-d2c7-5676-9e06-e1bc1a5a7eb7",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313896_MN84.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313896_MN84.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313896_MN84.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--92d3e738-bc75-5b97-b4ce-26f15e48f554",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313897_MN59.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313897_MN59.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313897_MN59.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--95ed61b3-ce07-580e-b912-22a892352749",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313897_MN59.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313897_MN59.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313897_MN59.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--998418e0-eda8-5738-806e-d2781b83a15f",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313898_MN63.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313898_MN63.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313898_MN63.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--4e51875b-3ef7-5a46-b733-3d63b7db92a8",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313898_MN63.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313898_MN63.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313898_MN63.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--f6237a22-bd11-5719-b1c1-dfe6e073f6ba",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313899_MN43.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313899_MN43.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313899_MN43.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--2454d65b-8517-50dd-841e-38e209d4eb60",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313899_MN43.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313899_MN43.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313899_MN43.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--8733fcac-8977-5b7d-a3ec-92384d69c16f",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313902_MN24.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313902_MN24.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313902_MN24.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--0ad7776a-992a-53b4-9566-b20574e8d366",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313902_MN24.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313902_MN24.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313902_MN24.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--dba1cb46-dc86-5c22-a2b8-32238a5df7b7",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313903_MN32.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313903_MN32.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313903_MN32.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--b1d7fd0f-3f7b-5bbb-8a48-03017ec7527d",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313903_MN32.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313903_MN32.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313903_MN32.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--f0a3e239-187f-5c18-83f7-db048316e4af",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313904_MN8.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313904_MN8.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313904_MN8.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--8fe1b0b0-0e0b-5066-b261-8a601c0202cd",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313904_MN8.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313904_MN8.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313904_MN8.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--875dc396-68b0-510a-8010-74c39bb27bbe",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313905_MN37.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313905_MN37.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313905_MN37.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--3747a714-3746-5949-9f06-85b02f568c75",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313905_MN37.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313905_MN37.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313905_MN37.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "mhd--raw-data-file--d44b25ab-d364-5b29-8dd1-23ee0ff15b59",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313908_MN12.wiff"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313908_MN12.wiff",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313908_MN12.wiff",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".wiff"
+            },
+            {
+                "id": "mhd--raw-data-file--c7bc9906-7c15-5782-922b-ed2a1cf6e4b1",
+                "type": "raw-data-file",
+                "url_list": [
+                    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313908_MN12.wiff.scan"
+                ],
+                "repository_identifier": "MSV000100661:Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313908_MN12.wiff.scan",
+                "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313908_MN12.wiff.scan",
+                "format_ref": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "extension": ".scan"
+            },
+            {
+                "id": "cv--characteristic-type--665578fb-687b-563f-ba6c-65862395bb6a",
+                "type": "characteristic-type",
+                "source": "NCIT",
+                "accession": "NCIT:C14250",
+                "name": "Organism"
+            },
+            {
+                "id": "cv--characteristic-value--689ba459-3eae-57be-83d7-a9742bd77886",
+                "type": "characteristic-value",
+                "source": "NCBITAXON",
+                "accession": "NCBITaxon:64680",
+                "name": "Tamias sibiricus"
+            },
+            {
+                "id": "cv-value--data-provider--b6fe5fd5-c5f8-5e6d-ab5d-0534c2693c9e",
+                "type": "data-provider",
+                "value": "GNPS",
+                "source": "NCIT",
+                "accession": "NCIT:C189151",
+                "name": "Study Data Repository"
+            },
+            {
+                "id": "cv--descriptor--bd9effc4-caf8-5c16-9600-c0bbb7b085a0",
+                "type": "descriptor",
+                "source": "MS",
+                "accession": "MS:1002853",
+                "name": "Dataset with no associated published manuscript"
+            },
+            {
+                "id": "cv--descriptor--52ebe386-ad7a-5ae7-acea-677b82d6bc8e",
+                "type": "descriptor",
+                "source": "",
+                "accession": "",
+                "name": "Food-storing hibernator"
+            },
+            {
+                "id": "cv--descriptor--31325095-4477-5d03-aa3d-8cbfbc212a85",
+                "type": "descriptor",
+                "source": "EDAM",
+                "accession": "EDAM:format_3710",
+                "name": "WIFF format"
+            },
+            {
+                "id": "cv--descriptor--d0910b45-e517-57ec-94d6-9f15f4827465",
+                "type": "descriptor",
+                "source": "EDAM",
+                "accession": "EDAM:format_2332",
+                "name": "XML"
+            }
+        ],
+        "relationships": [
+            {
+                "id": "rel--relationship--53ae4a57-1924-540c-8f00-849520ed3df3",
+                "type": "relationship",
+                "source_ref": "cv--characteristic-type--665578fb-687b-563f-ba6c-65862395bb6a",
+                "relationship_name": "type-of",
+                "target_ref": "mhd--characteristic-definition--da870c23-713e-5f44-953b-e2632247280f"
+            },
+            {
+                "id": "rel--relationship--39232b35-ae73-53d2-894d-2095692c0bee",
+                "type": "relationship",
+                "source_ref": "cv--characteristic-value--689ba459-3eae-57be-83d7-a9742bd77886",
+                "relationship_name": "instance-of",
+                "target_ref": "mhd--characteristic-definition--da870c23-713e-5f44-953b-e2632247280f"
+            },
+            {
+                "id": "rel--relationship--2a570b65-08d8-5fc2-8bd9-d742ad2719d4",
+                "type": "relationship",
+                "source_ref": "cv--descriptor--52ebe386-ad7a-5ae7-acea-677b82d6bc8e",
+                "relationship_name": "keyword-of",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--26977a77-15e7-5283-9878-0df3681e5696",
+                "type": "relationship",
+                "source_ref": "cv--descriptor--bd9effc4-caf8-5c16-9600-c0bbb7b085a0",
+                "relationship_name": "publication-status-of",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--d20ba34e-f4f9-5240-83d4-5b88ad0f698b",
+                "type": "relationship",
+                "source_ref": "cv-value--data-provider--b6fe5fd5-c5f8-5e6d-ab5d-0534c2693c9e",
+                "relationship_name": "provides",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--fe501c5a-094e-54a3-a3c6-a5b98dd025e9",
+                "type": "relationship",
+                "source_ref": "mhd--characteristic-definition--da870c23-713e-5f44-953b-e2632247280f",
+                "relationship_name": "has-instance",
+                "target_ref": "cv--characteristic-value--689ba459-3eae-57be-83d7-a9742bd77886"
+            },
+            {
+                "id": "rel--relationship--5be65f97-0d56-5992-88d6-dddf01658304",
+                "type": "relationship",
+                "source_ref": "mhd--characteristic-definition--da870c23-713e-5f44-953b-e2632247280f",
+                "relationship_name": "has-type",
+                "target_ref": "cv--characteristic-type--665578fb-687b-563f-ba6c-65862395bb6a"
+            },
+            {
+                "id": "rel--relationship--e9965f33-c460-508c-b2b8-4a3e5a26a8d9",
+                "type": "relationship",
+                "source_ref": "mhd--characteristic-definition--da870c23-713e-5f44-953b-e2632247280f",
+                "relationship_name": "used-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--2e9dfeec-f1a1-5984-ace8-9f869f180e13",
+                "type": "relationship",
+                "source_ref": "mhd--metadata-file--6fca7806-aa4e-5477-84ae-dd466d6184d3",
+                "relationship_name": "describes",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--2aa0d250-12b7-5da4-96d0-9f5728770899",
+                "type": "relationship",
+                "source_ref": "mhd--organization--3b9c571d-ef46-5b60-94bf-660206d5e372",
+                "relationship_name": "affiliated-with",
+                "target_ref": "mhd--person--84dc6494-d432-52ea-97ef-21bb9b57d9f4"
+            },
+            {
+                "id": "rel--relationship--db476bef-d40b-5f60-ada8-fe8b23efb47f",
+                "type": "relationship",
+                "source_ref": "mhd--person--84dc6494-d432-52ea-97ef-21bb9b57d9f4",
+                "relationship_name": "has-affiliation",
+                "target_ref": "mhd--organization--3b9c571d-ef46-5b60-94bf-660206d5e372"
+            },
+            {
+                "id": "rel--relationship--bc085f93-9547-5f4c-a0e2-4e3c62d826f7",
+                "type": "relationship",
+                "source_ref": "mhd--person--84dc6494-d432-52ea-97ef-21bb9b57d9f4",
+                "relationship_name": "principal-investigator-of",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--404a2f2a-d331-5718-88ba-908e2bf01e90",
+                "type": "relationship",
+                "source_ref": "mhd--person--84dc6494-d432-52ea-97ef-21bb9b57d9f4",
+                "relationship_name": "submits",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--8815f598-d7a1-5f06-b68c-c33b3e191604",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--0ad7776a-992a-53b4-9566-b20574e8d366",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--6af33f67-e4bd-5bc7-8acc-c654e2773012",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--0aebec76-12bb-5d64-9a37-1b47765614a1",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--d37c51bd-5644-5c95-841d-ff2d5cc3b73e",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--1088cf88-9984-57dd-be8b-4ca41e8c94ba",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--b5af0196-b034-5174-baf5-02551644bdb1",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--11dfb2d1-31a1-5a00-8356-6e2dd76d66de",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--2c3354b9-a3f4-5fae-8962-c6c4edee37a9",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--1593e29d-4836-552f-afe2-eae048b97558",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--81f0dd55-b9ff-5bb3-9236-24c433c43db0",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--18267d58-d6b0-51a0-bbe4-c8658937f8a7",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--64f12c86-173e-526f-9ee9-8ee3ef494e4e",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--182792bc-02ca-5925-9929-06e8cf140bbb",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--a507eb82-b124-5e78-b3ca-0e4bf517afce",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--19a54eff-efb0-5dec-bbbf-b9ba717f779e",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--cab3c374-2c00-59ac-9c7f-e92c6128199c",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--1eff8f99-aad0-5fc9-8a36-18b3203e3538",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--2016f935-c800-5cd2-b609-9eb01b92b027",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--2454d65b-8517-50dd-841e-38e209d4eb60",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--c2eaeeaa-3e08-5602-a6a6-027f224675c5",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--24983963-c0b8-5f99-9293-be27a244cb3b",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--9878570d-6db6-5afb-a17a-40792b6847da",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--2b966e79-4dff-5cc0-a5ed-b3151ddf74db",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--23c74699-9215-5a93-81a9-97ecd9757ae4",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--2d5b53c8-89d1-53f6-bc83-9f9068333137",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--0721c8e9-7516-5f5d-b0e1-b368a3450538",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--31892418-e71b-5ba5-8c3e-12832fe319b7",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--ef22a158-f49b-5196-af71-2731ab9703be",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--3747a714-3746-5949-9f06-85b02f568c75",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--11c25c86-95f0-5f54-b8d2-ae69c0ad234b",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--3fada7ac-e586-5d09-9b34-fc413de84871",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--022e56a7-b960-530d-82f9-65691f9fcb44",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--3fd84667-294f-55a8-a45d-832cb3497634",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--77a6daae-a4b1-548d-8c12-861ddffb13df",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--401a5e83-1f2a-5e63-ad08-d74c8251b86a",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--d596e478-143b-5625-870b-186a0cfbab75",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--408691bf-ff73-517a-ab8d-65e3b3eea72e",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--0f4a3861-9746-5d16-a3ab-0e3c77e21152",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--40b06c98-9441-558a-8546-4b20cdb03822",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--45391989-a7b1-5648-910d-7a42af53861a",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--41bbeb5c-6e4c-527b-a99e-89f7a8f1fddd",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--2a02baa8-f54a-558e-a4aa-eb62194681a0",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--45282c58-2608-5910-92d4-5a0d983f7a54",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--6fe66190-20c2-5abb-9c9b-07403ad85aa4",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--4c3954b6-d1b3-51ac-b74c-2af294777f1f",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--7eaf8216-6df6-56a1-8b32-f548043669f2",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--4c44f83a-9410-5822-bd5a-0c22bdfdbd78",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--412167ca-c2fb-53aa-aa0a-8001265af6cf",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--4dee6e69-f73b-587b-a6b9-af0c0fd6c1c9",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--18ddf73c-3304-5ec9-9f30-9b4af77ce36d",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--4e51875b-3ef7-5a46-b733-3d63b7db92a8",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--84bf8b6e-3202-584b-8a8f-d79ef2a37198",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--58ab4adf-df73-5970-9371-d957db7a4072",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--9ee66011-8de7-5a4a-b36f-54deda2b7ab5",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--5acd05fe-3285-5b32-864b-8bf2692e8d9d",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--9df0d2b7-77d5-5c24-965d-fab28d28aaf2",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--6052ac53-f502-5f55-b08d-a3f82352495f",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--800fd4bc-5140-536b-b191-af6e2378ccbb",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--634e6c30-263a-55bd-a461-6818cabcc784",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--638f54f9-9bfd-5bb8-aa20-6d3d40dc16b8",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--66a3207e-7a41-5b00-b007-04ea2adb215e",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--293527c1-b901-5cfa-9dd6-6e0a4d7326dd",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--68c5197c-316c-5a66-8736-d2cb267a9038",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--21e03fd4-5d84-5005-b066-15a118354621",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--6a31f2d3-ecd1-5584-bba6-a52d34f42131",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--c90bde6e-03b8-5f31-b7de-a43e879a812d",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--6b096825-a5d9-5661-8c50-f93c1c326ba8",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--dc692bb6-0e5a-5d72-8ec7-c9f6ecf2c508",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--6f55263b-2aef-5211-9d61-65dbfce02865",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--7d0595f4-ac57-5b87-9503-8b59c6a51818",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--72de763c-18f8-5463-9b82-1981e5c5d9d2",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--51741fb2-ee12-511e-9b2d-bad119a5cb0f",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--7326b142-7b0e-57cc-9327-472ed42af2fa",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--9b992325-7c4c-5880-b28b-0375d13c4a28",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--77a76a2b-c5fb-58f9-adc9-aa31c796acf7",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--40378db1-1012-50af-be9f-9d63d124d78e",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--7b99ae8a-f8a2-594f-88ae-0cd7e96beca1",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--c4e0577d-6029-5e61-953b-86bdee8ddfb7",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--7c02c6ff-5f04-5cfb-a51d-d3432802787c",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--11180e34-9c75-509e-a008-1e9fc24c5bd9",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--7de3fa54-bbc2-582b-945b-e3c570890c42",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--b5978cf5-a04d-59e0-a0a9-2af0ca985520",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--80c375fc-521b-57cc-a481-6eb7d2fbea5a",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--0d8299b2-a62a-5d53-aec5-58ebeab07643",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--80f778bb-7faa-5ccb-b1fa-a2774533e5a8",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--411a458e-c99b-54f8-a041-1fd57f7256ab",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--8733fcac-8977-5b7d-a3ec-92384d69c16f",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--f9eb1242-b376-58c7-acc8-9a1cf49fb16e",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--875dc396-68b0-510a-8010-74c39bb27bbe",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--aa4d20a5-4d03-56b9-a640-248aab47c834",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--885d3869-c628-5b7b-85b7-328b225c0183",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--65eca2c1-d427-536a-8713-060a62da08a6",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--8a6e256f-0f13-5355-a876-fa94972653f2",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--8d42881b-4375-5de8-a169-6d9fa669a6bb",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--8d369294-d2c7-5676-9e06-e1bc1a5a7eb7",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--3e9fff67-6b22-5810-9794-a01cb50f51c5",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--8fe1b0b0-0e0b-5066-b261-8a601c0202cd",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--52345594-ecbc-5137-81ed-5ca781439737",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--92d3e738-bc75-5b97-b4ce-26f15e48f554",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--c9d9248a-03db-5bfb-bf4d-3379ca2e9492",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--95ed61b3-ce07-580e-b912-22a892352749",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--bd833b77-7730-5dac-bc9d-6158d2db1d14",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--97f04bf9-2d42-56a3-9d93-79415b704b6a",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--4e0379d7-98c6-567e-bcce-9969a38bdb3b",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--998418e0-eda8-5738-806e-d2781b83a15f",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--0d1a1b1d-7e1a-5ca2-be45-9b7e4f091320",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--9b5f714a-6612-501f-90d1-a8f6873705e7",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--474d4617-b944-510e-a2cc-a53a58744d9a",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--9e0d0a84-7efb-580d-b2b7-e56044d526cb",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--b396e90d-9b5b-55cf-9d96-0873fc2b97c6",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--a05d263c-36fc-56f6-b07a-1ce8566eb7c9",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--2eb56d68-ef72-50d9-bf61-fac46cbb0695",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--a0bdddf7-3764-5a7e-b37e-49d3058f05ec",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--444779da-0a85-580a-b5e8-b7eb6d1004d8",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--a9fee51a-f272-5e08-a908-9d0e8bc294df",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--356d3238-7dd4-5b5e-90b8-74bfb4619f45",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--b052b9b5-d40a-559b-ad07-5f724c0583a6",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--60107cee-18b2-571e-9f8a-4a99925ac302",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--b1d7fd0f-3f7b-5bbb-8a48-03017ec7527d",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--1bfcedd9-67ac-5dda-a063-3ef5a4329712",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--b4034f37-8c12-5313-a11c-96bb28dddd41",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--44d52471-7f2f-5a46-85ea-1f10bb01260a",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--b570d91e-6f93-5833-88ff-9f86e56c273f",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--fac29d6f-1292-593b-935c-95c1b59206ad",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--b8e115fc-e372-51f7-9a9b-4ab946f6fb99",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--52be6cd6-ad42-56a0-9a72-b0b004a1bbc2",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--b9825792-e5f5-5c28-a767-7d06e130b9d1",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--bfdfdf0a-3d89-569d-88dc-291a7fb21d56",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--ba200b78-950a-593b-af51-3b094dd0d296",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--334c2f79-70b0-56c0-985c-6dea0be5a878",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--c0a091a5-e948-59ff-9e3e-4e31f6cc7e86",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--34e58b89-2498-5dc6-b33d-21bf1bd32e31",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--c4428fd0-9e35-5176-8461-bb14b4e1ec6b",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--9fc446bd-fe46-58f5-841f-b29b427063c3",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--c47bd56c-f8d2-54eb-b398-60ed3b9a4bc6",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--8b3d4565-58f8-53bb-b652-54d760311453",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--c6a976c4-556f-5847-957a-65421a560f48",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--ec18ed72-683f-5cc0-91ba-6d8e778697ec",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--c7bc9906-7c15-5782-922b-ed2a1cf6e4b1",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--c4051d96-b6ee-5aa2-b4c0-6b3ad0c5b3e2",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--c7fa24ab-a04a-5b03-934a-251bf99a6818",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--a0dbec80-45d4-53a1-8e03-fa4109e30101",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--ca782310-f6a0-5030-a0fa-34e0aa1a26f4",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--e62932ec-89b3-58d5-b7c3-02b7fe78ce53",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--cb6b2f3e-7315-52da-8b4f-5b681a3bca85",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--b05b9ffa-8faf-5439-a555-bd4986ce1298",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--cbb2133f-efee-54d6-ba8b-d29ed0b4ef26",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--66c15eda-1140-5892-b3c1-50f60254c1ba",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--cdeca546-0571-5129-9211-442e5b05237f",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--73ca4f0c-7cb4-591b-ad31-fd4f0edf128e",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--cff953ff-0e15-5d5b-84af-21730f92a6ac",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--13bc7eb9-ceac-59d3-b121-7d0699677eed",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--d44b25ab-d364-5b29-8dd1-23ee0ff15b59",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--d63148bd-80a2-5360-85d5-797db1edbb32",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--d578310c-d4a0-5e71-9689-0f9dd71a1116",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--612b4ed3-7c9c-5a3f-b3f9-4a90305ef3df",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--d844004a-7ff3-5d81-ab9c-73e2b0bac422",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--c63bf1de-758b-5c80-bc4d-b24c19063848",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--daef3060-7726-5f3a-af3d-74b8bcdb0dc8",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--38f5a790-4ec8-5055-9d04-7a0bc01bd543",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--dba1cb46-dc86-5c22-a2b8-32238a5df7b7",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--65c6fb35-a2e7-5e47-be68-5c13d3b43cc5",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--dcb9157a-d884-58a3-8c04-5094015676c9",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--78317186-bc53-5e6a-a38c-5339d91e79f2",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--deabb2af-f0d9-5228-a04b-f434a50cb044",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--0e16b0c4-749f-5061-b836-218f8756cb1e",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--dffde2c8-33fc-573d-acb3-8a8045595fbf",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--775e0a13-ee2a-52dd-8b37-84f0f547fa23",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--e8c1a2c5-80da-5aa3-8fa3-d214f5c74e2b",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--ce7627e2-6728-5726-9723-325622f8b6f0",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--e8cadcc8-285f-539a-8014-81b02de00fc5",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--5c954e42-e420-5903-93a2-ca5c71ad5834",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--e8fc7075-60b5-5f9a-8b6f-d37547aef102",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--396b8160-050a-5da4-b205-e170a6f2bd62",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--ee21f1fe-872a-5532-8e08-68b8b0da62a4",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--5ab912aa-e20e-573d-9d44-2d29b4ef890c",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--f0a3e239-187f-5c18-83f7-db048316e4af",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--599f87d8-5546-5901-89c0-2c905ec088d3",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--f0f17c94-87d6-5ae1-bb90-255dce495a91",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--9f80a874-bff6-5391-92af-b3a002e50d91",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--f2e6803d-f1d1-5086-a679-5104861f3205",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--bae2b34a-d69e-599f-96fa-446a364ee055",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--f6237a22-bd11-5719-b1c1-dfe6e073f6ba",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--e8dedd47-f822-578d-8592-6a1bcde9c19d",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--f6ecde13-3115-5950-872d-df8e2a3654fc",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--31927716-8046-5e46-9ebf-204daba286e4",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--fabf6389-f6b5-5b60-a212-b1455660b009",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--6b58b8c0-3679-588b-825a-d7ca0effac52",
+                "type": "relationship",
+                "source_ref": "mhd--raw-data-file--fc6cda2d-b286-5aed-a3e8-fd9db16386b8",
+                "relationship_name": "created-in",
+                "target_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517"
+            },
+            {
+                "id": "rel--relationship--390862d9-9964-5f99-bbaa-ad1e43ef27c2",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "defined-as",
+                "target_ref": "cv--descriptor--bd9effc4-caf8-5c16-9600-c0bbb7b085a0"
+            },
+            {
+                "id": "rel--relationship--b6a923be-dd33-5f0d-9004-d3fa0ab0ecbf",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-characteristic-definition",
+                "target_ref": "mhd--characteristic-definition--da870c23-713e-5f44-953b-e2632247280f"
+            },
+            {
+                "id": "rel--relationship--39f531c1-333c-5aaa-8aae-648395820776",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-metadata-file",
+                "target_ref": "mhd--metadata-file--6fca7806-aa4e-5477-84ae-dd466d6184d3"
+            },
+            {
+                "id": "rel--relationship--027910c9-7aa6-5729-b0d5-9983ebc3ff42",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-principal-investigator",
+                "target_ref": "mhd--person--84dc6494-d432-52ea-97ef-21bb9b57d9f4"
+            },
+            {
+                "id": "rel--relationship--1b1d76dc-4498-55dc-8b03-f107ebd12b30",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--0ad7776a-992a-53b4-9566-b20574e8d366"
+            },
+            {
+                "id": "rel--relationship--449d33e9-7dd9-57cb-b2b8-f55c69b3d386",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--0aebec76-12bb-5d64-9a37-1b47765614a1"
+            },
+            {
+                "id": "rel--relationship--9ac2eae9-17e0-5110-b331-304949cc0a77",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--1088cf88-9984-57dd-be8b-4ca41e8c94ba"
+            },
+            {
+                "id": "rel--relationship--516c9da2-fbdb-51e5-abd9-1e20561c7597",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--11dfb2d1-31a1-5a00-8356-6e2dd76d66de"
+            },
+            {
+                "id": "rel--relationship--debcfaa0-9b25-514b-a094-f2bfb75ca3ee",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--1593e29d-4836-552f-afe2-eae048b97558"
+            },
+            {
+                "id": "rel--relationship--2cd672ca-6649-50aa-baea-5a8019d6ca18",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--18267d58-d6b0-51a0-bbe4-c8658937f8a7"
+            },
+            {
+                "id": "rel--relationship--75ffb24b-2fda-5211-9e17-4edd59f4d7c5",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--182792bc-02ca-5925-9929-06e8cf140bbb"
+            },
+            {
+                "id": "rel--relationship--f1b682a4-360c-5d76-997d-c8743535bbf1",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--19a54eff-efb0-5dec-bbbf-b9ba717f779e"
+            },
+            {
+                "id": "rel--relationship--c7dc236f-f1ec-5b9e-9e32-5fed828f7aab",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--1eff8f99-aad0-5fc9-8a36-18b3203e3538"
+            },
+            {
+                "id": "rel--relationship--b3f499a1-b129-5fe8-b548-bfd4be5cc133",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--2454d65b-8517-50dd-841e-38e209d4eb60"
+            },
+            {
+                "id": "rel--relationship--7ce51d13-ce20-5dc1-8dc8-02b228888dbb",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--24983963-c0b8-5f99-9293-be27a244cb3b"
+            },
+            {
+                "id": "rel--relationship--6b7107ee-02dc-52f6-940f-61dac60b69c9",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--2b966e79-4dff-5cc0-a5ed-b3151ddf74db"
+            },
+            {
+                "id": "rel--relationship--2912846c-6ff4-551f-888b-af7c983c684b",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--2d5b53c8-89d1-53f6-bc83-9f9068333137"
+            },
+            {
+                "id": "rel--relationship--d13fac20-84f0-5827-8910-e3dc9199675d",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--31892418-e71b-5ba5-8c3e-12832fe319b7"
+            },
+            {
+                "id": "rel--relationship--a015b937-0fc7-5e95-a98f-3bd95ebe3e3f",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--3747a714-3746-5949-9f06-85b02f568c75"
+            },
+            {
+                "id": "rel--relationship--ead606ea-87db-5e36-a3f0-abac1179c24c",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--3fada7ac-e586-5d09-9b34-fc413de84871"
+            },
+            {
+                "id": "rel--relationship--320628d5-62db-55e2-8a76-27f0d3cc2c5d",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--3fd84667-294f-55a8-a45d-832cb3497634"
+            },
+            {
+                "id": "rel--relationship--58808800-a318-5d87-986f-adb476978647",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--401a5e83-1f2a-5e63-ad08-d74c8251b86a"
+            },
+            {
+                "id": "rel--relationship--5cf91023-e38d-535e-93be-062019e7dfdf",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--408691bf-ff73-517a-ab8d-65e3b3eea72e"
+            },
+            {
+                "id": "rel--relationship--54f05f97-ad23-546c-aedc-4666c7676c0c",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--40b06c98-9441-558a-8546-4b20cdb03822"
+            },
+            {
+                "id": "rel--relationship--38a96015-3988-5ac1-a071-1bb22ee0d107",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--41bbeb5c-6e4c-527b-a99e-89f7a8f1fddd"
+            },
+            {
+                "id": "rel--relationship--07baa7e4-134f-5de1-bc43-6cf8c3e31649",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--45282c58-2608-5910-92d4-5a0d983f7a54"
+            },
+            {
+                "id": "rel--relationship--ea568daf-8c25-5d87-995a-5f47ca8d1ec9",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--4c3954b6-d1b3-51ac-b74c-2af294777f1f"
+            },
+            {
+                "id": "rel--relationship--6bd1b2f8-5715-5187-87f9-4363cbbb46e0",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--4c44f83a-9410-5822-bd5a-0c22bdfdbd78"
+            },
+            {
+                "id": "rel--relationship--708af293-54e9-5e19-9818-337b9f1c8e7a",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--4dee6e69-f73b-587b-a6b9-af0c0fd6c1c9"
+            },
+            {
+                "id": "rel--relationship--0000db77-3ef4-56ab-bd43-37ad3f29f331",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--4e51875b-3ef7-5a46-b733-3d63b7db92a8"
+            },
+            {
+                "id": "rel--relationship--9fc540b5-41b6-50bc-bd00-6cdbb488b4f9",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--58ab4adf-df73-5970-9371-d957db7a4072"
+            },
+            {
+                "id": "rel--relationship--81c6987f-9d2b-5019-aa4f-320c85766e14",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--5acd05fe-3285-5b32-864b-8bf2692e8d9d"
+            },
+            {
+                "id": "rel--relationship--a157758b-814c-5006-bfec-125df4a01db7",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--6052ac53-f502-5f55-b08d-a3f82352495f"
+            },
+            {
+                "id": "rel--relationship--dd94cbeb-83c0-5dd1-9bce-8a6e1b5360bc",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--634e6c30-263a-55bd-a461-6818cabcc784"
+            },
+            {
+                "id": "rel--relationship--50661141-2d35-5028-ae53-d8a91b439657",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--66a3207e-7a41-5b00-b007-04ea2adb215e"
+            },
+            {
+                "id": "rel--relationship--3374d702-f8bf-52ce-8c70-59ad130177e7",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--68c5197c-316c-5a66-8736-d2cb267a9038"
+            },
+            {
+                "id": "rel--relationship--3d20f5f7-2154-5c97-a0e2-949c071c3776",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--6a31f2d3-ecd1-5584-bba6-a52d34f42131"
+            },
+            {
+                "id": "rel--relationship--2b780d54-d313-508b-8740-511079ca2df8",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--6b096825-a5d9-5661-8c50-f93c1c326ba8"
+            },
+            {
+                "id": "rel--relationship--c2dee92e-bdf3-5add-bcc4-17fb3ef8b963",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--6f55263b-2aef-5211-9d61-65dbfce02865"
+            },
+            {
+                "id": "rel--relationship--e3bf62ce-1410-525e-9f3c-9b815bd25dd3",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--72de763c-18f8-5463-9b82-1981e5c5d9d2"
+            },
+            {
+                "id": "rel--relationship--b4b87149-543a-5d11-a3e7-45460eb888b4",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--7326b142-7b0e-57cc-9327-472ed42af2fa"
+            },
+            {
+                "id": "rel--relationship--b85e094d-7d58-50d0-9b19-ede594dc20f1",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--77a76a2b-c5fb-58f9-adc9-aa31c796acf7"
+            },
+            {
+                "id": "rel--relationship--57585e68-a784-5103-85d8-7a13b1369095",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--7b99ae8a-f8a2-594f-88ae-0cd7e96beca1"
+            },
+            {
+                "id": "rel--relationship--bd61f6ff-10e6-5d7b-b5fd-248f49865e22",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--7c02c6ff-5f04-5cfb-a51d-d3432802787c"
+            },
+            {
+                "id": "rel--relationship--b63e43a2-58f5-5ef5-a863-3f4d1dc18bd2",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--7de3fa54-bbc2-582b-945b-e3c570890c42"
+            },
+            {
+                "id": "rel--relationship--1a79c610-b3da-5787-8917-90ef73473945",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--80c375fc-521b-57cc-a481-6eb7d2fbea5a"
+            },
+            {
+                "id": "rel--relationship--d18ef89c-cc04-501f-8a44-8f79ce64eff3",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--80f778bb-7faa-5ccb-b1fa-a2774533e5a8"
+            },
+            {
+                "id": "rel--relationship--bf491797-17a8-5c99-b090-4d189a8b0837",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--8733fcac-8977-5b7d-a3ec-92384d69c16f"
+            },
+            {
+                "id": "rel--relationship--1dbd629c-8de9-5451-b574-2d2d167ecdca",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--875dc396-68b0-510a-8010-74c39bb27bbe"
+            },
+            {
+                "id": "rel--relationship--334e66cd-068c-55b9-84e9-1e31fe9c0a07",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--885d3869-c628-5b7b-85b7-328b225c0183"
+            },
+            {
+                "id": "rel--relationship--8c377b6b-86c0-5bb1-a86a-212e1efb724f",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--8a6e256f-0f13-5355-a876-fa94972653f2"
+            },
+            {
+                "id": "rel--relationship--4975df77-7ab1-57bf-8f41-89edf3385260",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--8d369294-d2c7-5676-9e06-e1bc1a5a7eb7"
+            },
+            {
+                "id": "rel--relationship--51b2a776-61ff-5b7a-8be0-77a3fec584b8",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--8fe1b0b0-0e0b-5066-b261-8a601c0202cd"
+            },
+            {
+                "id": "rel--relationship--f6bb95de-80e1-5649-9b70-d472905a1b5c",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--92d3e738-bc75-5b97-b4ce-26f15e48f554"
+            },
+            {
+                "id": "rel--relationship--95f46dc0-b8fe-5162-a179-e0304005e4a5",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--95ed61b3-ce07-580e-b912-22a892352749"
+            },
+            {
+                "id": "rel--relationship--ca1da1d6-06be-534b-9214-082240289f52",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--97f04bf9-2d42-56a3-9d93-79415b704b6a"
+            },
+            {
+                "id": "rel--relationship--ff633dfe-54d1-51f1-b351-6166e60f3c42",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--998418e0-eda8-5738-806e-d2781b83a15f"
+            },
+            {
+                "id": "rel--relationship--0c31d12b-e6c2-599f-a259-99e67b42d12a",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--9b5f714a-6612-501f-90d1-a8f6873705e7"
+            },
+            {
+                "id": "rel--relationship--a36aadfe-0b89-53af-89d9-bf1289acf6bc",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--9e0d0a84-7efb-580d-b2b7-e56044d526cb"
+            },
+            {
+                "id": "rel--relationship--2f40ee4c-e209-58dc-81c2-f55777e88788",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--a05d263c-36fc-56f6-b07a-1ce8566eb7c9"
+            },
+            {
+                "id": "rel--relationship--1c2921e0-baf8-570b-9939-a2360cfc751e",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--a0bdddf7-3764-5a7e-b37e-49d3058f05ec"
+            },
+            {
+                "id": "rel--relationship--00774f62-3e08-53fa-9c96-30bebe108831",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--a9fee51a-f272-5e08-a908-9d0e8bc294df"
+            },
+            {
+                "id": "rel--relationship--fcb83a0f-19c1-597f-88a5-0faf9a7f0ff5",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--b052b9b5-d40a-559b-ad07-5f724c0583a6"
+            },
+            {
+                "id": "rel--relationship--d8e770ee-bd2c-5a93-9ced-37fe95a92d0a",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--b1d7fd0f-3f7b-5bbb-8a48-03017ec7527d"
+            },
+            {
+                "id": "rel--relationship--7ff5b304-88ef-59c8-8339-2cda0eea370a",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--b4034f37-8c12-5313-a11c-96bb28dddd41"
+            },
+            {
+                "id": "rel--relationship--7392fd22-dd2f-5502-8f5f-12f701b3662e",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--b570d91e-6f93-5833-88ff-9f86e56c273f"
+            },
+            {
+                "id": "rel--relationship--f40ac704-4be8-508a-bc9c-8bc0221964ff",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--b8e115fc-e372-51f7-9a9b-4ab946f6fb99"
+            },
+            {
+                "id": "rel--relationship--944bf877-40d4-50e0-8cad-8c254b38ad72",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--b9825792-e5f5-5c28-a767-7d06e130b9d1"
+            },
+            {
+                "id": "rel--relationship--00619f61-3bd7-5077-8b80-fcbc2baded5d",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--ba200b78-950a-593b-af51-3b094dd0d296"
+            },
+            {
+                "id": "rel--relationship--fd597e15-d10f-5d8f-a048-36246e74580a",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--c0a091a5-e948-59ff-9e3e-4e31f6cc7e86"
+            },
+            {
+                "id": "rel--relationship--76963650-ab24-5e08-91f6-725b68ee05b2",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--c4428fd0-9e35-5176-8461-bb14b4e1ec6b"
+            },
+            {
+                "id": "rel--relationship--0da1e871-6009-505b-b921-057c790f5cb3",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--c47bd56c-f8d2-54eb-b398-60ed3b9a4bc6"
+            },
+            {
+                "id": "rel--relationship--8cb7f36f-745c-55f2-9706-21032d6780f6",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--c6a976c4-556f-5847-957a-65421a560f48"
+            },
+            {
+                "id": "rel--relationship--c60cf05a-299b-522d-8ec9-3dff83c10aff",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--c7bc9906-7c15-5782-922b-ed2a1cf6e4b1"
+            },
+            {
+                "id": "rel--relationship--593c4db2-619b-582a-9413-3557b44490cd",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--c7fa24ab-a04a-5b03-934a-251bf99a6818"
+            },
+            {
+                "id": "rel--relationship--d2ae2f5e-9643-506a-9095-91e10cd44e4e",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--ca782310-f6a0-5030-a0fa-34e0aa1a26f4"
+            },
+            {
+                "id": "rel--relationship--c5477b4d-3e85-5c16-8f95-45ff4ab5d0b2",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--cb6b2f3e-7315-52da-8b4f-5b681a3bca85"
+            },
+            {
+                "id": "rel--relationship--d146dc08-dff3-51cb-be0d-3ada5b90118c",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--cbb2133f-efee-54d6-ba8b-d29ed0b4ef26"
+            },
+            {
+                "id": "rel--relationship--6e32ffae-f739-540e-a55f-66e86bedddd3",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--cdeca546-0571-5129-9211-442e5b05237f"
+            },
+            {
+                "id": "rel--relationship--c9a6e251-bda9-5715-8ffd-b71da2498372",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--cff953ff-0e15-5d5b-84af-21730f92a6ac"
+            },
+            {
+                "id": "rel--relationship--54588c79-3264-5152-bb4b-50784d8399be",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--d44b25ab-d364-5b29-8dd1-23ee0ff15b59"
+            },
+            {
+                "id": "rel--relationship--db522909-8d12-586a-a5e4-a0e469b1f2d8",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--d578310c-d4a0-5e71-9689-0f9dd71a1116"
+            },
+            {
+                "id": "rel--relationship--b19b4dae-40c9-5c72-a613-abbdf87008d8",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--d844004a-7ff3-5d81-ab9c-73e2b0bac422"
+            },
+            {
+                "id": "rel--relationship--696eb9b3-d591-568c-a193-ad3f42b2bc5b",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--daef3060-7726-5f3a-af3d-74b8bcdb0dc8"
+            },
+            {
+                "id": "rel--relationship--68873002-ecf7-5356-8343-9284979bcda1",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--dba1cb46-dc86-5c22-a2b8-32238a5df7b7"
+            },
+            {
+                "id": "rel--relationship--92f1d414-5a40-5506-ab8a-eb2ff99222e2",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--dcb9157a-d884-58a3-8c04-5094015676c9"
+            },
+            {
+                "id": "rel--relationship--219e474e-9af9-5daa-8530-5d39d9c44ad9",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--deabb2af-f0d9-5228-a04b-f434a50cb044"
+            },
+            {
+                "id": "rel--relationship--a2de1b40-e2e9-508a-9917-c406b131a7c0",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--dffde2c8-33fc-573d-acb3-8a8045595fbf"
+            },
+            {
+                "id": "rel--relationship--21279eab-bab0-5355-85fd-a4df25f093d8",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--e8c1a2c5-80da-5aa3-8fa3-d214f5c74e2b"
+            },
+            {
+                "id": "rel--relationship--e4b504cc-1111-5f66-90e5-8854f1a73de4",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--e8cadcc8-285f-539a-8014-81b02de00fc5"
+            },
+            {
+                "id": "rel--relationship--246b4a62-1c4b-5697-9ce9-0c4d823d3346",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--e8fc7075-60b5-5f9a-8b6f-d37547aef102"
+            },
+            {
+                "id": "rel--relationship--059bfc6d-017e-567f-9576-d9bc6903122b",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--ee21f1fe-872a-5532-8e08-68b8b0da62a4"
+            },
+            {
+                "id": "rel--relationship--fe008b81-6c90-5374-867d-e779b9f4a742",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--f0a3e239-187f-5c18-83f7-db048316e4af"
+            },
+            {
+                "id": "rel--relationship--7f163560-6408-526e-898d-f2a04233dd25",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--f0f17c94-87d6-5ae1-bb90-255dce495a91"
+            },
+            {
+                "id": "rel--relationship--61f9e333-3cbe-53db-8741-856d6ecfb320",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--f2e6803d-f1d1-5086-a679-5104861f3205"
+            },
+            {
+                "id": "rel--relationship--abc7e5da-23e2-5074-b60b-6c257e215714",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--f6237a22-bd11-5719-b1c1-dfe6e073f6ba"
+            },
+            {
+                "id": "rel--relationship--f661a352-837e-5def-8e19-3ab9d7212d39",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--f6ecde13-3115-5950-872d-df8e2a3654fc"
+            },
+            {
+                "id": "rel--relationship--86084a2a-5c34-5bbb-86ff-c24111b72d67",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--fabf6389-f6b5-5b60-a212-b1455660b009"
+            },
+            {
+                "id": "rel--relationship--93377bc5-a1a8-5031-bdf8-76e2f9247275",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-raw-data-file",
+                "target_ref": "mhd--raw-data-file--fc6cda2d-b286-5aed-a3e8-fd9db16386b8"
+            },
+            {
+                "id": "rel--relationship--c09aeb66-3630-5324-a060-3dc47c95af62",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "has-submitter-keyword",
+                "target_ref": "cv--descriptor--52ebe386-ad7a-5ae7-acea-677b82d6bc8e"
+            },
+            {
+                "id": "rel--relationship--ddcc13ba-f56c-54ff-b9de-59a85225b4b8",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "provided-by",
+                "target_ref": "cv-value--data-provider--b6fe5fd5-c5f8-5e6d-ab5d-0534c2693c9e"
+            },
+            {
+                "id": "rel--relationship--c3553798-0dee-59ef-a258-9522b17f7c45",
+                "type": "relationship",
+                "source_ref": "mhd--study--1259cd54-468f-59b2-a8b2-ad7b2140b517",
+                "relationship_name": "submitted-by",
+                "target_ref": "mhd--person--84dc6494-d432-52ea-97ef-21bb9b57d9f4"
+            }
+        ]
+    }
+}

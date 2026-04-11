@@ -1,0 +1,1232 @@
+{
+  "repository_name": "GNPS",
+  "repository_identifier": "MSV000100661",
+  "revision": 1,
+  "$schema": "https://metabolomicshub.github.io/mhd-model/schemas/v0_1/announcement-v0.1.schema.json",
+  "profile_uri": "https://metabolomicshub.github.io/mhd-model/schemas/v0_1/announcement-v0.1.legacy-profile.json",
+  "cv_definitions": [
+    {
+      "label": "EDAM",
+      "name": "The ontology of data analysis and management",
+      "uri": "http://edamontology.org",
+      "prefix": "http://edamontology.org/"
+    },
+    {
+      "label": "MS",
+      "name": "MS",
+      "uri": "http://purl.obolibrary.org/obo/ms.owl",
+      "prefix": "http://purl.obolibrary.org/obo/MS_"
+    },
+    {
+      "label": "NCBITAXON",
+      "name": "National Center for Biotechnology Information (NCBI) Organismal Classification",
+      "uri": "http://purl.obolibrary.org/obo/ncbitaxon.owl",
+      "prefix": "http://purl.obolibrary.org/obo/NCBITaxon_"
+    },
+    {
+      "label": "NCIT",
+      "name": "NCI Thesaurus OBO Edition",
+      "uri": "http://purl.obolibrary.org/obo/ncit.owl",
+      "prefix": "http://purl.obolibrary.org/obo/NCIT_"
+    }
+  ],
+  "mhd_metadata_file_url": "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/mhd/MSV000100661.mhd.json",
+  "dataset_url_list": [
+    "https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=f3722946b2ef4e95b2c8ee6d606e4e9a",
+    "ftp://massive-ftp.ucsd.edu/v12/MSV000100661"
+  ],
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "title": "Combining gut metatranscriptome and metabolome reveals metabolic adaptation of the food-storing Siberian chipmunk (Tamias sibiricus) to hibernation",
+  "description": "Untargeted metabolomics analysis of cecal contents from the Siberian chipmunk (Tamias sibiricus) across four physiological stages of hibernation: pre-hibernation (preH), deep torpor (torpor), interbout arousal (IBA), and post-hibernation (postH). The study aims to characterize the functional reprogramming of the gut metabolome during hibernation. Study Design: Species: Tamias sibiricus Sample Type: Cecal contents Groups: 4 groups (preH, torpor, IBA, postH) with 5 biological replicates per group (Total 20 samples). Method: Samples were analyzed using LC-MS/MS on a Thermo UHPLC-Q Exactive HF-X system in both positive and negative ion modes. Related Manuscript: Combining gut metatranscriptome and metabolome reveals metabolic adaptation of the food-storing Siberian chipmunk (Tamias sibiricus) to hibernation.",
+  "submission_date": "2026-04-10T23:15:54.286730Z",
+  "public_release_date": "2026-04-10T23:15:54.286946Z",
+  "submitters": [
+    {
+      "full_name": "Fei Yu",
+      "email_list": [
+        "yufei096@163.com"
+      ]
+    }
+  ],
+  "submitter_keywords": [
+    {
+      "source": "",
+      "accession": "",
+      "name": "Food-storing hibernator"
+    }
+  ],
+  "publications": {
+    "source": "MS",
+    "accession": "MS:1002853",
+    "name": "Dataset with no associated published manuscript"
+  },
+  "characteristic_values": [
+    {
+      "key": {
+        "source": "NCIT",
+        "accession": "NCIT:C14250",
+        "name": "Organism"
+      },
+      "values": [
+        {
+          "source": "NCBITAXON",
+          "accession": "NCBITaxon:64680",
+          "name": "Tamias sibiricus"
+        }
+      ]
+    }
+  ],
+  "protocols": [],
+  "repository_metadata_file_list": [
+    {
+      "name": "ccms_parameters/params.xml",
+      "url_list": [
+        "https://massive.ucsd.edu/ProteoSAFe/DownloadResultFile?file=f.MSV000100661%2Fccms_parameters%2Fparams.xml",
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/ccms_parameters/params.xml"
+      ],
+      "extension": ".xml",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_2332",
+        "name": "XML"
+      }
+    }
+  ],
+  "raw_data_file_list": [
+    {
+      "name": "Chipmunk_Metabolomics_2026/MAF/m_NEG_maf.tsv.xlsx",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/MAF/m_NEG_maf.tsv.xlsx"
+      ],
+      "extension": ".xlsx",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/MAF/m_POS_maf.tsv.xlsx",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/MAF/m_POS_maf.tsv.xlsx"
+      ],
+      "extension": ".xlsx",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/METADATA.csv",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/METADATA.csv"
+      ],
+      "extension": ".csv",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/Peak_Table_Final.csv",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/Peak_Table_Final.csv"
+      ],
+      "extension": ".csv",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_MN4.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_MN4.wiff.scan"
+      ],
+      "extension": ".scan"
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC01.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC01.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC01.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC01.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC02.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC02.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC02.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC02.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC03.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC03.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC03.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313881_QC03.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313882_MN20.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313882_MN20.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313882_MN20.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313882_MN20.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313883_MN73.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313883_MN73.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313883_MN73.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313883_MN73.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313884_MN55.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313884_MN55.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313884_MN55.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313884_MN55.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313885_MN2.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313885_MN2.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313885_MN2.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313885_MN2.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313888_MN48.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313888_MN48.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313888_MN48.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313888_MN48.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313889_MN67.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313889_MN67.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313889_MN67.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313889_MN67.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313892_MN45.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313892_MN45.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313892_MN45.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313892_MN45.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313893_MN53.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313893_MN53.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313893_MN53.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313893_MN53.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313894_MN25.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313894_MN25.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313894_MN25.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313894_MN25.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313895_MN21.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313895_MN21.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313895_MN21.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313895_MN21.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313896_MN84.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313896_MN84.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313896_MN84.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313896_MN84.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313897_MN59.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313897_MN59.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313897_MN59.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313897_MN59.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313898_MN63.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313898_MN63.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313898_MN63.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313898_MN63.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313899_MN43.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313899_MN43.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313899_MN43.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313899_MN43.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313902_MN24.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313902_MN24.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313902_MN24.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313902_MN24.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313903_MN32.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313903_MN32.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313903_MN32.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313903_MN32.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313904_MN8.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313904_MN8.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313904_MN8.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313904_MN8.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313905_MN37.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313905_MN37.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313905_MN37.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313905_MN37.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313908_MN12.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313908_MN12.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313908_MN12.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/NEG/NEG_MKG2313908_MN12.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_MN4.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_MN4.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_MN4.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_MN4.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC01.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC01.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC01.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC01.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC02.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC02.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC02.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC02.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC03.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC03.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC03.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313881_QC03.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313882_MN20.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313882_MN20.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313882_MN20.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313882_MN20.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313883_MN73.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313883_MN73.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313883_MN73.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313883_MN73.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313884_MN55.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313884_MN55.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313884_MN55.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313884_MN55.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313885_MN2.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313885_MN2.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313885_MN2.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313885_MN2.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313888_MN48.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313888_MN48.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313888_MN48.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313888_MN48.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313889_MN67.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313889_MN67.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313889_MN67.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313889_MN67.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313892_MN45.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313892_MN45.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313892_MN45.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313892_MN45.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313893_MN53.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313893_MN53.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313893_MN53.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313893_MN53.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313894_MN25.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313894_MN25.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313894_MN25.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313894_MN25.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313895_MN21.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313895_MN21.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313895_MN21.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313895_MN21.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313896_MN84.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313896_MN84.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313896_MN84.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313896_MN84.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313897_MN59.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313897_MN59.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313897_MN59.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313897_MN59.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313898_MN63.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313898_MN63.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313898_MN63.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313898_MN63.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313899_MN43.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313899_MN43.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313899_MN43.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313899_MN43.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313902_MN24.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313902_MN24.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313902_MN24.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313902_MN24.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313903_MN32.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313903_MN32.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313903_MN32.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313903_MN32.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313904_MN8.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313904_MN8.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313904_MN8.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313904_MN8.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313905_MN37.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313905_MN37.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313905_MN37.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313905_MN37.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313908_MN12.wiff",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313908_MN12.wiff"
+      ],
+      "extension": ".wiff",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    },
+    {
+      "name": "Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313908_MN12.wiff.scan",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v12/MSV000100661/peak/Chipmunk_Metabolomics_2026/RAW/POS/POS_MKG2313908_MN12.wiff.scan"
+      ],
+      "extension": ".scan",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_3710",
+        "name": "WIFF format"
+      }
+    }
+  ]
+}

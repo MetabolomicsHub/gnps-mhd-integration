@@ -1,0 +1,105 @@
+{
+  "repository_name": "GNPS",
+  "repository_identifier": "MSV000099201",
+  "revision": 1,
+  "$schema": "https://metabolomicshub.github.io/mhd-model/schemas/v0_1/announcement-v0.1.schema.json",
+  "profile_uri": "https://metabolomicshub.github.io/mhd-model/schemas/v0_1/announcement-v0.1.legacy-profile.json",
+  "cv_definitions": [
+    {
+      "label": "EDAM",
+      "name": "The ontology of data analysis and management",
+      "uri": "http://edamontology.org",
+      "prefix": "http://edamontology.org/"
+    },
+    {
+      "label": "MS",
+      "name": "MS",
+      "uri": "http://purl.obolibrary.org/obo/ms.owl",
+      "prefix": "http://purl.obolibrary.org/obo/MS_"
+    },
+    {
+      "label": "NCBITAXON",
+      "name": "National Center for Biotechnology Information (NCBI) Organismal Classification",
+      "uri": "http://purl.obolibrary.org/obo/ncbitaxon.owl",
+      "prefix": "http://purl.obolibrary.org/obo/NCBITaxon_"
+    },
+    {
+      "label": "NCIT",
+      "name": "NCI Thesaurus OBO Edition",
+      "uri": "http://purl.obolibrary.org/obo/ncit.owl",
+      "prefix": "http://purl.obolibrary.org/obo/NCIT_"
+    }
+  ],
+  "mhd_metadata_file_url": "ftp://massive-ftp.ucsd.edu/v10/MSV000099201/mhd/MSV000099201.mhd.json",
+  "dataset_url_list": [
+    "https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=5c43bb7d75b14bdeb55e31362ab26256&view=advanced_view",
+    "https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=5c43bb7d75b14bdeb55e31362ab26256",
+    "ftp://massive-ftp.ucsd.edu/v10/MSV000099201"
+  ],
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "title": "GNPS - Overcoming Biosynthetic Limitations to Enhance Bacterial Polyketide Production-LCMSrawdata",
+  "description": "Samples were grown in minimal medium with XAD16, extracted with ethyl acetate, and reconstituted in acetonitrile. Separation was performed on an Ultimate 3000 HPLC system with an ISIS NUCLEODUR C18 column (1.8 microm, 2.150 mm, MACHEREY NAGEL) using a gradient of water (0.1 percent formic acid) and acetonitrile (0.1 percent formic acid). Detection was carried out on a Bruker Compact mass spectrometer with standard ESI.",
+  "submission_date": "2026-04-10T23:22:09.874606Z",
+  "public_release_date": "2026-04-10T23:22:09.874611Z",
+  "submitters": [
+    {
+      "full_name": "Frank Schulz",
+      "email_list": [
+        "frank.schulz@ruhr-uni-bochum.de"
+      ]
+    }
+  ],
+  "submitter_keywords": [
+    {
+      "source": "",
+      "accession": "",
+      "name": "monensin"
+    }
+  ],
+  "publications": {
+    "source": "MS",
+    "accession": "MS:1002853",
+    "name": "Dataset with no associated published manuscript"
+  },
+  "characteristic_values": [
+    {
+      "key": {
+        "source": "NCIT",
+        "accession": "NCIT:C14250",
+        "name": "Organism"
+      },
+      "values": [
+        {
+          "source": "NCBITAXON",
+          "accession": "NCBITaxon:1883",
+          "name": "Streptomyces"
+        }
+      ]
+    }
+  ],
+  "protocols": [],
+  "repository_metadata_file_list": [
+    {
+      "name": "ccms_parameters/params.xml",
+      "url_list": [
+        "https://massive.ucsd.edu/ProteoSAFe/DownloadResultFile?file=f.MSV000099201%2Fccms_parameters%2Fparams.xml",
+        "ftp://massive-ftp.ucsd.edu/v10/MSV000099201/ccms_parameters/params.xml"
+      ],
+      "extension": ".xml",
+      "format": {
+        "source": "EDAM",
+        "accession": "EDAM:format_2332",
+        "name": "XML"
+      }
+    }
+  ],
+  "raw_data_file_list": [
+    {
+      "name": "EnhancingPolekytidesproduction-Schulz/README.txt",
+      "url_list": [
+        "ftp://massive-ftp.ucsd.edu/v10/MSV000099201/peak/EnhancingPolekytidesproduction-Schulz/README.txt"
+      ],
+      "extension": ".txt"
+    }
+  ]
+}
