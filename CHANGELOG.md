@@ -1,3 +1,9 @@
+## v0.0.22 (2026-04-11)
+
+### Fix
+
+- publication status, cli version errors
+
 ## v0.0.21 (2026-04-10)
 
 ### Fix
